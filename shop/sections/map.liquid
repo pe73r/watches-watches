@@ -28,7 +28,7 @@
         {% endif %}
 
         {% if section.settings.map_link_label != blank and section.settings.map_address != blank %}
-          <a href="https://syewatches.youcanbook.me" target="_blank" rel="nofollow" class="FeaturedMap__Location Button Button--primary">
+          <a href="{{ section.settings.button-link }}" target="_blank" rel="nofollow" class="FeaturedMap__Location Button Button--primary">
             {{- section.settings.map_link_label | escape -}}
           </a>
         {% endif %}
@@ -626,6 +626,11 @@
       "id": "map_link_label",
       "label": "Map link label",
       "default": "Get directions"
+    },
+    {
+      "type": "url",
+      "id": "button-link",
+      "label": "Button link"
     },
     {
       "type": "header",
