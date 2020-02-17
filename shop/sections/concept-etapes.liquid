@@ -1,0 +1,175 @@
+<style type="text/css">
+
+ @media (min-width: 600px) {
+
+    #section--{{ section.id }} .concept__etapes-title{
+    transform: translateX({{ section.settings.title_position}}%);
+    font-size: {{ section.settings.title_size }}em;
+    margin-bottom: 0;
+    }
+
+   #section--{{ section.id }} .concept__etapes-subtitle{
+   	 transform: translateX({{ section.settings.subtitle_position}}%);
+     font-size: {{ section.settings.subtitle_size }}em;
+     text-align: {{ section.settings.subtitle_align }}
+   }
+	}
+
+</style>
+{% if section.settings.isActive %}
+    <section id="section--{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="concept" class="etapes-section gutter-section" title="concept-stages">
+        	<div class="concept__heading align-center">
+        	    <h1 class="u-h1 concept__etapes-title Heading {% if section.settings.font_option == true %} phreaks {% endif %}">{{ section.settings.title }}</h1>
+        	    <h3 class="u-h3 concept__etapes-subtitle Heading {% if section.settings.font_option_subtitle == true %} phreaks {% endif %}">{{ section.settings.subtitle }}</h3>
+        	</div>
+          <div class="concept__etapes-content align-center">
+               <div class="grid">
+      		      {% for block in section.blocks %}
+
+          			        <div class="grid__cell 1/1 1/5--lap-and-up">
+          			          <div class="concept__image-container">
+          			            {% include 'image' with img : block.settings.image, class:'image__width' %}
+          			          </div>
+          			          <div class="concept__content ">
+          			          	 <h3 class="Heading concept__content-title">{{ block.settings.title }}</h3>
+                                   <p>{{ block.settings.content }}</p>
+                              {% if block.settings.link != blank %}
+                                  <a href="{{ block.settings.url }}" target="_blank" class="Heading"> <b>{{ block.settings.link }}</b> </a>
+                              {% endif %}
+          			          </div>
+          			        </div>
+      		      {% endfor %}
+               </div>
+          </div>
+    </section>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Concept Etapes",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "isActive",
+      "label": "Show section"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "checkbox",
+      "id": "font_option",
+      "label": "Special font",
+      "info": "change the font of the title",
+      "default": false
+    },
+    {
+    "type":      "range",
+    "id":        "title_position",
+    "min":       -50,
+    "max":       50,
+    "step":      1,
+    "unit":       "%",
+    "label":     "Title position",
+    "default":   0
+    },
+    {
+    "type":      "range",
+    "id":        "title_size",
+    "min":       2,
+    "max":       8,
+    "step":      1,
+    "unit":      "em",
+    "label":     "Title size",
+    "default":   4
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "checkbox",
+      "id": "font_option_subtitle",
+      "label": "Special font",
+      "info": "change the font of the subtitle",
+      "default": false
+    },
+    {
+    "type":      "range",
+    "id":        "subtitle_position",
+    "min":       -40,
+    "max":       40,
+    "step":      1,
+    "unit":       "%",
+    "label":     "Subtitle position",
+    "default":   0
+    },
+    {
+    "type":      "range",
+    "id":        "subtitle_size",
+    "min":       1,
+    "max":       5,
+    "step":      1,
+    "unit":      "em",
+    "label":     "Subtitle size",
+    "default":   1
+    },
+    {
+      "type": "select",
+      "id": "subtitle_align",
+      "label": "Subtitle align",
+      "options": [
+        {
+          "value": "left",
+          "label": "left"
+        },
+        {
+          "value": "center",
+          "label": "center"
+        },
+        {
+          "value": "right",
+          "label": "right"
+        }
+      ],
+      "default": "center"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Etape block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image presse"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Etapes title"
+        },
+        {
+          "type": "text",
+          "id": "content",
+          "label": "Etapes content"
+        },
+        {
+          "type": "text",
+          "id": "link",
+          "label": "link"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "url"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

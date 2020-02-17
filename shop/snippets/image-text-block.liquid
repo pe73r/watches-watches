@@ -1,0 +1,75 @@
+<style type="text/css">
+
+#section--{{ section.id }} .image-text-block-title-1{
+    font-size: {{ section.settings.title-1_size }}em;
+    color: {{ section.settings.title-1-color}};
+ }
+
+#section--{{ section.id }} .image-text-block-title-2{
+    font-size: {{ section.settings.title-2_size }}em;
+    color: {{ section.settings.title-2-color}};
+ }
+
+.image-text-block-image{
+   width: 100%;
+   height: 100%;
+}
+.image-text-block-text{
+  text-align: left;
+  padding: 30px;
+}
+@media screen and (max-width: 800px){
+  .grid__reverse{
+  display: flex;
+  flex-direction: column-reverse;
+  }
+}
+</style>
+{% if section.settings.isActive %}
+    <section id="section--{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="article" class="rellax-section">
+          <div class="grid grid--middle grid--flush">
+                   <div class="image-wrapper 1/2--lap-and-up grid__cell" >
+                      {% if section.settings.image != blank %}
+                         {% include 'image' with img : section.settings.image, class:'image-text-block-image' %}
+                      {% elsif section.settings.html_area != blank %}
+                         <div class="block__video">
+                            <div class="html-text">{{ section.settings.html_area }}</div>
+                         </div>
+                      {% endif %}
+                  </div>
+                  <div class="1/2--lap-and-up grid__cell image-text-block-content">
+                      <div class="image-text-block-text">
+                         <h2 class="Heading u-h2 image-text-block-title-1">{{ section.settings.block_title-1 }}</h2>
+                         <p class="Heading"> {{ section.settings.block_text-1 }}</p>
+                      </div>
+                  </div>
+          </div>
+          <div class="grid grid--middle grid__reverse grid--flush">
+                   <div class="1/2--lap-and-up grid__cell image-text-block-content">
+                      <div class="image-text-block-text">
+                         <h2 class="Heading u-h2 image-text-block-title-2">{{ section.settings.block_title-2 }}</h2>
+                         <p class="Heading"> {{ section.settings.block_text-2 }}</p>
+                      </div>
+                  </div>
+                  <div class="1/2--lap-and-up grid__cell">
+                     {% if section.settings.image-2 != blank %}
+                        {% include 'image' with img : section.settings.image-2, class:'image-text-block-image' %}
+                     {% elsif section.settings.html_area2 != blank %}
+                        <div class="block__video">
+                           <div class="html-text">{{ section.settings.html_area2 }}</div>
+                        </div>
+                     {% endif %}
+                  </div>
+            </div>
+            <div class="button__container">
+              {% if section.settings.button_status %}
+                  <div class="custom-button">
+                      <button class="Button Button--primary custom-grid__button">
+                         <a href="{{ section.settings.link_url }}">
+                           {%if section.settings.button_text == blank %}{{ 'home_page.featured_product.view_product' | t }}{%else%}{{ section.settings.button_text }}{% endif %}</a>
+                    </button>
+                  </div>
+              {%- endif -%}
+            </div>
+    </section>
+{% endif %}

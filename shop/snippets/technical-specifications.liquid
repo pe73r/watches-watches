@@ -1,0 +1,63 @@
+<style media="screen">
+{% for block in section.blocks %}
+	  #block--{{ block.id }} .specs__block-text{
+	      text-align: {{ block.settings.text_position }}
+
+		}
+    #block--{{ block.id }} .specs__block-title{
+		text-decoration: underline;
+	  }
+
+{% endfor %}
+</style>
+{% if section.settings.isActive %}
+	<section id="section--{{ section.id }}" class="tecnical__specs-section" data-section-id="{{ section.id }}" data-section-type="article">
+		<h1 class="specs__title align-center">{{ section.settings.title }}</h1>
+	    <article class="grid-sandbox">
+	          <div class="grid grid--center">
+		          <div class="1/3--lap-and-up grid__cell">
+			            <div class="specs__block-padding">
+			             {% for block in section.blocks %}
+										   <div id="block--{{ block.id }}">
+					                 {% if block.settings.block_position == "left" %}
+								              <div class="specs__content">
+								                   <h3 class="specs__block-title align-center">{{ block.settings.title }}</h3>
+								                   <div class="specs__block-text">{{ block.settings.text }}</div>
+							                </div>
+							              {% endif %}
+												</div>
+			              {% endfor %}
+			           </div>
+		          </div>
+		          <div class="1/3--lap-and-up grid__cell">
+			           <div class="specs__block-padding">
+			             {% for block in section.blocks %}
+									    <div id="block--{{ block.id }}">
+					               {% if block.settings.block_position == "center" %}
+						              <div class="specs__content ">
+						                   <h3 class="specs__block-title align-center">{{ block.settings.title }}</h3>
+						                   <div class="specs__block-text">{{ block.settings.text }}</div>
+					                   </div>
+					               {% endif %}
+											</div>
+			              {% endfor %}
+			           </div>
+		          </div>
+		          <div class="1/3--lap-and-up grid__cell">
+			            <div class="specs__block-padding">
+			              {% for block in section.blocks %}
+											 <div id="block--{{ block.id }}">
+						               {% if block.settings.block_position == "right" %}
+							              <div class="specs__content">
+							                   <h3 class="specs__block-title  align-center">{{ block.settings.title }}</h3>
+							                   <div class="specs__block-text">{{ block.settings.text }}</div>
+						                   </div>
+						               {% endif %}
+											 </div>
+			              {% endfor %}
+			           </div>
+		          </div>
+	           </div>
+	      </article>
+	</section>
+{% endif %}

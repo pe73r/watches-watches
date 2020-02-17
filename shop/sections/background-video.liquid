@@ -1,0 +1,65 @@
+{%- capture section_settings -%}
+{
+  "videoType": {{ section.settings.video_url.type | json }},
+  "videoId": {{ section.settings.video_url.id | json }},
+  "requestHost": {{ request.host | json }}
+}
+{%- endcapture -%}
+{% if section.settings.isActive %}
+    <section class="Section" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="background-video" data-section-settings='{{ section_settings }}'>
+      <div class="ImageHero {% if section.settings.section_size != 'normal' %}ImageHero--{{ section.settings.section_size }}{% endif %}">
+        <div class="ImageHero__VideoHolder"></div>
+      </div>
+    </section>
+{% endif %}
+{% schema %}
+{
+  "name": "Background video",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "isActive",
+      "label": "Show section",
+      "default": true
+    },
+    {
+      "type": "paragraph",
+      "content": "Background videos are automatically muted to allow autoplay on mobile. If you require audio, use the \"Featured Video\" section."
+    },
+    {
+      "type": "select",
+      "id": "section_size",
+      "label": "Section size",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "large"
+    },
+    {
+      "type": "video_url",
+      "accept": ["youtube", "vimeo"],
+      "id": "video_url",
+      "label": "Video URL",
+      "default": "https://www.youtube.com/watch?v=YIBqB-N2B38"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Video",
+      "name": "Background video",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

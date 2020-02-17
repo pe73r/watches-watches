@@ -1,0 +1,310 @@
+{%- if section.settings.show_layout_switch -%}
+  {%- assign desktop_items_per_row = cart.attributes.collection_desktop_items_per_row | default: section.settings.grid_desktop_items_per_row | times: 1 -%}
+  {%- assign mobile_items_per_row  = cart.attributes.collection_mobile_items_per_row | default: section.settings.grid_mobile_items_per_row | times: 1 -%}
+
+  {%- if desktop_items_per_row >= 3 and desktop_items_per_row != section.settings.grid_desktop_items_per_row -%}
+    {%- assign desktop_items_per_row = section.settings.grid_desktop_items_per_row -%}
+  {%- endif -%}
+{%- else -%}
+  {%- assign desktop_items_per_row = section.settings.grid_desktop_items_per_row | times: 1 -%}
+  {%- assign mobile_items_per_row  = section.settings.grid_mobile_items_per_row | times: 1 -%}
+{%- endif -%}
+
+{%- if desktop_items_per_row == 4 -%}
+  {%- assign tablet_items_per_row = 3 -%}
+{%- else -%}
+  {%- assign tablet_items_per_row = 2 -%}
+{%- endif -%}
+
+{%- capture collection_inner -%}
+  {%- comment -%}This is the common part to both template{%- endcomment -%}
+
+  {%- if collection.products_count > 0 -%}
+    {%- paginate collection.products by section.settings.grid_items_per_page -%}
+      <div class="ProductListWrapper">
+        <div class="ProductList ProductList--grid {% if paginate.pages > 1 %}ProductList--removeMargin{% endif %} Grid" data-mobile-count="{{ mobile_items_per_row }}" data-desktop-count="{{ desktop_items_per_row }}">
+          {%- for product in collection.products -%}
+            <div class="Grid__Cell 1/{{ mobile_items_per_row }}--phone 1/{{ tablet_items_per_row }}--tablet-and-up 1/{{ desktop_items_per_row }}--{% if section.settings.filter_position == 'drawer' %}lap-and-up{% else %}desk{% endif %}">
+              {%- include 'product-item', show_product_info: true, show_vendor: section.settings.show_vendor, show_color_swatch: section.settings.show_color_swatch, show_labels: true -%}
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+
+      {%- include 'pagination' -%}
+    {%- endpaginate -%}
+  {%- else -%}
+    <div class="EmptyState">
+      <div class="Container">
+        <h1 class="EmptyState__Title Heading u-h5">{{ 'collection.general.no_products' | t }}</h1>
+        <button class="EmptyState__Action Button Button--primary" data-action="reset-tags">{{ 'collection.general.reset' | t }}</button>
+      </div>
+    </div>
+  {%- endif -%}
+{%- endcapture -%}
+
+{%- if template == 'collection.ajax' -%}
+  {%- comment -%}
+  --------------------------------------------------------------------------------------------------------------------
+  CONTENT FOR AJAX ALTERNATE TEMPLATE
+  --------------------------------------------------------------------------------------------------------------------
+  {%- endcomment -%}
+
+  {%- layout none -%}
+  {{- collection_inner -}}
+
+{%- else -%}
+  {%- comment -%}
+  --------------------------------------------------------------------------------------------------------------------
+  CONTENT FOR NORMAL TEMPLATE
+  --------------------------------------------------------------------------------------------------------------------
+  {%- endcomment -%}
+
+  {%- assign active_tags = '' -%}
+
+  {%- for tag in current_tags -%}
+    {%- assign tag_as_handle = tag | replace: '&#39;', '' | replace: '&#34;', '' | handle -%}
+    {%- assign active_tags = active_tags | append: tag_as_handle -%}
+
+    {%- unless forloop.last -%}
+      {%- assign active_tags = active_tags | append: '+' -%}
+    {%- endunless -%}
+  {%- endfor -%}
+
+  {%- capture section_settings -%}
+  {
+    "collectionUrl": {{ collection.url | default: '/collections/all' | json }},
+    "currentTags": {% if active_tags != blank %}{{ active_tags | split: '+' | json }}{% else %}[]{% endif %},
+    "sortBy": {{ collection.sort_by | default: collection.default_sort_by | json }},
+    "filterPosition": {{ section.settings.filter_position | json }}
+  }
+  {%- endcapture -%}
+
+<style media="screen">
+{% for block in section.blocks %}
+    .block{{ block.id }} .custom__parallax-main-box{
+      padding: 60px;
+      background-color: {{ section.settings.main-background_color }};
+     }
+
+    .block{{ block.id }} .custom__parallax-box{
+      padding: 50px;
+      background-color: {{ section.settings.background_color }};
+     }
+    .block{{ block.id }} .custom_parallax-main-text{
+        max-width: 500px;
+        display: inline-block;
+        text-align: center;
+        color:#000;
+    }
+     .block{{ block.id }} .custom_parallax-content{
+        max-width: 500px;
+        display: inline-block;
+        text-align: center;
+    }
+{% endfor %}
+</style>
+{% if section.settings.isActive %}
+<section data-section-id="{{ section.id }}" data-section-type="collection" data-section-settings='{{ section_settings }}'>
+    {% for block in section.blocks %}
+      <div class="block{{ block.id }}">
+            <div class="parallax-custom">
+                <div class="FlexboxIeFix">
+                      <header class="PageHeader PageHeader--withBackground {% if section.settings.collection_image_size != 'normal' %}PageHeader--{{ section.settings.collection_image_size }}{% endif %}" style="background: url({{ block.settings.image | img_url: 'master' }})">
+                            <div class="PageHeader__ImageWrapper Image--lazyLoad Image--fadeIn {% if block.settings.apply_overlay %}Image--contrast{% endif %}"
+                                 data-optimumx="1.2"
+                                 data-bgset="{{ block.settings.image  | img_url: 'x600' }} 600w, {{ block.settings.image  | img_url: '800x' }} 800w, {{ block.settings.image  | img_url: '1200x' }} 1200w, {{ block.settings.image  | img_url: '1400x' }} 1400w, {{ block.settings.image  | img_url: '1600x' }} 1600w">
+                            </div>
+                            <noscript>
+                              <div class="PageHeader__ImageWrapper {% if block.settings.apply_overlay %}Image--contrast{% endif %}" style="background-image: url({{ block.settings.image | img_url: '800x' }})"></div>
+                            </noscript>
+                            <div class="SectionHeader SectionHeader--center align-{{ block.settings.align }} custom__parallax-main-box">
+                                <div class="custom_parallax-content">
+                                     <h1 class="SectionHeader__Heading Heading u-h1">{{ block.settings.title }}</h1>
+                                     <div class="custom_parallax-text"> {{ block.settings.content }}</div>
+                                </div>
+                           </div>
+                       </header>
+                 </div>
+
+                {% if block.settings.title2 != blank or block.settings.content2 != blank %}
+                    <div class="Container custom__parallax-box">
+                        <div class="SectionHeader SectionHeader--center align-{{ block.settings.align }}">
+                           <div class="custom_parallax-content">
+                               <h1 class="SectionHeader__Heading Heading u-h1">{{ block.settings.title2 }}</h1>
+                               <div class="custom_parallax-text"> {{ block.settings.content2 }}</div>
+                           </div>
+                       </div>
+                    </div>
+               {% endif %}
+            </div>
+          </div>
+      {% endfor %}
+  </section>
+{%- endif -%}
+{%- endif -%}
+
+
+{%- capture hack -%}
+{%- comment -%}This is just an ugly hack to make those variables appear as part of the theme editor in the General Settings{%- endcomment -%}
+{{ settings.product_list_horizontal_spacing }},{{ settings.product_list_vertical_spacing }}
+{%- endcapture -%}
+
+{% schema %}
+{
+  "name": "Custom parallax",
+  "class": "shopify-section--bordered",
+
+  "settings": [
+      {
+        "type": "checkbox",
+        "id": "isActive",
+        "label": "Show section"
+      }
+   ],
+   "blocks": [
+     {
+       "type": "block_type",
+       "name": "Block Parallax",
+       "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "image background"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "title"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "content"
+    },
+    {
+        "type": "color",
+        "id": "main-background_color",
+        "label": "Background color",
+        "default": "#8c8c8c"
+    },
+    {
+      "type": "select",
+      "id": "main-text-align",
+      "label": "main text align",
+      "options": [
+        {
+          "value": "left",
+          "label": "left"
+        },
+        {
+          "value": "center",
+          "label": "center"
+        },
+        {
+          "value": "right",
+          "label": "right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "text",
+      "id": "title2",
+      "label": "title 2"
+    },
+    {
+      "type": "richtext",
+      "id": "content2",
+      "label": "content 2"
+    },
+    {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background color",
+        "default": "#8c8c8c"
+    },
+    {
+      "type": "select",
+      "id": "align",
+      "label": "box text align",
+      "options": [
+        {
+          "value": "left",
+          "label": "left"
+        },
+        {
+          "value": "center",
+          "label": "center"
+        },
+        {
+          "value": "right",
+          "label": "right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_collection_info",
+      "label": "Show collection info",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_collection_image",
+      "label": "Show collection image",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "apply_overlay",
+      "label": "Apply overlay on image",
+      "info": "This can improve text visibility.",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_color_swatch",
+      "label": "Show color swatch",
+      "info": "Some colors appear white? [Learn more](http://support.maestrooo.com/article/80-product-uploading-custom-color-for-color-swatch).",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "label": "Show vendor",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "collection_image_size",
+      "label": "Collection image size",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "normal"
+    }
+    ]
+  }
+],
+"presets": [
+  {
+    "category": "Image",
+    "name": " Custom Parallax",
+    "settings": {}
+  }
+]
+}
+{% endschema %}

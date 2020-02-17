@@ -1,0 +1,92 @@
+{% if section.settings.isActive %}
+<section id="section--{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="logos" class="logos__section" title="logos">
+      <div class="gutter-section logos__container">
+        {% for block in section.blocks %}
+          <div class="logos-block">
+              <div class="logos-block__content">
+                {% assign img_dim = "x" | append: block.settings.logo_height  %}
+                {% if block.settings.image_logo != blank %}
+                    {% if block.settings.logo_off == false %}
+                       <img class="logos-block_img" src="{{ block.settings.image_logo | img_url: img_dim  }}">
+                    {% endif %}
+                {% endif %}
+                  <p class="logos-block__text">{{ block.settings.logo_text }}</p>
+                  <h3 class="Heading u-h3">{{ block.settings.logo_title }}</h3>
+              </div>
+          </div>
+        {% endfor %}
+       </div>
+</section>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Section Logos",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "isActive",
+      "label": "Show section",
+      "default": true
+    }
+   ],
+    "blocks": [
+      {
+        "type": "block",
+        "name": "Block",
+     "settings": [
+      {
+        "type": "image_picker",
+        "id": "image_logo",
+        "label" : "image logo"
+      },
+      {
+        "type": "checkbox",
+        "id": "logo_off",
+        "label": "Disable logo",
+        "default": false
+      },
+      {
+         "type":      "range",
+         "id":        "logo_height",
+         "min":       30,
+         "max":       100,
+         "step":       1,
+         "unit":      "px",
+         "label":     "Logo size",
+         "default":   80
+      },
+       {
+      "type": "text",
+      "id": "logo_text",
+      "label": "logo text",
+      "default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+      },
+      {
+      "type": "text",
+      "id": "logo_title",
+      "label": "logo_title",
+      "default": "Jonathon Smith"
+    }
+    ]
+      }
+    ],
+  "presets": [
+    {
+      "category": "Image",
+      "name": "Text image brands",
+      "blocks": [
+        {
+          "type": "block"
+        },
+        {
+          "type": "block"
+        },
+        {
+          "type": "block"
+        }
+      ]
+     }
+  ]
+}
+{% endschema %}

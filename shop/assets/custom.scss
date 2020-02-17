@@ -1,0 +1,819 @@
+/*!
+Avalanche | MIT License | @colourgarden
+Quickstart, kitchen sink CSS file. Includes 12-column grid widths and all layout options.
+Version: 1.2
+*/
+/* FONTS TECHNICAL SPECIFICATIONS */
+
+@font-face {
+  font-family: "Aspira";
+  font-weight: 400;
+  src: url("https://cdn.shopify.com/s/files/1/0096/7540/7426/files/Aspira_Nar_W01_Bold.ttf?6500") format("ttf");
+}
+
+
+/* Media queries Avalanche */
+
+$thumb:            "screen and (max-width: 499px)";
+$handheld:         "screen and (min-width: 500px) and (max-width: 800px)";
+$handheld-and-up:  "screen and (min-width: 500px)";
+$pocket:           "screen and (max-width: 800px)";
+$lap:              "screen and (min-width: 801px) and (max-width: 1024px)";
+$lap-and-up:       "screen and (min-width: 801px)";
+$portable:         "screen and (max-width: 1024px)";
+$desk:             "screen and (min-width: 1025px)";
+$widescreen:       "screen and (min-width: 1160px)";
+$retina:           "screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx)";
+
+
+
+/* Colors */
+
+
+$background      : #ffffff;
+$light-background: #ffffff;
+$heading-color   : #1c1b1b;
+$text-color      : #1c1b1b;
+$text-color-light: #6a6a6a;
+$link-color      : #176fb2;
+$border-color    : #dddddd;
+
+$button-background: #f7f5f5;
+$button-text-color: #000000;
+
+$header-background       : #ffffff;
+$header-heading-color    : #1c1b1b;
+$header-light-text-color : #6a6a6a;
+$header-border-color     : #dddddd;
+
+$footer-background    : #b9b9b9;
+$footer-text-color    : #ffffff;
+$footer-heading-color : #ffffff;
+$footer-border-color  : #c4c4c4;
+
+$navigation-background      : #000000;
+$navigation-text-color      : #ffffff;
+$navigation-text-color-light: rgba($navigation-text-color, 0.5);
+$navigation-border-color    : rgba($navigation-text-color, 0.25);
+
+$newsletter-popup-background : #176fb2;
+$newsletter-popup-text-color : #ffffff;
+
+$secondary-elements-background       : #1c1b1b;
+$secondary-elements-text-color       : #ffffff;
+$secondary-elements-text-color-light : rgba($secondary-elements-text-color, 0.5);
+$secondary-elements-border-color     : rgba($secondary-elements-text-color, 0.25);
+
+$product-sale-price-color: #f94c43;
+
+/* Media queries PRESTIGE */
+$theme-phone:            "screen and (max-width: 640px)";
+$theme-tablet:           "screen and (min-width: 641px) and (max-width: 1007px)";
+$theme-tablet-and-up:    "screen and (min-width: 641px)";
+$theme-pocket:           "screen and (max-width: 1007px)";
+$theme-lap:              "screen and (min-width: 1008px) and (max-width: 1239px)";
+$theme-lap-and-up:       "screen and (min-width: 1008px)";
+$theme-desk:             "screen and (min-width: 1240px)";
+$theme-widescreen:       "screen and (min-width: 1500px)";
+
+/* Typography */
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n4.7fd0287595be20cd5a683102bf49d073b6abf144.woff2?h1=c3lld2F0Y2hlcy5jb20&hmac=9fafae0c7d63e9d2b0d7a65cfda933ea6ac137e84b058efcdb558989f7077c71") format("woff2"),
+       url("https://fonts.shopifycdn.com/avenir_next/avenirnext_n4.a26a334a0852627a5f36b195112385b0cd700077.woff?h1=c3lld2F0Y2hlcy5jb20&hmac=0310b802c698d3b640efb1b704de1807cfde19e74825acfe58d051df30a5cb29") format("woff");
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/montserrat/montserrat_n4.1d581f6d4bf1a97f4cbc0b88b933bc136d38d178.woff2?h1=c3lld2F0Y2hlcy5jb20&hmac=942094130321c6275fb380080b3ee8ccfe8b24e2f9b8d2604374411322107260") format("woff2"),
+       url("https://fonts.shopifycdn.com/montserrat/montserrat_n4.cfce41a967758ce5a9b7d48daeb5b028fd977a9b.woff?h1=c3lld2F0Y2hlcy5jb20&hmac=8995fb128cb2526ff6945dd26a3c2d16995d29cfb14428707110a0d7699b7bf5") format("woff");
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/montserrat/montserrat_n7.c496e9cf2031deec4c4bca338faa81971c8631d4.woff2?h1=c3lld2F0Y2hlcy5jb20&hmac=adf3f778cd3ec736c91b57eb34378468bba9033aff4822c7d901f43c3368cc76") format("woff2"),
+       url("https://fonts.shopifycdn.com/montserrat/montserrat_n7.78b0223375c94b39ce1af7e09a0225f2bb3d05f7.woff?h1=c3lld2F0Y2hlcy5jb20&hmac=5a6c8419ab9030948dd5cf298c07ed37c10d9ac70da3917153c33a421a0b9c9c") format("woff");
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: italic;
+  src: url("https://fonts.shopifycdn.com/montserrat/montserrat_i4.ae02483b3d5e8777d0d4a4ccf396482c364d8955.woff2?h1=c3lld2F0Y2hlcy5jb20&hmac=663e6e7988800e2c6ffa27018f9674ff12aa0bf61e3f7c69df9a8cf7f3066177") format("woff2"),
+       url("https://fonts.shopifycdn.com/montserrat/montserrat_i4.ba28d1a04ec09448de486d83c63235903dfc0af8.woff?h1=c3lld2F0Y2hlcy5jb20&hmac=0dfb5ce02bc2f460c60b8211f06b73b56373a7047e50071ac44ac3ae6614381a") format("woff");
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: italic;
+  src: url("https://fonts.shopifycdn.com/montserrat/montserrat_i7.83866c3eec90071fa974c17980ffb42977f9e667.woff2?h1=c3lld2F0Y2hlcy5jb20&hmac=d58ad03f6ac079e74b7125a241c970245b587e87520e0cd095faf4227d011a1e") format("woff2"),
+       url("https://fonts.shopifycdn.com/montserrat/montserrat_i7.25524241b12d864609c85325613d60efcf1a87e3.woff?h1=c3lld2F0Y2hlcy5jb20&hmac=8e859cd550487300d4e3d529db3c5bb19581f31de21af082c191eff8adf03d6a") format("woff");
+}
+
+
+$heading-font-family : "Avenir Next", sans-serif;
+$heading-font-weight : 400;
+$heading-font-style  : normal;
+$heading-font-size   : large;
+
+$text-font-family : Montserrat, sans-serif;
+$text-font-weight : 400;
+$text-font-style  : normal;
+
+$uppercase-heading: false;
+
+$base-text-font-size   : 14px;
+$default-text-font-size: 14px;
+
+/* Products */
+$product-info-alignment         : center;
+$product-show-price-on-hover    : true;
+$product-list-horizontal-spacing: extra_small;
+$product-list-vertical-spacing  : extra_small;
+
+$cursor-zoom-in-svg    : "//cdn.shopify.com/s/files/1/0096/7540/7426/t/2/assets/cursor-zoom-in.svg?v=17053293033005814018";
+$cursor-zoom-in-2x-svg : "//cdn.shopify.com/s/files/1/0096/7540/7426/t/2/assets/cursor-zoom-in-2x.svg?v=5668565818364938756";
+
+/* Animation */
+$drawer-transition-timing: cubic-bezier(0.645, 0.045, 0.355, 1);
+$show-page-transition: true;
+$show-button-transition: true;
+$show-image-zooming: true;
+$show-element-staggering: true;
+
+/* Other */
+$header-base-height: 68px; /* We use this value for browsers that do not support CSS variables */
+
+.grid {display:block;list-style:none;padding:0;margin:0;margin-left:-20px;    font-size: 0rem;}.grid__cell{box-sizing:border-box;display:inline-block;width:100%;padding:0;padding-left:20px;margin:0;vertical-align:top;font-size:1rem}.grid--center{text-align:center}.grid--center>.grid__cell{text-align:left}.grid__cell--center{display:block;margin:0 auto}.grid--right{text-align:right}.grid--right>.grid__cell{text-align:left}.grid--middle>.grid__cell{vertical-align:middle}.grid--bottom>.grid__cell{vertical-align:bottom}.grid--flush{margin-left:0}.grid--flush>.grid__cell{padding-left:0}.grid--tiny{margin-left:-5px}.grid--tiny>.grid__cell{padding-left:5px}.grid--small{margin-left:-10px}.grid--small>.grid__cell{padding-left:10px}.grid--large{margin-left:-40px}.grid--large>.grid__cell{padding-left:40px}.grid--huge{margin-left:-80px}.grid--huge>.grid__cell{padding-left:80px}.grid--auto>.grid__cell{width:auto}.grid--rev{direction:rtl}.grid--rev>.grid__cell{direction:ltr}.\31\/2,.\32\/4,.\33\/6,.\34\/8,.\35\/10,.\36\/12{width:50%}.\31\/3,.\32\/6,.\33\/9,.\34\/12{width:33.33333%}.\32\/3,.\34\/6,.\36\/9,.\38\/12{width:66.66667%}.\31\/4,.\32\/8,.\33\/12{width:25%}.\33\/4,.\36\/8,.\39\/12{width:75%}.\31\/5,.\32\/10{width:20%}.\32\/5,.\34\/10{width:40%}.\33\/5,.\36\/10{width:60%}.\34\/5,.\38\/10{width:80%}.\31\/6,.\32\/12{width:16.66667%}.\35\/6,.\31\30\/12{width:83.33333%}.\31\/7{width:14.28571%}.\32\/7{width:28.57143%}.\33\/7{width:42.85714%}.\34\/7{width:57.14286%}.\35\/7{width:71.42857%}.\36\/7{width:85.71429%}.\31\/8{width:12.5%}.\33\/8{width:37.5%}.\35\/8{width:62.5%}.\37\/8{width:87.5%}.\31\/9{width:11.11111%}.\32\/9{width:22.22222%}.\34\/9{width:44.44444%}.\35\/9{width:55.55556%}.\37\/9{width:77.77778%}.\38\/9{width:88.88889%}.\31\/10{width:10%}.\33\/10{width:30%}.\37\/10{width:70%}.\39\/10{width:90%}.\31\/11{width:9.09091%}.\32\/11{width:18.18182%}.\33\/11{width:27.27273%}.\34\/11{width:36.36364%}.\35\/11{width:45.45455%}.\36\/11{width:54.54545%}.\37\/11{width:63.63636%}.\38\/11{width:72.72727%}.\39\/11{width:81.81818%}.\31\30\/11{width:90.90909%}.\31\/12{width:8.33333%}.\35\/12{width:41.66667%}.\37\/12{width:58.33333%}.\31\31\/12{width:91.66667%}@media screen and (max-width: 499px){.\31\/2--thumb,.\32\/4--thumb,.\33\/6--thumb,.\34\/8--thumb,.\35\/10--thumb,.\36\/12--thumb{width:50%}.\31\/3--thumb,.\32\/6--thumb,.\33\/9--thumb,.\34\/12--thumb{width:33.33333%}.\32\/3--thumb,.\34\/6--thumb,.\36\/9--thumb,.\38\/12--thumb{width:66.66667%}.\31\/4--thumb,.\32\/8--thumb,.\33\/12--thumb{width:25%}.\33\/4--thumb,.\36\/8--thumb,.\39\/12--thumb{width:75%}.\31\/5--thumb,.\32\/10--thumb{width:20%}.\32\/5--thumb,.\34\/10--thumb{width:40%}.\33\/5--thumb,.\36\/10--thumb{width:60%}.\34\/5--thumb,.\38\/10--thumb{width:80%}.\31\/6--thumb,.\32\/12--thumb{width:16.66667%}.\35\/6--thumb,.\31\30\/12--thumb{width:83.33333%}.\31\/7--thumb{width:14.28571%}.\32\/7--thumb{width:28.57143%}.\33\/7--thumb{width:42.85714%}.\34\/7--thumb{width:57.14286%}.\35\/7--thumb{width:71.42857%}.\36\/7--thumb{width:85.71429%}.\31\/8--thumb{width:12.5%}.\33\/8--thumb{width:37.5%}.\35\/8--thumb{width:62.5%}.\37\/8--thumb{width:87.5%}.\31\/9--thumb{width:11.11111%}.\32\/9--thumb{width:22.22222%}.\34\/9--thumb{width:44.44444%}.\35\/9--thumb{width:55.55556%}.\37\/9--thumb{width:77.77778%}.\38\/9--thumb{width:88.88889%}.\31\/10--thumb{width:10%}.\33\/10--thumb{width:30%}.\37\/10--thumb{width:70%}.\39\/10--thumb{width:90%}.\31\/11--thumb{width:9.09091%}.\32\/11--thumb{width:18.18182%}.\33\/11--thumb{width:27.27273%}.\34\/11--thumb{width:36.36364%}.\35\/11--thumb{width:45.45455%}.\36\/11--thumb{width:54.54545%}.\37\/11--thumb{width:63.63636%}.\38\/11--thumb{width:72.72727%}.\39\/11--thumb{width:81.81818%}.\31\30\/11--thumb{width:90.90909%}.\31\/12--thumb{width:8.33333%}.\35\/12--thumb{width:41.66667%}.\37\/12--thumb{width:58.33333%}.\31\31\/12--thumb{width:91.66667%}}@media screen and (min-width: 500px) and (max-width: 800px){.\31\/2--handheld,.\32\/4--handheld,.\33\/6--handheld,.\34\/8--handheld,.\35\/10--handheld,.\36\/12--handheld{width:50%}.\31\/3--handheld,.\32\/6--handheld,.\33\/9--handheld,.\34\/12--handheld{width:33.33333%}.\32\/3--handheld,.\34\/6--handheld,.\36\/9--handheld,.\38\/12--handheld{width:66.66667%}.\31\/4--handheld,.\32\/8--handheld,.\33\/12--handheld{width:25%}.\33\/4--handheld,.\36\/8--handheld,.\39\/12--handheld{width:75%}.\31\/5--handheld,.\32\/10--handheld{width:20%}.\32\/5--handheld,.\34\/10--handheld{width:40%}.\33\/5--handheld,.\36\/10--handheld{width:60%}.\34\/5--handheld,.\38\/10--handheld{width:80%}.\31\/6--handheld,.\32\/12--handheld{width:16.66667%}.\35\/6--handheld,.\31\30\/12--handheld{width:83.33333%}.\31\/7--handheld{width:14.28571%}.\32\/7--handheld{width:28.57143%}.\33\/7--handheld{width:42.85714%}.\34\/7--handheld{width:57.14286%}.\35\/7--handheld{width:71.42857%}.\36\/7--handheld{width:85.71429%}.\31\/8--handheld{width:12.5%}.\33\/8--handheld{width:37.5%}.\35\/8--handheld{width:62.5%}.\37\/8--handheld{width:87.5%}.\31\/9--handheld{width:11.11111%}.\32\/9--handheld{width:22.22222%}.\34\/9--handheld{width:44.44444%}.\35\/9--handheld{width:55.55556%}.\37\/9--handheld{width:77.77778%}.\38\/9--handheld{width:88.88889%}.\31\/10--handheld{width:10%}.\33\/10--handheld{width:30%}.\37\/10--handheld{width:70%}.\39\/10--handheld{width:90%}.\31\/11--handheld{width:9.09091%}.\32\/11--handheld{width:18.18182%}.\33\/11--handheld{width:27.27273%}.\34\/11--handheld{width:36.36364%}.\35\/11--handheld{width:45.45455%}.\36\/11--handheld{width:54.54545%}.\37\/11--handheld{width:63.63636%}.\38\/11--handheld{width:72.72727%}.\39\/11--handheld{width:81.81818%}.\31\30\/11--handheld{width:90.90909%}.\31\/12--handheld{width:8.33333%}.\35\/12--handheld{width:41.66667%}.\37\/12--handheld{width:58.33333%}.\31\31\/12--handheld{width:91.66667%}}@media screen and (min-width: 500px){.\31\/2--handheld-and-up,.\32\/4--handheld-and-up,.\33\/6--handheld-and-up,.\34\/8--handheld-and-up,.\35\/10--handheld-and-up,.\36\/12--handheld-and-up{width:50%}.\31\/3--handheld-and-up,.\32\/6--handheld-and-up,.\33\/9--handheld-and-up,.\34\/12--handheld-and-up{width:33.33333%}.\32\/3--handheld-and-up,.\34\/6--handheld-and-up,.\36\/9--handheld-and-up,.\38\/12--handheld-and-up{width:66.66667%}.\31\/4--handheld-and-up,.\32\/8--handheld-and-up,.\33\/12--handheld-and-up{width:25%}.\33\/4--handheld-and-up,.\36\/8--handheld-and-up,.\39\/12--handheld-and-up{width:75%}.\31\/5--handheld-and-up,.\32\/10--handheld-and-up{width:20%}.\32\/5--handheld-and-up,.\34\/10--handheld-and-up{width:40%}.\33\/5--handheld-and-up,.\36\/10--handheld-and-up{width:60%}.\34\/5--handheld-and-up,.\38\/10--handheld-and-up{width:80%}.\31\/6--handheld-and-up,.\32\/12--handheld-and-up{width:16.66667%}.\35\/6--handheld-and-up,.\31\30\/12--handheld-and-up{width:83.33333%}.\31\/7--handheld-and-up{width:14.28571%}.\32\/7--handheld-and-up{width:28.57143%}.\33\/7--handheld-and-up{width:42.85714%}.\34\/7--handheld-and-up{width:57.14286%}.\35\/7--handheld-and-up{width:71.42857%}.\36\/7--handheld-and-up{width:85.71429%}.\31\/8--handheld-and-up{width:12.5%}.\33\/8--handheld-and-up{width:37.5%}.\35\/8--handheld-and-up{width:62.5%}.\37\/8--handheld-and-up{width:87.5%}.\31\/9--handheld-and-up{width:11.11111%}.\32\/9--handheld-and-up{width:22.22222%}.\34\/9--handheld-and-up{width:44.44444%}.\35\/9--handheld-and-up{width:55.55556%}.\37\/9--handheld-and-up{width:77.77778%}.\38\/9--handheld-and-up{width:88.88889%}.\31\/10--handheld-and-up{width:10%}.\33\/10--handheld-and-up{width:30%}.\37\/10--handheld-and-up{width:70%}.\39\/10--handheld-and-up{width:90%}.\31\/11--handheld-and-up{width:9.09091%}.\32\/11--handheld-and-up{width:18.18182%}.\33\/11--handheld-and-up{width:27.27273%}.\34\/11--handheld-and-up{width:36.36364%}.\35\/11--handheld-and-up{width:45.45455%}.\36\/11--handheld-and-up{width:54.54545%}.\37\/11--handheld-and-up{width:63.63636%}.\38\/11--handheld-and-up{width:72.72727%}.\39\/11--handheld-and-up{width:81.81818%}.\31\30\/11--handheld-and-up{width:90.90909%}.\31\/12--handheld-and-up{width:8.33333%}.\35\/12--handheld-and-up{width:41.66667%}.\37\/12--handheld-and-up{width:58.33333%}.\31\31\/12--handheld-and-up{width:91.66667%}}@media screen and (max-width: 800px){.\31\/2--pocket,.\32\/4--pocket,.\33\/6--pocket,.\34\/8--pocket,.\35\/10--pocket,.\36\/12--pocket{width:50%}.\31\/3--pocket,.\32\/6--pocket,.\33\/9--pocket,.\34\/12--pocket{width:33.33333%}.\32\/3--pocket,.\34\/6--pocket,.\36\/9--pocket,.\38\/12--pocket{width:66.66667%}.\31\/4--pocket,.\32\/8--pocket,.\33\/12--pocket{width:25%}.\33\/4--pocket,.\36\/8--pocket,.\39\/12--pocket{width:75%}.\31\/5--pocket,.\32\/10--pocket{width:20%}.\32\/5--pocket,.\34\/10--pocket{width:40%}.\33\/5--pocket,.\36\/10--pocket{width:60%}.\34\/5--pocket,.\38\/10--pocket{width:80%}.\31\/6--pocket,.\32\/12--pocket{width:16.66667%}.\35\/6--pocket,.\31\30\/12--pocket{width:83.33333%}.\31\/7--pocket{width:14.28571%}.\32\/7--pocket{width:28.57143%}.\33\/7--pocket{width:42.85714%}.\34\/7--pocket{width:57.14286%}.\35\/7--pocket{width:71.42857%}.\36\/7--pocket{width:85.71429%}.\31\/8--pocket{width:12.5%}.\33\/8--pocket{width:37.5%}.\35\/8--pocket{width:62.5%}.\37\/8--pocket{width:87.5%}.\31\/9--pocket{width:11.11111%}.\32\/9--pocket{width:22.22222%}.\34\/9--pocket{width:44.44444%}.\35\/9--pocket{width:55.55556%}.\37\/9--pocket{width:77.77778%}.\38\/9--pocket{width:88.88889%}.\31\/10--pocket{width:10%}.\33\/10--pocket{width:30%}.\37\/10--pocket{width:70%}.\39\/10--pocket{width:90%}.\31\/11--pocket{width:9.09091%}.\32\/11--pocket{width:18.18182%}.\33\/11--pocket{width:27.27273%}.\34\/11--pocket{width:36.36364%}.\35\/11--pocket{width:45.45455%}.\36\/11--pocket{width:54.54545%}.\37\/11--pocket{width:63.63636%}.\38\/11--pocket{width:72.72727%}.\39\/11--pocket{width:81.81818%}.\31\30\/11--pocket{width:90.90909%}.\31\/12--pocket{width:8.33333%}.\35\/12--pocket{width:41.66667%}.\37\/12--pocket{width:58.33333%}.\31\31\/12--pocket{width:91.66667%}}@media screen and (min-width: 801px) and (max-width: 1024px){.\31\/2--lap,.\32\/4--lap,.\33\/6--lap,.\34\/8--lap,.\35\/10--lap,.\36\/12--lap{width:50%}.\31\/3--lap,.\32\/6--lap,.\33\/9--lap,.\34\/12--lap{width:33.33333%}.\32\/3--lap,.\34\/6--lap,.\36\/9--lap,.\38\/12--lap{width:66.66667%}.\31\/4--lap,.\32\/8--lap,.\33\/12--lap{width:25%}.\33\/4--lap,.\36\/8--lap,.\39\/12--lap{width:75%}.\31\/5--lap,.\32\/10--lap{width:20%}.\32\/5--lap,.\34\/10--lap{width:40%}.\33\/5--lap,.\36\/10--lap{width:60%}.\34\/5--lap,.\38\/10--lap{width:80%}.\31\/6--lap,.\32\/12--lap{width:16.66667%}.\35\/6--lap,.\31\30\/12--lap{width:83.33333%}.\31\/7--lap{width:14.28571%}.\32\/7--lap{width:28.57143%}.\33\/7--lap{width:42.85714%}.\34\/7--lap{width:57.14286%}.\35\/7--lap{width:71.42857%}.\36\/7--lap{width:85.71429%}.\31\/8--lap{width:12.5%}.\33\/8--lap{width:37.5%}.\35\/8--lap{width:62.5%}.\37\/8--lap{width:87.5%}.\31\/9--lap{width:11.11111%}.\32\/9--lap{width:22.22222%}.\34\/9--lap{width:44.44444%}.\35\/9--lap{width:55.55556%}.\37\/9--lap{width:77.77778%}.\38\/9--lap{width:88.88889%}.\31\/10--lap{width:10%}.\33\/10--lap{width:30%}.\37\/10--lap{width:70%}.\39\/10--lap{width:90%}.\31\/11--lap{width:9.09091%}.\32\/11--lap{width:18.18182%}.\33\/11--lap{width:27.27273%}.\34\/11--lap{width:36.36364%}.\35\/11--lap{width:45.45455%}.\36\/11--lap{width:54.54545%}.\37\/11--lap{width:63.63636%}.\38\/11--lap{width:72.72727%}.\39\/11--lap{width:81.81818%}.\31\30\/11--lap{width:90.90909%}.\31\/12--lap{width:8.33333%}.\35\/12--lap{width:41.66667%}.\37\/12--lap{width:58.33333%}.\31\31\/12--lap{width:91.66667%}}@media screen and (min-width: 801px){.\31\/2--lap-and-up,.\32\/4--lap-and-up,.\33\/6--lap-and-up,.\34\/8--lap-and-up,.\35\/10--lap-and-up,.\36\/12--lap-and-up{width:50%}.\31\/3--lap-and-up,.\32\/6--lap-and-up,.\33\/9--lap-and-up,.\34\/12--lap-and-up{width:33.33333%}.\32\/3--lap-and-up,.\34\/6--lap-and-up,.\36\/9--lap-and-up,.\38\/12--lap-and-up{width:66.66667%}.\31\/4--lap-and-up,.\32\/8--lap-and-up,.\33\/12--lap-and-up{width:25%}.\33\/4--lap-and-up,.\36\/8--lap-and-up,.\39\/12--lap-and-up{width:75%}.\31\/5--lap-and-up,.\32\/10--lap-and-up{width:20%}.\32\/5--lap-and-up,.\34\/10--lap-and-up{width:40%}.\33\/5--lap-and-up,.\36\/10--lap-and-up{width:60%}.\34\/5--lap-and-up,.\38\/10--lap-and-up{width:80%}.\31\/6--lap-and-up,.\32\/12--lap-and-up{width:16.66667%}.\35\/6--lap-and-up,.\31\30\/12--lap-and-up{width:83.33333%}.\31\/7--lap-and-up{width:14.28571%}.\32\/7--lap-and-up{width:28.57143%}.\33\/7--lap-and-up{width:42.85714%}.\34\/7--lap-and-up{width:57.14286%}.\35\/7--lap-and-up{width:71.42857%}.\36\/7--lap-and-up{width:85.71429%}.\31\/8--lap-and-up{width:12.5%}.\33\/8--lap-and-up{width:37.5%}.\35\/8--lap-and-up{width:62.5%}.\37\/8--lap-and-up{width:87.5%}.\31\/9--lap-and-up{width:11.11111%}.\32\/9--lap-and-up{width:22.22222%}.\34\/9--lap-and-up{width:44.44444%}.\35\/9--lap-and-up{width:55.55556%}.\37\/9--lap-and-up{width:77.77778%}.\38\/9--lap-and-up{width:88.88889%}.\31\/10--lap-and-up{width:10%}.\33\/10--lap-and-up{width:30%}.\37\/10--lap-and-up{width:70%}.\39\/10--lap-and-up{width:90%}.\31\/11--lap-and-up{width:9.09091%}.\32\/11--lap-and-up{width:18.18182%}.\33\/11--lap-and-up{width:27.27273%}.\34\/11--lap-and-up{width:36.36364%}.\35\/11--lap-and-up{width:45.45455%}.\36\/11--lap-and-up{width:54.54545%}.\37\/11--lap-and-up{width:63.63636%}.\38\/11--lap-and-up{width:72.72727%}.\39\/11--lap-and-up{width:81.81818%}.\31\30\/11--lap-and-up{width:90.90909%}.\31\/12--lap-and-up{width:8.33333%}.\35\/12--lap-and-up{width:41.66667%}.\37\/12--lap-and-up{width:58.33333%}.\31\31\/12--lap-and-up{width:91.66667%}}@media screen and (max-width: 1024px){.\31\/2--portable,.\32\/4--portable,.\33\/6--portable,.\34\/8--portable,.\35\/10--portable,.\36\/12--portable{width:50%}.\31\/3--portable,.\32\/6--portable,.\33\/9--portable,.\34\/12--portable{width:33.33333%}.\32\/3--portable,.\34\/6--portable,.\36\/9--portable,.\38\/12--portable{width:66.66667%}.\31\/4--portable,.\32\/8--portable,.\33\/12--portable{width:25%}.\33\/4--portable,.\36\/8--portable,.\39\/12--portable{width:75%}.\31\/5--portable,.\32\/10--portable{width:20%}.\32\/5--portable,.\34\/10--portable{width:40%}.\33\/5--portable,.\36\/10--portable{width:60%}.\34\/5--portable,.\38\/10--portable{width:80%}.\31\/6--portable,.\32\/12--portable{width:16.66667%}.\35\/6--portable,.\31\30\/12--portable{width:83.33333%}.\31\/7--portable{width:14.28571%}.\32\/7--portable{width:28.57143%}.\33\/7--portable{width:42.85714%}.\34\/7--portable{width:57.14286%}.\35\/7--portable{width:71.42857%}.\36\/7--portable{width:85.71429%}.\31\/8--portable{width:12.5%}.\33\/8--portable{width:37.5%}.\35\/8--portable{width:62.5%}.\37\/8--portable{width:87.5%}.\31\/9--portable{width:11.11111%}.\32\/9--portable{width:22.22222%}.\34\/9--portable{width:44.44444%}.\35\/9--portable{width:55.55556%}.\37\/9--portable{width:77.77778%}.\38\/9--portable{width:88.88889%}.\31\/10--portable{width:10%}.\33\/10--portable{width:30%}.\37\/10--portable{width:70%}.\39\/10--portable{width:90%}.\31\/11--portable{width:9.09091%}.\32\/11--portable{width:18.18182%}.\33\/11--portable{width:27.27273%}.\34\/11--portable{width:36.36364%}.\35\/11--portable{width:45.45455%}.\36\/11--portable{width:54.54545%}.\37\/11--portable{width:63.63636%}.\38\/11--portable{width:72.72727%}.\39\/11--portable{width:81.81818%}.\31\30\/11--portable{width:90.90909%}.\31\/12--portable{width:8.33333%}.\35\/12--portable{width:41.66667%}.\37\/12--portable{width:58.33333%}.\31\31\/12--portable{width:91.66667%}}@media screen and (min-width: 1025px){.\31\/2--desk,.\32\/4--desk,.\33\/6--desk,.\34\/8--desk,.\35\/10--desk,.\36\/12--desk{width:50%}.\31\/3--desk,.\32\/6--desk,.\33\/9--desk,.\34\/12--desk{width:33.33333%}.\32\/3--desk,.\34\/6--desk,.\36\/9--desk,.\38\/12--desk{width:66.66667%}.\31\/4--desk,.\32\/8--desk,.\33\/12--desk{width:25%}.\33\/4--desk,.\36\/8--desk,.\39\/12--desk{width:75%}.\31\/5--desk,.\32\/10--desk{width:20%}.\32\/5--desk,.\34\/10--desk{width:40%}.\33\/5--desk,.\36\/10--desk{width:60%}.\34\/5--desk,.\38\/10--desk{width:80%}.\31\/6--desk,.\32\/12--desk{width:16.66667%}.\35\/6--desk,.\31\30\/12--desk{width:83.33333%}.\31\/7--desk{width:14.28571%}.\32\/7--desk{width:28.57143%}.\33\/7--desk{width:42.85714%}.\34\/7--desk{width:57.14286%}.\35\/7--desk{width:71.42857%}.\36\/7--desk{width:85.71429%}.\31\/8--desk{width:12.5%}.\33\/8--desk{width:37.5%}.\35\/8--desk{width:62.5%}.\37\/8--desk{width:87.5%}.\31\/9--desk{width:11.11111%}.\32\/9--desk{width:22.22222%}.\34\/9--desk{width:44.44444%}.\35\/9--desk{width:55.55556%}.\37\/9--desk{width:77.77778%}.\38\/9--desk{width:88.88889%}.\31\/10--desk{width:10%}.\33\/10--desk{width:30%}.\37\/10--desk{width:70%}.\39\/10--desk{width:90%}.\31\/11--desk{width:9.09091%}.\32\/11--desk{width:18.18182%}.\33\/11--desk{width:27.27273%}.\34\/11--desk{width:36.36364%}.\35\/11--desk{width:45.45455%}.\36\/11--desk{width:54.54545%}.\37\/11--desk{width:63.63636%}.\38\/11--desk{width:72.72727%}.\39\/11--desk{width:81.81818%}.\31\30\/11--desk{width:90.90909%}.\31\/12--desk{width:8.33333%}.\35\/12--desk{width:41.66667%}.\37\/12--desk{width:58.33333%}.\31\31\/12--desk{width:91.66667%}}@media screen and (min-width: 1160px){.\31\/2--widescreen,.\32\/4--widescreen,.\33\/6--widescreen,.\34\/8--widescreen,.\35\/10--widescreen,.\36\/12--widescreen{width:50%}.\31\/3--widescreen,.\32\/6--widescreen,.\33\/9--widescreen,.\34\/12--widescreen{width:33.33333%}.\32\/3--widescreen,.\34\/6--widescreen,.\36\/9--widescreen,.\38\/12--widescreen{width:66.66667%}.\31\/4--widescreen,.\32\/8--widescreen,.\33\/12--widescreen{width:25%}.\33\/4--widescreen,.\36\/8--widescreen,.\39\/12--widescreen{width:75%}.\31\/5--widescreen,.\32\/10--widescreen{width:20%}.\32\/5--widescreen,.\34\/10--widescreen{width:40%}.\33\/5--widescreen,.\36\/10--widescreen{width:60%}.\34\/5--widescreen,.\38\/10--widescreen{width:80%}.\31\/6--widescreen,.\32\/12--widescreen{width:16.66667%}.\35\/6--widescreen,.\31\30\/12--widescreen{width:83.33333%}.\31\/7--widescreen{width:14.28571%}.\32\/7--widescreen{width:28.57143%}.\33\/7--widescreen{width:42.85714%}.\34\/7--widescreen{width:57.14286%}.\35\/7--widescreen{width:71.42857%}.\36\/7--widescreen{width:85.71429%}.\31\/8--widescreen{width:12.5%}.\33\/8--widescreen{width:37.5%}.\35\/8--widescreen{width:62.5%}.\37\/8--widescreen{width:87.5%}.\31\/9--widescreen{width:11.11111%}.\32\/9--widescreen{width:22.22222%}.\34\/9--widescreen{width:44.44444%}.\35\/9--widescreen{width:55.55556%}.\37\/9--widescreen{width:77.77778%}.\38\/9--widescreen{width:88.88889%}.\31\/10--widescreen{width:10%}.\33\/10--widescreen{width:30%}.\37\/10--widescreen{width:70%}.\39\/10--widescreen{width:90%}.\31\/11--widescreen{width:9.09091%}.\32\/11--widescreen{width:18.18182%}.\33\/11--widescreen{width:27.27273%}.\34\/11--widescreen{width:36.36364%}.\35\/11--widescreen{width:45.45455%}.\36\/11--widescreen{width:54.54545%}.\37\/11--widescreen{width:63.63636%}.\38\/11--widescreen{width:72.72727%}.\39\/11--widescreen{width:81.81818%}.\31\30\/11--widescreen{width:90.90909%}.\31\/12--widescreen{width:8.33333%}.\35\/12--widescreen{width:41.66667%}.\37\/12--widescreen{width:58.33333%}.\31\31\/12--widescreen{width:91.66667%}}@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx){.\31\/2--retina,.\32\/4--retina,.\33\/6--retina,.\34\/8--retina,.\35\/10--retina,.\36\/12--retina{width:50%}.\31\/3--retina,.\32\/6--retina,.\33\/9--retina,.\34\/12--retina{width:33.33333%}.\32\/3--retina,.\34\/6--retina,.\36\/9--retina,.\38\/12--retina{width:66.66667%}.\31\/4--retina,.\32\/8--retina,.\33\/12--retina{width:25%}.\33\/4--retina,.\36\/8--retina,.\39\/12--retina{width:75%}.\31\/5--retina,.\32\/10--retina{width:20%}.\32\/5--retina,.\34\/10--retina{width:40%}.\33\/5--retina,.\36\/10--retina{width:60%}.\34\/5--retina,.\38\/10--retina{width:80%}.\31\/6--retina,.\32\/12--retina{width:16.66667%}.\35\/6--retina,.\31\30\/12--retina{width:83.33333%}.\31\/7--retina{width:14.28571%}.\32\/7--retina{width:28.57143%}.\33\/7--retina{width:42.85714%}.\34\/7--retina{width:57.14286%}.\35\/7--retina{width:71.42857%}.\36\/7--retina{width:85.71429%}.\31\/8--retina{width:12.5%}.\33\/8--retina{width:37.5%}.\35\/8--retina{width:62.5%}.\37\/8--retina{width:87.5%}.\31\/9--retina{width:11.11111%}.\32\/9--retina{width:22.22222%}.\34\/9--retina{width:44.44444%}.\35\/9--retina{width:55.55556%}.\37\/9--retina{width:77.77778%}.\38\/9--retina{width:88.88889%}.\31\/10--retina{width:10%}.\33\/10--retina{width:30%}.\37\/10--retina{width:70%}.\39\/10--retina{width:90%}.\31\/11--retina{width:9.09091%}.\32\/11--retina{width:18.18182%}.\33\/11--retina{width:27.27273%}.\34\/11--retina{width:36.36364%}.\35\/11--retina{width:45.45455%}.\36\/11--retina{width:54.54545%}.\37\/11--retina{width:63.63636%}.\38\/11--retina{width:72.72727%}.\39\/11--retina{width:81.81818%}.\31\30\/11--retina{width:90.90909%}.\31\/12--retina{width:8.33333%}.\35\/12--retina{width:41.66667%}.\37\/12--retina{width:58.33333%}.\31\31\/12--retina{width:91.66667%}}
+
+/*=============================================================================*/
+/*=========================  CUSTOM SCSS BY ZERANCE  ==========================*/
+/*=============================================================================*/
+
+
+
+@media #{$thumb}{.mobile-hidden, .mobileHidden, .mobile-hide, .mobileHide{display : none !important;}}
+@media #{$handheld-and-up}{
+  .desk-hidden, .deskHidden, .desk-hide, .deskHide,.desktop-hidden, .desktopHidden, .desktop-hide, .desktopHide{display : none !important;}
+}
+.hide, .hidden{display : none !important;}
+
+.text-center{text-align : center;}
+.flex-grow{flex-grow: 100;}
+.relative{position : relative;}
+
+.align-center, .center{
+  text-align: center;
+}
+.align-right, .right{
+  text-align: right;
+}
+.align-left, .left{
+  text-align: left;
+}
+.container--small {
+  width:80%;
+  max-width: 1000px;
+  margin: auto;
+}
+.image-container {
+  width:100%;
+  img { width:100%; }
+}
+
+
+.gutter-section{
+  padding : 0 30px;
+}
+
+.Icon-Wrapper--clickable:hover{
+  .Icon--instagram, .Icon--facebook, .Icon--pinterest, .Icon--tumblr, .Icon--twitter, .Icon--vimeo, .Icon--youtube, .Icon--linkedin, .Icon--snapchat{
+    fill : #176fb2;
+  }
+}
+
+
+/*============================== FONTS ========================================*/
+@font-face {
+  font-family: 'phont phreaks';
+  src: url('phontphreaks-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.phreaks{font-family : 'phont phreaks' !important;}
+
+
+/*============================== FOOTER ========================================*/
+.Footer__Title{display: none;}
+
+.Footer__Social .Icon:hover{
+  color:#176fb2;
+}
+.Footer__Social .Icon{
+  &:hover{
+    color:#176fb2;
+  }
+}
+.Icon-Wrapper--clickable:hover {
+  color:#176fb2;
+}
+
+.footer_logo{
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+.Footer__Content {
+  font-size: .9em;
+
+}
+
+@media #{$pocket}{
+  .footer_logo{
+    margin: 20px auto;
+    display: none;
+  }
+
+  .Footer__Content {
+    display: none;
+
+  }
+}
+
+@media #{$portable}{
+  .Footer__Block--text{
+    display: none;
+  }
+}
+
+/*================================ Weglot ====================================*/
+#weglot-switcher-1{
+  padding-bottom: 28px;
+  font-family: "Josefin Sans",sans-serif;
+  display : none;
+}
+.wg-list.country-selector a:hover{
+  color : unset !important;
+}
+@media #{$theme-desk}{
+  #weglot-switcher-1{display : block;}
+}
+@media #{$pocket}{
+  .weglot_switcher{
+    margin-left: 5px;
+  }
+}
+
+/*=============================================================================*/
+/*=======================  SECTION TEXT IMAGE OFFSET  =========================*/
+/*=============================================================================*/
+#section--text-image-offset-5{
+  margin-top: 50px;
+}
+.custom-grid__offset-image{
+  width: 100%;
+}
+
+.custom-grid__content{
+  color: #535353;
+  padding: 20px;
+}
+
+.custom-grid__title{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.custom-grid__subtitle{
+  margin-bottom: 0;
+}
+
+.custom-grid__pretitle{
+  margin-bottom: 0;
+}
+
+.custom-grid__mail,
+.custom-grid__button{
+  width: 100%;
+  padding: 10px 25px;
+  margin-top: 10px;
+}
+
+@media #{$pocket}{
+  .Button--background{
+    margin-bottom: 30px;
+  }
+  .custom-grid__mail{
+    text-align: center;
+  }
+}
+
+
+
+/*===================  TEXT IMAGE OFFSET MOBILE ==============================*/
+
+
+.show--pocket{
+  display: none;
+}
+
+@media #{$pocket}{
+
+  .show--pocket{
+    display: block;
+  }
+
+  .hide--pocket{
+    display: none;
+  }
+
+  .custom-grid__title{
+    margin-top: 30px;
+  }
+
+  .custom-grid__content{
+    padding: 0 20px;
+  }
+
+}
+
+/*=============================================================================*/
+/*=======================  SECTION LOGOS  =====================================*/
+/*=============================================================================*/
+
+
+.logos__container{
+  display: flex;
+  flex-wrap: inherit;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  background-color: #fff;
+}
+
+.logos-block__content{
+  padding: 40px;
+}
+
+.logos-block__text{
+  font-size: .9rem;
+  margin-top: 15px;
+}
+
+
+@media #{$pocket}{
+  .logos__container{
+    display: block;
+  }
+}
+
+
+
+/*=============================================================================*/
+/*=======================  IMAGE WITH CALL 2 ACTION  ==========================*/
+/*=============================================================================*/
+
+.image-with-call-2-action{
+  .ImageHero{
+    position: relative;
+
+  }
+}
+
+/*=============================================================================*/
+/*=======================  PRESS PAGE  ========================================*/
+/*=============================================================================*/
+
+.press__form-header {
+  margin-top: 30px;
+}
+
+
+@media #{$lap-and-up}{
+
+  .press__posts{
+
+    .Section--spacingNormal {
+      padding: 0;
+      margin:0;
+    }
+  }
+}
+
+@media #{$widescreen}{
+  .press__posts{
+    margin-top: 50px;
+  }
+}
+/*=============================================================================*/
+/*=======================  MEDIA PRESS  =======================================*/
+/*=============================================================================*/
+
+
+.press-media__container {
+  margin-top: 50px;
+}
+
+.press__video{
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+}
+
+/*=============================================================================*/
+/*=======================  CONCEPT PAGE   =====================================*/
+/*=============================================================================*/
+
+.etapes-section,
+.concept-section{
+  margin-top: 30px;
+
+  img{
+    max-width: 100px;
+  }
+}
+
+.concept__heading{
+  padding: 50px 30px 0 30px;
+
+}
+
+.concept__advantages-content,
+.concept__etapes-content{
+  margin-top: 30px;
+}
+.concept__content-title{
+  font-weight: bold;
+}
+.concept__advantages-text{
+  width: 80%;
+  margin: 30px auto;
+}
+
+  .concept__advantages-description{
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .concept__image-container{
+    padding: 50px;
+  }
+
+  @media #{$pocket}{
+    .etapes-section, .concept-section{
+      margin-top : 0;
+    }
+    .concept__image-container{
+      margin-top: 30px;
+      padding-top: 0;
+      padding-bottom: 30px;
+    }
+
+  }
+
+
+  .Product__Wrapper{
+    td:first-child {
+      padding-left : 10px !important;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+  }
+
+  /*=============================================================================*/
+  /*=======================  IMAGE TEXT BLOCK   =================================*/
+  /*=============================================================================*/
+
+  .button__container{
+    position: relative;
+  }
+  .custom-button{
+    position: relative;
+    width: 90%;
+    margin: 10px auto;
+
+  }
+  .image-text-block-title-1,
+  .image-text-block-title-2{
+    text-transform: unset;
+  }
+
+  @media #{$lap-and-up}{
+    .custom-button{
+      position: absolute;
+      right: 5%;
+      bottom: 50px;
+      width: auto;
+      margin: 0;
+    }
+  }
+  /*=============================================================================*/
+  /*=======================  SPECIAL TEXT   =====================================*/
+  /*=============================================================================*/
+
+
+  @media #{$pocket}{
+
+    .special-title-content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .special__title-title{
+      font-size: 2em;
+      margin: 0 auto;
+    }
+
+    .special__title-subtitle{
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+  }
+
+  /*=============================================================================*/
+  /*=======================  TECHNICAL SPECIFICATIONS   =========================*/
+  /*=============================================================================*/
+
+  .tecnical__specs-section{
+    max-width: 1600px;
+    margin: 50px auto;
+  }
+  .specs__title{
+    font-size: 1.3em;
+    font-family: "Avenir Next",sans-serif;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+  }
+
+  .specs__block-padding{
+    padding: 10px 50px 10px;
+
+  }
+
+  .specs__block-title{
+    font-family: "Aspira", sans-serif;
+    font-weight: bold;
+  }
+
+  .specs__content {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ededed;
+
+    p{
+      font-family: "Avenir Next",sans-serif;
+      font-style: italic;
+      font-size: 1.1em;
+      margin-bottom: 0;
+    }
+  }
+  /*=============================================================================*/
+  /*=======================  PRODUCT DESCRIPTION   ==============================*/
+  /*=============================================================================*/
+
+  .product__description-section{
+    max-width: 1300px;
+    margin: 10px auto;
+  }
+
+  .product__description-padding{
+
+  }
+  .product__description-title{
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+  }
+
+  .product__description-content p{
+    font-family: "Avenir Next",sans-serif;
+    font-style: italic;
+    line-height: 2;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+
+  }
+  .product__pictos{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    div{
+      margin-left: 30px;
+    }
+    img{
+      width: 35px;
+      height: 35px;
+      margin-bottom: 5px;
+    }
+
+  }
+
+  @media #{$pocket}{
+    .product__description-section{
+      margin-bottom : 0;
+    }
+  }
+  /*=======================  pre-order text price   ===========================*/
+
+  .preorder__price-text{
+    margin-top: 10px;
+    font-size: .8em;
+  }
+  .ProductMeta__Price.Price--compareAt {
+    margin-left: 10px;
+  }
+  .Price--highlight {
+    margin-left: 10px;
+  }
+  /*=============================  COOKIE BOT  ===============================*/
+  #CybotCookiebotDialog, #CybotCookiebotDialogDetail{
+    background-color: $header-background !important;
+    color : black !important;
+    h2,#CybotCookiebotDialogBodyButtons .CybotCookiebotDialogBodyLink, #CybotCookiebotDialogBodyLevelDetailsButton,#CybotCookiebotDialogBodyButtons .CybotCookiebotDialogBodyLink:hover, #CybotCookiebotDialogBodyLevelDetailsButton:hover{
+      color : black !important;}
+      #CybotCookiebotDialogPoweredbyImage{filter: invert(100%);}
+    }
+    #CybotCookiebotDialogBodyButtonAccept{
+      background-color : $button-background !important;
+      border : 1px solid $button-background !important;
+    }
+
+    #CybotCookiebotDialog a, #CybotCookiebotDialog div, {
+      font-family : $text-font-family !important;
+    }
+    #CybotCookiebotDialogBodyContentTitle, #CybotCookiebotDialogBodyButtons a{
+      font-family: $heading-font-family !important;
+    }
+    #CybotCookiebotDialogBody{
+      max-width: 750px !important;
+    }
+
+    /*=============================================================================*/
+    /*=======================  Plugin counterdown    ==============================*/
+    /*=============================================================================*/
+
+    #boostflow-countdown-timer .wrapper-message .img-bflow img,
+    .boostflow-countdown-timer .wrapper-message .img-bflow img {
+      display: none;
+    }
+
+
+    /*=============================================================================*/
+    /*=======================  GALERY InSTAGRAM   =================================*/
+    /*=============================================================================*/
+    #Section--gallery{
+      padding-bottom: 0;
+    }
+
+    .gallery__text{
+      position: absolute;
+      bottom: 20%;
+      text-align: center;
+      width: 100%;
+    }
+
+    /*=============================================================================*/
+    /*=======================  section recommendations   ==========================*/
+    /*=============================================================================*/
+
+    .Section--recomendations {
+      padding: 0 0 80px 0;
+    }
+
+    /*=============================================================================*/
+    /*=======================  SUPPORT  ==========================================*/
+    /*=============================================================================*/
+
+    .support__image{
+      width: 100%;
+      margin: 15px auto;
+
+    }
+
+    /*=============================================================================*/
+    /*=======================  slideshow   ========================================*/
+    /*=============================================================================*/
+
+    @media #{$theme-pocket}{
+      .Slideshow__Content {
+        top: 85%;
+      }
+    }
+
+    /*=============================================================================*/
+    /*=======================  section map   ======================================*/
+    /*=============================================================================*/
+
+    .Section--map{
+      padding-bottom: 0 !important;
+    }
+
+
+    @media screen and (min-width: 641px){
+      .FeaturedMap__Info{
+        padding: 0 60px;
+      }
+    }
+
+
+
+    /*=============================================================================*/
+    /*=======================     overlay    ======================================*/
+    /*=============================================================================*/
+
+    .Image--contrast::after{
+      background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(4,4,4,0.3)), to(rgba(54,54,54,0.1)));
+      background-image: linear-gradient(to top, rgba(4,4,4,0.3), rgba(54,54,54,0.1));
+    }
+
+
+    /*=======================     collection-list HOME   ======================================*/
+    #section-collection-list{
+      margin-top: 20px;
+    }
+
+
+    /*=============================================================================*/
+    /*=======================     Parallax    ======================================*/
+    /*=============================================================================*/
+
+    .parallax__section{
+      width: 100%;
+      height: 100%;
+    }
+
+    .parallax-float-left{
+      float: left;
+      margin: 0 0 0 20px;
+    }
+
+    .parallax-float-right{
+      float: right;
+      margin: 0 20px 0 0;
+    }
+
+
+    .story{
+      margin: 0 auto;
+      overflow: auto;
+      width: 90%;
+    }
+
+    .story .parallax-float-left,
+    .story .parallax-float-right{
+      padding: 60px 0 0 0;
+      position: relative;
+      width: 50%;
+    }
+
+    .parallax-image-mobile{
+      display: none;
+    }
+
+    @media #{$theme-pocket}{
+      .story{
+        width: 100%;
+      }
+      .story .parallax-float-left,
+      .story .parallax-float-right{
+        width: 100%;
+        float: unset;
+        margin: 0 auto;
+        padding: 0;
+      }
+      .display_background{
+        background-image: none !important;
+      }
+
+      .parallax-image-mobile{
+        display: block;
+        width: 100%;
+      }
+    }
+
+    /*=============================================================================*/
+    /*=======================     Separator    ===================================*/
+    /*=============================================================================*/
+    .separator__text-container{
+      padding: 70px 0;
+    }
+    .separator__text{
+      width: 70%;
+      margin: auto;
+  }
+
+  /*=============================================================================*/
+  /*=========================  SPECIFIC PRODUCT PAGES  ==========================*/
+  /*=============================================================================*/

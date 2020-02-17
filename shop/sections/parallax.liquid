@@ -1,0 +1,327 @@
+<style media="screen">
+{% for block in section.blocks %}
+.block{{ block.id }} .parallax__title{
+	font-size: {{ block.settings.title_size }}em;
+}
+.block{{ block.id }} .parallax__subtitle{
+	font-size: {{ block.settings.subtitle_size }}em;
+}
+@media (max-width: 800px) {
+	.block{{ block.id }} .parallax__title{
+		font-size: {{ block.settings.title_size_mobile }}em;
+	}
+	.block{{ block.id }} .parallax__subtitle{
+		font-size: {{ block.settings.subtitle_size_mobile }}em;
+	}
+}
+
+{% if block.type == 'block_type' %}
+.block{{ block.id }} #intro{
+	background:url(https:{{ block.settings.image | img_url: 'master' }}) 50% 0 no-repeat fixed;
+	height: 90vh;
+	margin: 0 auto;
+	padding: 0;
+}
+.block{{ block.id }} .paralax__content-box{
+	padding: 20px;
+	margin: 30px;
+	background-color: {{ block.settings.color }};
+}
+
+@media (max-width: 800px) {
+	.block{{ block.id }} #intro{
+		background-size: cover;
+		height: inherit;
+		background-position: {{ block.settings.position_mobile }};
+	}
+}
+{% elsif block.type == 'separator' %}
+	.block{{ block.id }}{
+		background-color : {{ block.settings.bg_color}};
+	}
+{% endif %}
+{% endfor %}
+</style>
+{% if section.settings.isActive %}
+<section id="section--{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="parallax" class="parallax__section">
+	{% for block in section.blocks %}
+	<div class="block{{ block.id }}">
+		{% if block.type == 'block_type' %}
+		<div id="intro" class="{% if block.settings.display_background %} display_background {% endif %}">
+			<div class="story">
+				<div class="parallax-float-{{ block.settings.text_align }}">
+					<div class="paralax__content-box">
+						<h2 class="Heading u-h2 parallax__title">{{ block.settings.title }}</h2>
+						<h3 class="Heading u-h3 parallax__subtitle">{{ block.settings.subtitle }}</h3>
+						<p class"parallax__text parallax__text">{{ block.settings.text }}</p>
+					</div>
+				</div>
+				{% if block.settings.image_mobile != blank %}
+				{% include 'image' with img : block.settings.image_mobile, class:'parallax-image-mobile' %}
+				{% endif %}
+			</div>
+		</div>
+		{% elsif block.type == 'separator' %}
+		<div class="separator {% if block.settings.display_mobile == false %}mobileHide{% endif %}">
+			<div class="separator__text-container {{ block.settings.text_align }}">
+				<div class="separator__text">
+					{% if block.settings.title %}
+						<h2 class="{% if block.settings.title_special_font == true %}phreaks {% endif %}Heading u-h2 parallax__title">{{ block.settings.title }}</h2>
+					{% endif %}
+					{% if block.settings.subtitle %}
+						<h3 class="{% if block.settings.subtitle_special_font == true %}phreaks {% endif %}Heading u-h3 parallax__subtitle">{{ block.settings.subtitle }}</h3>
+					{% endif %}
+					<p class"parallax__text parallax__text">{{ block.settings.text }}</p>
+				</div>
+
+			</div>
+		</div>
+		{% endif %}
+	</div>
+	{% endfor %}
+</section>
+{% endif %}
+
+{% schema %}
+{
+	"name": "Parallax section",
+	"settings": [
+	{
+		"type": "checkbox",
+		"id": "isActive",
+		"label": "Show section"
+	}
+	],
+	"blocks": [
+	{
+		"type": "block_type",
+		"name": "Block Parallax",
+		"settings": [
+		{
+			"type": "text",
+			"id": "title",
+			"label": "title"
+		},
+		{
+			"type":      "range",
+			"id":        "title_size",
+			"min":       1,
+			"max":       4,
+			"step":      1,
+			"unit":      "em",
+			"label":     "Title size",
+			"default":   3
+		},
+		{
+			"type":      "range",
+			"id":        "title_size_mobile",
+			"min":       1,
+			"max":       3,
+			"step":      1,
+			"unit":      "em",
+			"label":     "Title size mobile",
+			"default":   3
+		},
+		{
+			"type": "text",
+			"id": "subtitle",
+			"label": "subtitle"
+		},
+		{
+			"type":      "range",
+			"id":        "subtitle_size",
+			"min":       1,
+			"max":       3,
+			"step":      1,
+			"unit":      "em",
+			"label":     "Subtitle size",
+			"default":   2
+		},
+		{
+			"type":      "range",
+			"id":        "subtitle_size_mobile",
+			"min":       1,
+			"max":       3,
+			"step":      1,
+			"unit":      "em",
+			"label":     "Subtitle size mobile",
+			"default":   2
+		},
+		{
+			"type": "richtext",
+			"id": "text",
+			"label": "text"
+		},
+		{
+			"type": "image_picker",
+			"id": "image",
+			"label": "image background"
+		},
+		{
+			"type": "select",
+			"id": "text_align",
+			"label": "text align",
+			"options": [
+			{
+				"value": "left",
+				"label": "left"
+			},
+			{
+				"value": "right",
+				"label": "right"
+			}
+			],
+			"default": "left"
+		},
+		{
+			"type": "color",
+			"id": "color",
+			"label": "Text background color",
+			"default": "transparent"
+		},
+		{
+			"type": "checkbox",
+			"id": "display_background",
+			"label": "dont display image in background in mobile",
+			"default": false
+		},
+		{
+			"type": "select",
+			"id": "position_mobile",
+			"label": "Background position mobile",
+			"options": [
+			{
+				"value": "left",
+				"label": "left"
+			},
+			{
+				"value": "right",
+				"label": "right"
+			},
+			{
+				"value": "center",
+				"label": "center"
+			}
+			],
+			"default": "center"
+		},
+		{
+			"type": "image_picker",
+			"id": "image_mobile",
+			"label": "Display another image in mobile"
+		}
+		]
+	},
+	{
+		"type": "separator",
+		"name": "Block Separator",
+		"settings": [
+		{
+		  "type": "checkbox",
+		  "id": "display_mobile",
+		  "label": "Display on mobile?",
+		  "default": true
+	  },
+		{
+		  "type": "color",
+		  "id": "bg_color",
+		  "label": "Couleur du background"
+	  },
+		{
+			"type": "text",
+			"id": "title",
+			"label": "title"
+		},
+		{
+			"type":      "range",
+			"id":        "title_size",
+			"min":       1,
+			"max":       4,
+			"step":      1,
+			"unit":      "em",
+			"label":     "Title size",
+			"default":   3
+		},
+		{
+			"type":      "range",
+			"id":        "title_size_mobile",
+			"min":       1,
+			"max":       3,
+			"step":      1,
+			"unit":      "em",
+			"label":     "Title size mobile",
+			"default":   3
+		},
+		{
+		  "type": "checkbox",
+		  "id": "title_special_font",
+		  "label": "Special font title?",
+		  "default":false
+	  },
+		{
+			"type": "text",
+			"id": "subtitle",
+			"label": "subtitle"
+		},
+		{
+			"type":      "range",
+			"id":        "subtitle_size",
+			"min":       1,
+			"max":       3,
+			"step":      1,
+			"unit":      "em",
+			"label":     "Subtitle size",
+			"default":   2
+		},
+		{
+			"type":      "range",
+			"id":        "subtitle_size_mobile",
+			"min":       1,
+			"max":       3,
+			"step":      1,
+			"unit":      "em",
+			"label":     "Subtitle size mobile",
+			"default":   2
+		},
+		{
+		  "type": "checkbox",
+		  "id": "subtitle_special_font",
+		  "label": "Special font subtitle?",
+		  "default":false
+	  },
+		{
+			"type": "richtext",
+			"id": "text",
+			"label": "text"
+		},{
+			"type": "select",
+			"id": "text_align",
+			"label": "text align",
+			"options": [
+			{
+				"value": "left",
+				"label": "left"
+			},
+			{
+				"value": "center",
+				"label": "center"
+			},
+			{
+				"value": "right",
+				"label": "right"
+			}
+			],
+			"default": "center"
+		}
+		]
+	}
+	],
+	"presets": [
+	{
+		"category": "Image",
+		"name": "Parallax",
+		"settings": {}
+	}
+	]
+}
+{% endschema %}

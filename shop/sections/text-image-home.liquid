@@ -1,0 +1,229 @@
+{% include 'text-image-offset' %}
+
+{% schema %}
+{
+  "name": "Text-image-Home",
+  "settings": [
+    {
+      "type": "select",
+      "id": "block_position",
+      "label": "block position",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "left"
+        },
+        {
+          "value": "right",
+          "label": "right"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "image_width",
+      "label": "image size",
+      "options": [
+        {
+          "value": "2/3",
+          "label": "Two/thirds"
+        },
+        {
+          "value": "1/2",
+          "label": "Half"
+        },
+        {
+          "value": "3/4",
+          "label": "Three/Quarters"
+        }
+      ],
+      "default": "1/2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "1500 x 800px .jpg recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Image",
+      "info": "400 x 500px .jpg recommended"
+    },
+    {
+      "type": "text",
+      "id": "pretitle",
+      "label": "pretitle",
+      "default": "pretitle"
+    },
+    {
+     "type": "checkbox",
+     "id": "font_option_pretitle",
+     "label": "Special font",
+     "info": "change the font of the subtitle",
+     "default": false
+    },
+    {
+    "type":      "range",
+    "id":        "pretitle_size",
+    "min":       2,
+    "max":       6,
+    "step":      1,
+    "unit":      "em",
+    "label":     "pretitle size",
+    "default":   2
+    },
+     {
+    "type":      "range",
+    "id":        "pretitle_size_mobile",
+    "min":       2,
+    "max":       6,
+    "step":      1,
+    "unit":      "em",
+    "label":     "pretitle size Mobile",
+    "default":   2
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+     {
+      "type": "checkbox",
+      "id": "font_option",
+      "label": "Special font",
+      "info": "change the font of the title",
+      "default": false
+    },
+    {
+    "type":      "range",
+    "id":        "title_position",
+    "min":       0,
+    "max":       200,
+    "step":       2,
+    "unit":       "%",
+    "label":     "Title position",
+    "default":   0
+    },
+    {
+    "type":      "range",
+    "id":        "title_size",
+    "min":       2,
+    "max":       8,
+    "step":      1,
+    "unit":      "em",
+    "label":     "Title size",
+    "default":   4
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "subtitle",
+      "default": "subtitle"
+    },
+    {
+     "type": "checkbox",
+     "id": "font_option_subtitle",
+     "label": "Special font",
+     "info": "change the font of the subtitle",
+     "default": false
+    },
+    {
+    "type":      "range",
+    "id":        "subtitle_size",
+    "min":       2,
+    "max":       6,
+    "step":      1,
+    "unit":      "em",
+    "label":     "Subtitle size",
+    "default":   2
+    },
+     {
+    "type":      "range",
+    "id":        "subtitle_size_mobile",
+    "min":       2,
+    "max":       6,
+    "step":      1,
+    "unit":      "em",
+    "label":     "Subtitle size Mobile",
+    "default":   2
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Text",
+      "default": "<p>A short sentence describing this section</p>"
+    },
+    {
+      "type": "select",
+      "id": "text_position",
+      "label": "Text position",
+      "options": [
+        {
+          "value": "top",
+          "label": "Top"
+        },
+        {
+          "value": "middle",
+          "label": "Middle"
+        },
+        {
+          "value": "bottom",
+          "label": "Bottom"
+        }
+      ],
+      "default": "middle"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Text align",
+      "options": [
+        {
+          "value": "align-right",
+          "label": "Right"
+        },
+        {
+          "value": "align-left",
+          "label": "Left"
+        },
+        {
+          "value": "align-center",
+          "label": "Center"
+        }
+      ],
+      "default": "align-left"
+    },
+    {
+       "type":      "checkbox",
+       "id":        "form_status",
+       "label":     "Display a form",
+       "default":   false
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "button color"
+    },
+    {
+     "type":      "range",
+     "id":        "form_size",
+     "min":       30,
+     "max":       100,
+     "step":      1,
+     "unit":      "%",
+     "label":     "form size",
+     "default":   50
+    }
+  ],
+  "presets": [
+    {
+      "category": "Image",
+      "name": "Text image Home v.0"
+    }
+  ]
+}
+{% endschema %}

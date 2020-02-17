@@ -1,0 +1,130 @@
+<style type="text/css">
+
+  @media screen and (min-width: 641px){
+	.call2action__block{
+	   position: absolute;
+       transform: translate(-50%, -50%);
+       top: {{ section.settings.button_x }}%; 
+       left: {{ section.settings.button_y }}%;   
+     }
+
+  }
+   #section-{{ section.id }} .Button--primary{
+        color: {{ section.settings.text_color }};
+        border-color: {{ section.settings.background }};
+   }
+   #section-{{ section.id }} .Button:not([disabled])::before{
+        background-color : {{ section.settings.background }};
+    }
+    #section-{{ section.id }} .Button--primary:not([disabled]):hover{
+        color: {{ section.settings.background }};
+    }
+   
+</style>
+
+<section class="Section image-with-call-2-action" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="image-with-call-2-action">
+  {%- capture mobile_size -%}750x{% if section.settings.image.height >= 960 %}960{% else %}{{ section.settings.image.height }}{% endif %}{%- endcapture -%}
+
+  <div class="FlexboxIeFix">
+    <div class="ImageHero ImageHero--large" {% if section.settings.image %}style="background: url({{ section.settings.image | img_url: '1x1', format: 'pjpg' }})"{% endif %}>
+      <div class="ImageHero__ImageWrapper">
+        <div class="ImageHero__Image Image--lazyLoad Image--zoomOut {% if section.settings.show_parallax %}ImageHero__Image--parallax{% endif %}"
+             data-optimumx="1.4"
+             data-expand="-150"
+             {% if section.settings.image %}data-bgset="{{ section.settings.image | img_url: mobile_size, crop: 'center' }} 750w, {{ section.settings.image | img_url: '1000x' }} 1000w, {{ section.settings.image | img_url: '1500x' }} 1500w"{% endif %}>
+        </div>
+
+        <noscript>
+          <div class="ImageHero__ImageWrapper" style="background-image: url({{ section.settings.image | img_url: '1000x' }})"></div>
+        </noscript>
+
+        {%- unless section.settings.image != blank -%}
+          <div class="PlaceholderBackground PlaceholderBackground--Dark">
+            {{ 'lifestyle-1' | placeholder_svg_tag: 'PlaceholderBackground__Svg' }}
+          </div>
+        {%- endunless -%}
+      </div>
+
+      {%- if section.settings.title != blank or section.settings.content != blank or section.settings.button_label != blank -%}
+        <div class="ImageHero__Wrapper call2action__block">
+          <div class="">
+            {%- if section.settings.button_label != blank -%}
+              <a href="{{ section.settings.button_link }}" class="ImageHero__BlockLink Button Button--primary Link Link--underline">{{ section.settings.button_label | escape }}</a>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Image with call to action",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "1500 x 800px .jpg recommended"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#1c1b1b"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+    "type":      "range",
+    "id":        "button_x",
+    "min":       0,
+    "max":       100,
+    "step":      1,
+    "unit":      "%",
+    "label":     "Button position X",
+    "default":   50 
+    },
+     {
+    "type":      "range",
+    "id":        "button_y",
+    "min":       0,
+    "max":       100,
+    "step":      1,
+    "unit":      "%",
+    "label":     "Button position Y",
+    "default":   50 
+    },
+    {
+      "type": "checkbox",
+      "id": "show_parallax",
+      "label": "Show parallax scrolling effect",
+      "info": "Only applies to desktop.",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "category": "Image",
+      "name": "Image with call to action",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

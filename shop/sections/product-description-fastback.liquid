@@ -1,0 +1,56 @@
+{% include "product-description" %}
+
+{% schema %}
+{
+  "name": "Product description",
+  "settings": [
+	  {
+		 "type": "checkbox",
+		 "id": "isActive",
+		 "label": "Show section",
+     "default": true
+	 },
+   {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Technical Specifications"
+   }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "title",
+          "default": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "text"
+        },
+        {
+	      "type": "select",
+	      "id": "block_position",
+	      "label": "Block position",
+	      "options": [
+	        {
+	          "value": "left",
+	          "label": "left"
+	        },
+	        {
+	          "value": "right",
+	          "label": "right"
+	        }
+	      ],
+	      "default": "left"
+	    }
+      ]
+    }
+  ]
+}
+{% endschema %}

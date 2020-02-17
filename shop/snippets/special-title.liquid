@@ -1,0 +1,36 @@
+<style type="text/css">
+
+@media screen and (min-width: 800px){
+  #section--{{ section.id }} .special-title-content{
+    display: flex;
+    align-items: baseline;
+   	padding: {{ section.settings.block_size }}px;
+    justify-content: {{ section.settings.position }};
+
+   }
+
+  #section--{{ section.id }} .special__title-title{
+     font-size: {{ section.settings.title_size }}em;
+     color: {{ section.settings.title_color }};
+     margin-bottom: 0;
+   }
+   #section--{{ section.id }} .special__title-subtitle{
+     font-size: {{ section.settings.subtitle_size }}em;
+     color: {{ section.settings.subtitle_color  }};
+     margin-bottom: 0;
+   }
+ }
+ /* comment  */
+</style>
+{% if section.settings.isActive %}
+    <section id="section--{{ section.id }}" class="section-special-title" data-section-id="{{ section.id }}" data-section-type="special-title">
+      <div class="special__title-container">
+        	{% if section.settings.title != blank or section.settings.subtitle != blank %}
+          	   <div class="special-title-content">
+      			    	<div class="Heading u-h2 special__title-title {% if section.settings.font_option == true %} phreaks {% endif %}">{{ section.settings.title }}</div>
+      			    	<div class="Heading u-h4 special__title-subtitle {% if section.settings.font_option2 == true %} phreaks {% endif %}">{{ section.settings.subtitle }}</div>
+      		    </div>
+          {% endif %}
+       </div>
+    </section>
+{% endif %}

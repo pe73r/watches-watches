@@ -1,0 +1,119 @@
+{% include 'image-text-block'%}
+
+
+{% schema %}
+{
+  "name": "Image text block 2",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "isActive",
+      "label": "Show section",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "1500 x 800px .jpg recommended"
+    },
+    {
+       "type": "html",
+       "id": "html_area",
+       "label": "Custom HTML",
+       "info": "If video embed change <i frame width:100%> to be well displayed in mobile"
+    },
+    {
+      "type": "richtext",
+      "id": "block_title-1",
+      "label": "Title Right",
+      "default": "<p>Title right</p>"
+    },
+    {
+    "type":      "range",
+    "id":        "title-1_size",
+    "min":       2,
+    "max":       8,
+    "step":      1,
+    "unit":      "em",
+    "label":     "Title size",
+    "default":   4
+    },
+    {
+        "type": "color",
+        "id": "title-1-color",
+        "label": "color title 1",
+        "default": "#333333"
+    },
+     {
+      "type": "richtext",
+      "id": "block_text-1",
+      "label": "Text Right",
+      "default": "<p>Text on the right</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image-2",
+      "label": "Image",
+      "info": "1500 x 800px .jpg recommended"
+    },
+    {
+       "type": "html",
+       "id": "html_area2",
+       "label": "Custom HTML",
+       "info": "If video embed change <i frame width:100%> to be well displayed in mobile"
+    },
+    {
+      "type": "richtext",
+      "id": "block_title-2",
+      "label": "Title Left",
+      "default": "<p>Title Left</p>"
+    },
+    {
+    "type":      "range",
+    "id":        "title-2_size",
+    "min":       2,
+    "max":       8,
+    "step":      1,
+    "unit":      "em",
+    "label":     "Title size",
+    "default":   4
+    },
+    {
+        "type": "color",
+        "id": "title-2-color",
+        "label": "color title 1",
+        "default": "#333333"
+    },
+     {
+      "type": "richtext",
+      "id": "block_text-2",
+      "label": "Text Left",
+      "default": "<p>Text on the left</p>"
+    },
+     {
+       "type":      "checkbox",
+       "id":        "button_status",
+       "label":     "Display a button",
+       "default":   false
+    },
+     {
+      "type": "text",
+      "id": "button_text",
+      "label": "button text"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "button link"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Image",
+      "name": "Image text block",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

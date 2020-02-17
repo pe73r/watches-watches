@@ -1,0 +1,33 @@
+{% if section.settings.isActive %}
+<section id="section--{{ section.id }}" class="product__description-section" data-section-id="{{ section.id }}" data-section-type="article">
+	<h1 class="specs__title align-center">{{ section.settings.title }}</h1>
+    <article class="grid-sandbox">
+          <div class="grid grid--center">
+	          <div class="1/2--lap-and-up grid__cell">
+		            <div class="product__description-padding">
+		             {% for block in section.blocks %}
+			               {% if block.settings.block_position == "left" %}
+				              <div class="product__description-content align-center">
+				                   <h3 class="product__description-title">{{ block.settings.title }}</h3>
+				                   <p class="product__description-text">{{ block.settings.text }}</p>
+			                   </div>
+			               {% endif %}
+		              {% endfor %}
+		           </div>
+	          </div>
+	          <div class="1/2--lap-and-up grid__cell">
+		           <div class="product__description-padding">
+		             {% for block in section.blocks %}
+			               {% if block.settings.block_position == "right" %}
+				              <div class="product__description-content align-center">
+				                   <h3 class="product__description-title">{{ block.settings.title }}</h3>
+				                   <div class="product__description-text">{{ block.settings.text }}</div>
+			                   </div>
+			               {% endif %}
+		              {% endfor %}
+		           </div>
+	         </div>
+        </div>
+    </article>
+</section>
+{% endif %}

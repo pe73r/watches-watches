@@ -1,0 +1,3794 @@
+{
+  "current": {
+    "heading_color": "#1c1b1b",
+    "text_color": "#1c1b1b",
+    "text_light_color": "#6a6a6a",
+    "link_color": "#176fb2",
+    "background": "#ffffff",
+    "light_background": "#ffffff",
+    "product_on_sale_color": "#f94c43",
+    "button_background": "#f7f5f5",
+    "button_text_color": "#000000",
+    "header_background": "#ffffff",
+    "header_heading_color": "#1c1b1b",
+    "header_light_color": "#6a6a6a",
+    "footer_background": "#b9b9b9",
+    "footer_heading_color": "#ffffff",
+    "footer_text_color": "#ffffff",
+    "navigation_background": "#000000",
+    "navigation_text_color": "#ffffff",
+    "newsletter_popup_background": "#176fb2",
+    "newsletter_popup_text_color": "#ffffff",
+    "secondary_elements_background": "#1c1b1b",
+    "secondary_elements_text_color": "#ffffff",
+    "heading_font": "avenir_next_n4",
+    "heading_size": "large",
+    "uppercase_heading": false,
+    "text_font": "montserrat_n4",
+    "base_text_font_size": 14,
+    "currency_conversion_enabled": true,
+    "currency_conversion_round_amounts": true,
+    "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+    "currency_conversion_money_format": "money_format",
+    "show_page_transition": true,
+    "show_button_transition": true,
+    "show_image_zooming": true,
+    "show_element_staggering": true,
+    "search_mode": "product,article,page",
+    "product_show_price_on_hover": true,
+    "product_show_secondary_image": true,
+    "product_info_alignment": "center",
+    "product_image_size": "natural",
+    "product_list_horizontal_spacing": "extra_small",
+    "product_list_vertical_spacing": "extra_small",
+    "cart_type": "drawer",
+    "cart_enable_notes": false,
+    "cart_show_free_shipping_threshold": false,
+    "cart_free_shipping_threshold": "50",
+    "share_image": "",
+    "social_facebook": "https:\/\/www.facebook.com\/syewatches",
+    "social_twitter": "",
+    "social_pinterest": "",
+    "social_instagram": "https:\/\/instagram.com\/syewatches",
+    "social_vimeo": "",
+    "social_tumblr": "",
+    "social_youtube": "https:\/\/www.youtube.com\/channel\/UC3ZRMjE_KQ65yG411LB-aGA\/",
+    "social_linkedin": "https:\/\/www.linkedin.com\/company\/syewatches",
+    "social_snapchat": "",
+    "social_fancy": "",
+    "favicon": "shopify:\/\/shop_images\/SYE_favicon.jpg",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#f3f3f3",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#f3f3f3",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Lato",
+    "checkout_accent_color": "#176fb2",
+    "checkout_button_color": "#176fb2",
+    "checkout_error_color": "#e14d43",
+    "sections": {
+      "sidebar-menu": {
+        "type": "sidebar-menu",
+        "settings": {
+          "primary_menu": "main-menu",
+          "secondary_menu": "",
+          "show_social_media": true
+        }
+      },
+      "announcement": {
+        "type": "announcement",
+        "settings": {
+          "enable_bar": true,
+          "home_page_only": false,
+          "background": "#000000",
+          "text_color": "#ffffff",
+          "content": "Preorders will start soon, subscribe here to be informed of the launch",
+          "link": "https:\/\/link.syewatches.com\/subscribe"
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "use_sticky_header": true,
+          "logo": "shopify:\/\/shop_images\/Logo_SYE_noir.png",
+          "logo_max_width": 155,
+          "mobile_logo_max_width": 90,
+          "navigation_menu": "main-menu",
+          "navigation_style": "center",
+          "show_icons": true,
+          "enable_transparent_header": false,
+          "enable_transparent_header_collection": false,
+          "show_transparent_header_border": false,
+          "transparent_text_color": "rgba(0,0,0,0)",
+          "transparent_logo": ""
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "text",
+            "settings": {
+              "footer_logo": "shopify:\/\/shop_images\/Logo_SYE_blanc_website_3x_e4a66530-1bf1-438e-80a9-8bf1013e6831.png",
+              "content": "<p>SYE [Start Your Engine] is a premium brand bringing the concept of Sport Tailoring to your wrist.<br>With its fine leather, impeccable finish, exclusive style and sharp design, you have so many reasons to get excited and give in to temptation.<\/p>",
+              "show_social_media": true
+            }
+          },
+          "footer-1": {
+            "type": "links",
+            "settings": {
+              "menu": "footer"
+            }
+          },
+          "1561109692401": {
+            "type": "links",
+            "settings": {
+              "menu": "footer-2"
+            }
+          },
+          "1561109704798": {
+            "type": "links",
+            "settings": {
+              "menu": ""
+            }
+          },
+          "1563543220754": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Newsletter",
+              "content": "<p>Keep up with the launch!<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "footer-1",
+          "1561109692401",
+          "1561109704798",
+          "1563543220754"
+        ],
+        "settings": {
+          "show_payment_methods": true,
+          "color_1": "#6a6a6a",
+          "color_2": "#6a6a6a",
+          "color_percentage": 1
+        }
+      },
+      "collection-list": {
+        "type": "collection-list",
+        "blocks": {
+          "collection-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "",
+              "image": "shopify:\/\/shop_images\/output_rider_2.gif",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft",
+              "subheading": "Explore our universe",
+              "title": "START YOUR ENGINE",
+              "button_text": "FIND OUT MORE",
+              "button_link": "shopify:\/\/pages\/about-sye-watches",
+              "apply_overlay": false
+            }
+          },
+          "collection-1": {
+            "type": "collection",
+            "settings": {
+              "collection": "sye-mot1on-line-up",
+              "image": "shopify:\/\/shop_images\/SYE_MOT1ON_Automatic_Twenty_Four_Hero_whitebg_3x_c1de4396-6155-45f6-98c7-6dbaa9d26c0f.jpg",
+              "image_alignment": "center center",
+              "content_position": "bottomRight",
+              "subheading": "a strong personality",
+              "title": "SYE MOT1ON",
+              "button_text": "FIND OUT MORE",
+              "button_link": "shopify:\/\/pages\/discover-sye-mot1on-wristwatch",
+              "apply_overlay": false
+            }
+          }
+        },
+        "block_order": [
+          "collection-0",
+          "collection-1"
+        ],
+        "settings": {
+          "image_size": "normal",
+          "add_spacing": true,
+          "expand_collection": true,
+          "stack_on_mobile": true,
+          "text_color": "#1c1b1b",
+          "button_color": "#ffffff"
+        }
+      },
+      "shop-the-look": {
+        "type": "shop-the-look",
+        "disabled": true,
+        "blocks": {
+          "look-0": {
+            "type": "look",
+            "settings": {
+              "image": "",
+              "dot_style": "light",
+              "product_1": "",
+              "product_1_horizontal_position": 81,
+              "product_1_vertical_position": 30,
+              "product_2": "",
+              "product_2_horizontal_position": 77,
+              "product_2_vertical_position": 57,
+              "product_3": "",
+              "product_3_horizontal_position": 70,
+              "product_3_vertical_position": 50
+            }
+          },
+          "1561486515131": {
+            "type": "look",
+            "settings": {
+              "image": "",
+              "dot_style": "light",
+              "product_1": "",
+              "product_1_horizontal_position": 88,
+              "product_1_vertical_position": 38,
+              "product_2": "",
+              "product_2_horizontal_position": 84,
+              "product_2_vertical_position": 71,
+              "product_3": "",
+              "product_3_horizontal_position": 85,
+              "product_3_vertical_position": 85
+            }
+          }
+        },
+        "block_order": [
+          "look-0",
+          "1561486515131"
+        ],
+        "settings": {
+          "subheading": "and our straps",
+          "title": "Discover our watches",
+          "show_mobile_product_info": true
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "show_collection_info": false,
+          "show_collection_image": false,
+          "apply_overlay": false,
+          "show_color_swatch": false,
+          "show_vendor": false,
+          "collection_image_size": "large",
+          "show_sort_by": false,
+          "show_layout_switch": true,
+          "toolbar_position": "top",
+          "filter_position": "sidebar",
+          "filter_mode": "hidden",
+          "show_filter_color_swatch": false,
+          "filter_menu": "",
+          "grid_items_per_page": 12,
+          "grid_mobile_items_per_row": "2",
+          "grid_desktop_items_per_row": 4
+        }
+      },
+      "recently-viewed-products": {
+        "type": "recently-viewed-products",
+        "settings": {
+          "show_section": false,
+          "title": "Recently viewed",
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false
+        }
+      },
+      "collection-footer": {
+        "type": "collection-footer",
+        "settings": {
+          "show_section": false,
+          "image": "",
+          "text_color": "#ffffff",
+          "apply_overlay": true,
+          "title": "Our story",
+          "content": "<p>Add your own custom content to explain your processes...<\/p>"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_share_buttons": false,
+          "show_vendor": false,
+          "show_sku": false,
+          "description_below_add_to_cart": false,
+          "selector_mode": "block",
+          "show_color_swatch": true,
+          "show_color_carousel": true,
+          "show_quantity_selector": false,
+          "show_inventory_quantity": false,
+          "inventory_quantity_threshold": 3,
+          "show_price_in_button": true,
+          "show_payment_button": false,
+          "image_size": "large",
+          "stack_images": true,
+          "show_thumbnails": false,
+          "enable_image_zoom": true,
+          "tab_page_1_handle": "",
+          "tab_page_2_handle": "",
+          "reviews_enabled": true,
+          "featured_image_size": "large"
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "SOME MORE JUST FOR YOU",
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "show_popup": false,
+          "show_only_on_index": true,
+          "show_only_for_visitors": true,
+          "show_only_once": false,
+          "title": "Get early access",
+          "content": "",
+          "show_newsletter": true,
+          "apparition_delay": 0
+        }
+      },
+      "text-image-offset-1": {
+        "type": "text-image-offset-1",
+        "settings": {
+          "block_position": "left",
+          "image_width": "1\/2",
+          "image": "",
+          "image_mobile": "",
+          "title": "START YOUR ENGINE",
+          "font_option": false,
+          "title_position": 0,
+          "title_size": 5,
+          "subtitle": "",
+          "font_option_subtitle": false,
+          "subtitle_size": 2,
+          "subtitle_size_mobile": 2,
+          "content": "<p>Qu&rsquo;avez-vous ressenti devant les courbes d&rsquo;une carrosserie d&rsquo;exception, la musique sauvage d&rsquo;un bicylindre, l&rsquo;&eacute;clat d&rsquo;un chrome rutilant, le toucher sensuel d&rsquo;une sellerie patin&eacute;e par les ans ?<\/p>\n<p>Ce sont toutes ces &eacute;motions qui m&rsquo;animent et ont guid&eacute; la cr&eacute;ation de la marque SYE !<\/p>\n<p><\/p>\n<p>A la recherche d&rsquo;un temps id&eacute;al, elles m&rsquo;ont inspir&eacute; et conduit &agrave; r&eacute;interpr&eacute;ter les mati&egrave;res, le savoir-faire et l&rsquo;esprit du design du XX&egrave;me si&egrave;cle dans une montre r&eacute;solument moderne.<\/p>\n<p><\/p>\n<p><strong>Sir Yorrick Earl<\/strong><\/p>",
+          "text_position": "middle",
+          "text_align": "align-left",
+          "form_status": false,
+          "bg_color": "",
+          "form_size": 50
+        }
+      },
+      "text-image-offset-2": {
+        "type": "text-image-offset-2",
+        "settings": {
+          "block_position": "right",
+          "image_width": "1\/2",
+          "image": "",
+          "image_mobile": "",
+          "title": "INVENTER",
+          "font_option": false,
+          "title_position": 0,
+          "title_size": 5,
+          "subtitle": "une nouvelle élégance",
+          "font_option_subtitle": false,
+          "subtitle_size": 2,
+          "subtitle_size_mobile": 2,
+          "content": "<p>Anti-conformiste, assum&eacute;, distingu&eacute;&hellip; SYE inaugure le Sport Tailoring au poignet : alliance de rigueur et de d&eacute;contraction, d&rsquo;exigence et de libert&eacute;.<\/p>\n<p><\/p>\n<p>Porter une SYE, c&rsquo;est affirmer son attachement &agrave; une montre diff&eacute;rente, revendiquer un style muscl&eacute; et un esprit audacieux.<\/p>",
+          "text_position": "middle",
+          "text_align": "align-left",
+          "form_status": false,
+          "bg_color": "",
+          "form_size": 50
+        }
+      },
+      "text-image-offset-3": {
+        "type": "text-image-offset-3",
+        "settings": {
+          "block_position": "left",
+          "image_width": "1\/2",
+          "image": "",
+          "image_mobile": "",
+          "title": "PROVOQUER",
+          "font_option": false,
+          "title_position": 0,
+          "title_size": 5,
+          "subtitle": "des sensations fortes",
+          "font_option_subtitle": false,
+          "subtitle_size": 2,
+          "subtitle_size_mobile": 2,
+          "content": "<p>Embarquez, osez et laissez vos sens s&rsquo;emballer !<\/p>\n<p><\/p>\n<p>Pour nos montres, pas de compromis&nbsp;: de belles mati&egrave;res, des finitions impeccables, un style exclusif et un design vraiment cool.<\/p>\n<p><\/p>\n<p>Autant de raisons de vibrer fort et de c&eacute;der &agrave; la tentation !<\/p>",
+          "text_position": "middle",
+          "text_align": "align-left",
+          "form_status": false,
+          "bg_color": "",
+          "form_size": 50
+        }
+      },
+      "text-image-offset-4": {
+        "type": "text-image-offset-4",
+        "settings": {
+          "block_position": "left",
+          "image_width": "1\/2",
+          "image": "",
+          "image_mobile": "",
+          "title": "EVERYONE",
+          "font_option": false,
+          "title-align": "left",
+          "title_size": 5,
+          "subtitle": "is a winner!",
+          "font_option_subtitle": true,
+          "subtitle_size": 3,
+          "subtitle_size_mobile": 3,
+          "content": "<p>After two years of development, SYE watches are finally ready to go... but now they need your help.<\/p>\n<p>To breathe life into our first watches and get our machines rolling, SYE is opening up pre-orders and you have everything to gain!<\/p>",
+          "text_position": "bottom",
+          "text_align": "align-left",
+          "form_status": false,
+          "bg_color": "",
+          "form_size": 50
+        }
+      },
+      "background-video": {
+        "type": "background-video",
+        "settings": {
+          "isActive": false,
+          "section_size": "large",
+          "video_url": "https:\/\/youtu.be\/YIBqB-N2B38"
+        }
+      },
+      "slideshow-2": {
+        "type": "slideshow-2",
+        "blocks": {
+          "1561024805198": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "mobile_image": "",
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "",
+              "subtitle-size": 30,
+              "title": "SYE MOT1ON Automatic Twenty Four",
+              "title-size": 30,
+              "button_1_text": "FIND OUT MORE",
+              "button_1_link": "shopify:\/\/products\/kick-automatic",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          },
+          "1561050350808": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "mobile_image": "",
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "",
+              "subtitle-size": 10,
+              "title": "SYE MOT1ON Chronograph",
+              "title-size": 30,
+              "button_1_text": "FIND OUT MORE",
+              "button_1_link": "shopify:\/\/products\/kick-chrono",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1561024805198",
+          "1561050350808"
+        ],
+        "settings": {
+          "isActive": true,
+          "show_fullscreen": true,
+          "show_arrow": false,
+          "autoplay": true,
+          "cycle_speed": 5,
+          "text_color": "#ffffff",
+          "button_color": "#363636",
+          "button_background": "#ffffff"
+        }
+      },
+      "image-with-call-2-action": {
+        "type": "image-with-call-2-action",
+        "settings": {
+          "image": "",
+          "background": "#080808",
+          "text_color": "#f3f3f3",
+          "button_label": "GO TO COLLECTION",
+          "button_link": "shopify:\/\/collections",
+          "button_x": 50,
+          "button_y": 50,
+          "show_parallax": true
+        }
+      },
+      "image-text-block": {
+        "type": "image-text-block",
+        "settings": {
+          "isActive": true,
+          "image": "",
+          "html_area": "<iframe width=\"100%\" height=\"500\" src=\"https:\/\/www.youtube.com\/embed\/YIBqB-N2B38?autoplay=1controls=0&amp;start=22?autoplay=1\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"><\/iframe>",
+          "block_title-1": "<p>STRONG PERSONALITY<\/p>",
+          "title-1_size": 3,
+          "title-1-color": "#000000",
+          "block_text-1": "<p>Our desire to design an exclusive watch led to the birth of MOT1ON.<\/p>\n<p><br>MOT1ON combines a high-quality leather strap with a modern steel body in an innovative, eye-catching design.<\/p>\n<p><br>This watch is the epitome of Sports Tailoring for your wrist; it's as dynamic as it is elegant and will hug your wrist all day long without a single misstep.<\/p>\n<p><br>If you want to change up your style, the Fastback&trade; system and our range of premium straps makes swapping out the strap so simple.<\/p>",
+          "image-2": "",
+          "html_area2": "",
+          "block_title-2": "<p>PERFECT FOR GEARHEADS<\/p>",
+          "title-2_size": 3,
+          "title-2-color": "#000000",
+          "block_text-2": "<p>We cut no corners with MOTION &ndash; it has the best of everything.<\/p>\n<p><\/p>\n<p>A solid steel body, an impeccably precise finish and an anodized screw in the middle for an unexpected touch.<\/p>\n<p><\/p>\n<p>The strap &ndash; made of only the finest leather &ndash; is interspersed with metal and comes with a folding clasp to make wearing it easier and more secure.<\/p>\n<p>At the heart of the SYE MOTION watches, we chose to use famously reliable Japanese movements. We offer an automatic movement, powered&nbsp;by the motion of your wrist, and a mechanical-quartz hybrid movement to combine the ultra-precise quartz with the familiar mechanical tick.<\/p>\n<p>Underneath the MOTION watch you will find the Fastback&trade; system, an ingenious mechanism that makes swapping out the strap feel like playing with Meccano.<\/p>",
+          "button_status": true,
+          "button_text": "DISCOVER THE WATCHES",
+          "link_url": "shopify:\/\/products\/kick-automatic"
+        }
+      },
+      "image-text-block-2": {
+        "type": "image-text-block-2",
+        "settings": {
+          "isActive": true,
+          "image": "",
+          "html_area": "",
+          "block_title-1": "<p>TOP-RANGE LEATHER<\/p>",
+          "title-1_size": 3,
+          "title-1-color": "#000000",
+          "block_text-1": "<p>We stopped at nothing to make the best possible straps for SYE MOTION watches.<\/p>\n<p><\/p>\n<p>The straps are made from French calfskin, carefully chosen from a tannery in Alsace. Its quality is unparalleled &ndash; soft, supple, and able to acquire a beautiful patina over time.<\/p>\n<p><\/p>\n<p>This leather is lined with a semi-matte full grain calfskin with our signature color, which matches the back of the watch perfectly.<\/p>",
+          "image-2": "",
+          "html_area2": "<iframe width=\"100%\" height=\"500\" src=\"https:\/\/www.youtube.com\/embed\/YIBqB-N2B38?controls=0&amp;autoplay=1&amp;showinfo=0&amp;iv_load_policy=3\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"><\/iframe>",
+          "block_title-2": "<p>TAILORING ON YOUR WRIST<\/p>",
+          "title-2_size": 3,
+          "title-2-color": "#000000",
+          "block_text-2": "<p>The Fastback&trade; strap is a key part of the watch that required several long months of development to be truly perfected.<\/p>\n<p><\/p>\n<p>Original, with crisp lines and precisely set into the watch, the Fastback&trade; strap is the pi&egrave;ce de r&eacute;sistance that makes the SYE MOTION watch so exclusive.<\/p>\n<p><\/p>\n<p>Our straps are produced by a top-range French producer based in the eastern Doubs region. They are meticulously crafted and checked in order to be precise and supple with high-quality finishes and stitching.<\/p>",
+          "button_status": true,
+          "button_text": "DISCOVER THE STRAPS",
+          "link_url": ""
+        }
+      },
+      "1561041128255": {
+        "type": "map",
+        "settings": {
+          "title": "TOUCH & TRY SYE WATCHES",
+          "address": "<p><strong>Address:<\/strong><br>33 rue Lafayette<br>75009 PARIS<\/p>\n<p><\/p>",
+          "hours": "<p><strong>Opening hours :<\/strong><br>Every friday on appointment<br>10am - 7pm<\/p>",
+          "map_address": "33 rue lafayette",
+          "map_link_label": "BOOK APPOINTMENT",
+          "api_key": "AIzaSyA_2aNX-rD2XyOmW9gmk_BW758apCPdhq0",
+          "zoom": 14,
+          "map_style": "silver",
+          "image": "shopify:\/\/shop_images\/map.jpg"
+        }
+      },
+      "1561043424893": {
+        "type": "background-video",
+        "settings": {
+          "isActive": true,
+          "section_size": "large",
+          "video_url": "https:\/\/youtu.be\/z3vQhqLBkSU"
+        }
+      },
+      "section-logos": {
+        "type": "section-logos",
+        "blocks": {
+          "1561045864367": {
+            "type": "block",
+            "settings": {
+              "image_logo": "shopify:\/\/shop_images\/wat.jpg",
+              "logo_off": true,
+              "logo_height": 61,
+              "logo_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+              "logo_title": "Jonathon Smith"
+            }
+          },
+          "1561045874332": {
+            "type": "block",
+            "settings": {
+              "image_logo": "shopify:\/\/shop_images\/watch.jpg",
+              "logo_off": false,
+              "logo_height": 80,
+              "logo_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+              "logo_title": "Jonathon Smith"
+            }
+          },
+          "1561045896979": {
+            "type": "block",
+            "settings": {
+              "image_logo": "shopify:\/\/shop_images\/hodinkee.jpg",
+              "logo_off": false,
+              "logo_height": 80,
+              "logo_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+              "logo_title": "Jonathon Smith"
+            }
+          },
+          "1561045948056": {
+            "type": "block",
+            "settings": {
+              "image_logo": "shopify:\/\/shop_images\/watch.jpg",
+              "logo_off": false,
+              "logo_height": 80,
+              "logo_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+              "logo_title": "Jonathon Smith"
+            }
+          }
+        },
+        "block_order": [
+          "1561045864367",
+          "1561045874332",
+          "1561045896979",
+          "1561045948056"
+        ],
+        "settings": {
+          "isActive": false
+        }
+      },
+      "1561046809689": {
+        "type": "section-logos",
+        "disabled": true,
+        "blocks": {
+          "1561046809689-0": {
+            "type": "block",
+            "settings": {
+              "image_logo": "shopify:\/\/shop_images\/hodinkee.jpg",
+              "logo_off": false,
+              "logo_height": 80,
+              "logo_text": "NY, 18 Sep 2019",
+              "logo_title": "Jonathon Smith"
+            }
+          },
+          "1561046809689-1": {
+            "type": "block",
+            "settings": {
+              "image_logo": "shopify:\/\/shop_images\/wat.jpg",
+              "logo_off": false,
+              "logo_height": 80,
+              "logo_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+              "logo_title": "Jonathon Smith"
+            }
+          },
+          "1561046809689-2": {
+            "type": "block",
+            "settings": {
+              "image_logo": "shopify:\/\/shop_images\/watch.jpg",
+              "logo_off": false,
+              "logo_height": 80,
+              "logo_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+              "logo_title": "Jonathon Smith"
+            }
+          },
+          "1561046953380": {
+            "type": "block",
+            "settings": {
+              "image_logo": "shopify:\/\/shop_images\/hodinkee.jpg",
+              "logo_off": false,
+              "logo_height": 80,
+              "logo_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+              "logo_title": "Jonathon Smith"
+            }
+          },
+          "1561046987084": {
+            "type": "block",
+            "settings": {
+              "image_logo": "shopify:\/\/shop_images\/wat.jpg",
+              "logo_off": false,
+              "logo_height": 80,
+              "logo_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+              "logo_title": "Jonathon Smith"
+            }
+          },
+          "1561047005021": {
+            "type": "block",
+            "settings": {
+              "image_logo": "shopify:\/\/shop_images\/watch.jpg",
+              "logo_off": false,
+              "logo_height": 80,
+              "logo_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+              "logo_title": "Jonathon Smith"
+            }
+          }
+        },
+        "block_order": [
+          "1561046809689-0",
+          "1561046809689-1",
+          "1561046809689-2",
+          "1561046953380",
+          "1561046987084",
+          "1561047005021"
+        ],
+        "settings": {
+          "isActive": true
+        }
+      },
+      "1561048304444": {
+        "type": "testimonials",
+        "disabled": true,
+        "blocks": {
+          "1561048304444-0": {
+            "type": "testimonial",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/hodinkee.jpg",
+              "quote": "<p>Share what your customers are saying about your products, your company...<\/p>"
+            }
+          },
+          "1561048304444-1": {
+            "type": "testimonial",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/wat.jpg",
+              "quote": "<p>Share what your customers are saying about your products, your company...<\/p>"
+            }
+          },
+          "1561048304444-2": {
+            "type": "testimonial",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/watch.jpg",
+              "quote": "<p>Share what your customers are saying about your products, your company...<\/p>"
+            }
+          },
+          "1561048353025": {
+            "type": "testimonial",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/hodinkee.jpg",
+              "quote": "<p>Lorem ipsum<\/p>"
+            }
+          },
+          "1561048361500": {
+            "type": "testimonial",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/wat.jpg",
+              "quote": "<p>Share what your customers are saying about your products, your company...<\/p>"
+            }
+          },
+          "1561048372110": {
+            "type": "testimonial",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/watch.jpg",
+              "quote": "<p>Share what your customers are saying about your products, your company...<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1561048304444-0",
+          "1561048304444-1",
+          "1561048304444-2",
+          "1561048353025",
+          "1561048361500",
+          "1561048372110"
+        ],
+        "settings": {
+          "autoplay": true,
+          "cycle_speed": 4,
+          "background": "#ffffff",
+          "text_color": "#1c1b1b"
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "show_rss": true,
+          "show_tags": true,
+          "show_featured_article": true,
+          "show_category": false
+        }
+      },
+      "shop-now": {
+        "type": "shop-now",
+        "settings": {
+          "show_section": true,
+          "title": "DISCOVER SYE MOT1ON",
+          "collection": "sye-mot1on-line-up",
+          "grid_items_count": 3,
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false
+        }
+      },
+      "slideshow-3": {
+        "type": "slideshow-3",
+        "blocks": {
+          "1561051163720": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "mobile_image": "",
+              "apply_overlay": false,
+              "content_position": "middleLeft",
+              "subheading": "",
+              "subtitle-size": 10,
+              "title": "SYE PREMIUM STRAPS",
+              "title-size": 50,
+              "button_1_text": "FIND OUT MORE",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1561051163720"
+        ],
+        "settings": {
+          "isActive": true,
+          "show_fullscreen": true,
+          "show_arrow": false,
+          "autoplay": true,
+          "cycle_speed": 5,
+          "text_color": "#1c1b1b",
+          "button_color": "#ffffff",
+          "button_background": "#1c1b1b"
+        }
+      },
+      "slideshow-4": {
+        "type": "slideshow-4",
+        "blocks": {
+          "1561051038564": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/SYE_MOT1ON__Touch_Try_cover.jpg",
+              "mobile_image": "",
+              "apply_overlay": false,
+              "content_position": "middleCenter",
+              "subheading": "",
+              "subtitle-size": 30,
+              "title": "COME AND TRY SYE WATCHES",
+              "title-size": 50,
+              "button_1_text": "",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1561051038564"
+        ],
+        "settings": {
+          "isActive": false,
+          "show_fullscreen": true,
+          "show_arrow": false,
+          "autoplay": false,
+          "cycle_speed": 5,
+          "text_color": "#ffffff",
+          "button_color": "#363636",
+          "button_background": "#ffffff"
+        }
+      },
+      "map": {
+        "type": "map",
+        "settings": {
+          "title": "VENUE DETAILS",
+          "address": "<p><strong>Address :<br><\/strong>33 rue Lafayette<br>75009 Paris<\/p>\n<p><\/p>\n<p><strong>Accesses<\/strong> : M&eacute;tro 7 : Le Peletier (a few steps away), M&eacute;tro 12 : Notre-Dame-de-Lorette (3 min walk), M&eacute;tro 8\/9 : Richelieu-Drouot (5 min walk)<\/p>",
+          "hours": "<p><strong>Opening hours<\/strong> :<br>Every Friday on appointment<br>10am - 7pm<\/p>",
+          "map_address": "33 rue Lafayette",
+          "map_link_label": "BOOK NOW!",
+          "api_key": "AIzaSyA_2aNX-rD2XyOmW9gmk_BW758apCPdhq0",
+          "zoom": 14,
+          "map_style": "silver",
+          "image": "shopify:\/\/shop_images\/map.jpg"
+        }
+      },
+      "text-image-offset-5": {
+        "type": "text-image-offset-5",
+        "settings": {
+          "block_position": "left",
+          "image_width": "1\/2",
+          "image": "shopify:\/\/shop_images\/SYE_WATCHES_LOUNGE_WEWORK_LAFAYETTE.jpg",
+          "image_mobile": "",
+          "title": "TOUCH & TRY MEETINGS",
+          "font_option": false,
+          "title_position": 0,
+          "title_size": 3,
+          "subtitle": "Exclusive pre-launch fitting sessions.",
+          "font_option_subtitle": true,
+          "subtitle_size": 3,
+          "subtitle_size_mobile": 2,
+          "content": "<p><strong>Welcome&hellip;<\/strong><\/p>\n<p>to our Paris lounge, where you can come and get to know the whole range of SYE watches and straps before the crowds.<\/p>\n<p><\/p>\n<p>Make yourself comfortable, and touch and try out our watches and straps. Slip them onto your wrist and feel everything they have to offer.<\/p>\n<p>This is also the perfect chance to ask us any questions you might have about the watches.<\/p>\n<p>If you're able to come to Paris, make the most of the opportunity and come and discover our products before the crowds!<\/p>\n<p>The lounge is open on Fridays from 10am until 7pm.<\/p>",
+          "text_position": "middle",
+          "text_align": "align-left",
+          "form_status": false,
+          "bg_color": "",
+          "form_size": 50
+        }
+      },
+      "1561053249566": {
+        "type": "text-image-home",
+        "settings": {
+          "block_position": "right",
+          "image_width": "1\/2",
+          "image": "shopify:\/\/shop_images\/SYE_hero_signature_1000px.jpg",
+          "image_mobile": "",
+          "pretitle": "",
+          "font_option_pretitle": false,
+          "pretitle_size": 2,
+          "pretitle_size_mobile": 2,
+          "title": "Start Your Engine",
+          "font_option": true,
+          "title_position": 4,
+          "title_size": 5,
+          "subtitle": "and keep up with the launch!",
+          "font_option_subtitle": true,
+          "subtitle_size": 3,
+          "subtitle_size_mobile": 2,
+          "content": "",
+          "text_position": "middle",
+          "text_align": "align-center",
+          "form_status": true,
+          "bg_color": "#176fb2",
+          "form_size": 80
+        }
+      },
+      "instagram-feed": {
+        "type": "instagram-feed",
+        "settings": {
+          "subheading": "@SYEWATCHES",
+          "title": "Follow us",
+          "access_token": "7464776050.1677ed0.36068160aef14cfc8c93cdfbdafe0f4b",
+          "image_count": 10,
+          "button_text": "Access",
+          "button_url": "https:\/\/www.instagram.com\/syewatches\/"
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "show_article_image": true,
+          "show_date": true,
+          "show_category": false,
+          "show_author": false,
+          "show_share_buttons": false
+        }
+      },
+      "press-form": {
+        "type": "press-form",
+        "blocks": {
+          "1561123075276": {
+            "type": "text",
+            "settings": {
+              "title": "Subject",
+              "use_long_text": false,
+              "is_required": true
+            }
+          }
+        },
+        "block_order": [
+          "1561123075276"
+        ],
+        "settings": {
+          "invert": false,
+          "title": "PRESS ENQUIRIES",
+          "image": "shopify:\/\/shop_images\/SYE_brand_hero_blocks_mobile.jpg"
+        }
+      },
+      "press-posts": {
+        "type": "press-posts",
+        "blocks": {
+          "1581360132355": {
+            "type": "blog",
+            "settings": {
+              "blog": "press-relations"
+            }
+          }
+        },
+        "block_order": [
+          "1581360132355"
+        ],
+        "settings": {
+          "subheading": "",
+          "title": "PRESS RELEASES",
+          "show_category": false,
+          "button_link": "",
+          "button_text": "View all articles"
+        }
+      },
+      "press-media": {
+        "type": "press-media",
+        "blocks": {
+          "1581374752818": {
+            "type": "image",
+            "settings": {
+              "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0096\/7540\/7426\/files\/Fastback_premium_strap_line-up_FR.png?v=1581374917",
+              "image": "shopify:\/\/shop_images\/Fastback_premium_strap_line-up_FR.png"
+            }
+          },
+          "1581375239740": {
+            "type": "image",
+            "settings": {
+              "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0096\/7540\/7426\/files\/SYE_MOT1ON_Fastback.png?v=1581375106",
+              "image": "shopify:\/\/shop_images\/SYE_MOT1ON_Fastback.png"
+            }
+          },
+          "1581375293663": {
+            "type": "image",
+            "settings": {
+              "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0096\/7540\/7426\/files\/Pele_mele_SYE_MOT1ON.jpg?v=1581375284",
+              "image": "shopify:\/\/shop_images\/Pele_mele_SYE_MOT1ON.jpg"
+            }
+          },
+          "1581375329099": {
+            "type": "image",
+            "settings": {
+              "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0096\/7540\/7426\/files\/SYE_MOT1ON_Fastback_system.jpg?v=1581375284",
+              "image": "shopify:\/\/shop_images\/SYE_MOT1ON_Fastback_system.jpg"
+            }
+          },
+          "1581375365130": {
+            "type": "image",
+            "settings": {
+              "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0096\/7540\/7426\/files\/SYE_MOT1ON_Chronograph_attaching_helmet.jpg?v=1581375285",
+              "image": "shopify:\/\/shop_images\/SYE_MOT1ON_Chronograph_attaching_helmet.jpg"
+            }
+          },
+          "1581375376233": {
+            "type": "image",
+            "settings": {
+              "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0096\/7540\/7426\/files\/SYE_MOT1ON_Automatic_drive.jpg?v=1581375285",
+              "image": "shopify:\/\/shop_images\/SYE_MOT1ON_Automatic_drive.jpg"
+            }
+          },
+          "1581375423581": {
+            "type": "image",
+            "settings": {
+              "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0096\/7540\/7426\/files\/SYE_MOT1ON_Automatic_bike.jpg?v=1581375285",
+              "image": "shopify:\/\/shop_images\/SYE_MOT1ON_Automatic_bike.jpg"
+            }
+          },
+          "1581375530535": {
+            "type": "image",
+            "settings": {
+              "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0096\/7540\/7426\/files\/SYE_MOT1ON_Chronograph_gloves.jpg?v=1581375285",
+              "image": "shopify:\/\/shop_images\/SYE_MOT1ON_Chronograph_gloves.jpg"
+            }
+          },
+          "1581375554759": {
+            "type": "image",
+            "settings": {
+              "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0096\/7540\/7426\/files\/SYE_MOT1ON_Automatic_saddle.jpg?v=1581375284",
+              "image": "shopify:\/\/shop_images\/SYE_MOT1ON_Automatic_saddle.jpg"
+            }
+          },
+          "1581375619909": {
+            "type": "image",
+            "settings": {
+              "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0096\/7540\/7426\/files\/SYE_MOT1ON_Automatic_throttle.jpg?v=1581375284",
+              "image": "shopify:\/\/shop_images\/SYE_MOT1ON_Automatic_throttle.jpg"
+            }
+          },
+          "1581375644348": {
+            "type": "image",
+            "settings": {
+              "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0096\/7540\/7426\/files\/SYE_MOT1ON_Automatic_Jaguar.jpg?v=1581375284",
+              "image": "shopify:\/\/shop_images\/SYE_MOT1ON_Automatic_Jaguar.jpg"
+            }
+          },
+          "1581375673826": {
+            "type": "image",
+            "settings": {
+              "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0096\/7540\/7426\/files\/SYE_MOT1ON_Chronograph_holding_helmet.jpg?v=1581375284",
+              "image": "shopify:\/\/shop_images\/SYE_MOT1ON_Chronograph_holding_helmet.jpg"
+            }
+          },
+          "1581375708073": {
+            "type": "image",
+            "settings": {
+              "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0096\/7540\/7426\/files\/SYE_MOT1ON_Chronograph_suit_pocket.jpg?v=1581375284",
+              "image": "shopify:\/\/shop_images\/SYE_MOT1ON_Chronograph_suit_pocket.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1581374752818",
+          "1581375239740",
+          "1581375293663",
+          "1581375329099",
+          "1581375365130",
+          "1581375376233",
+          "1581375423581",
+          "1581375530535",
+          "1581375554759",
+          "1581375619909",
+          "1581375644348",
+          "1581375673826",
+          "1581375708073"
+        ],
+        "settings": {
+          "title": "CONTENT"
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "show_shipping_estimator": false,
+          "shipping_estimator_default_country": "United States"
+        }
+      },
+      "concept-advantages": {
+        "type": "concept-advantages",
+        "blocks": {
+          "1562234543434": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/price-tag.png",
+              "title": "EXCEPTIONAL PRICE",
+              "content": "You can get up to 40% off compared to future public prices. Snap them up fast!",
+              "link": "LEARN MORE",
+              "url": ""
+            }
+          },
+          "1562234649236": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/startup.png",
+              "title": "NUMBERED PRODUCTS",
+              "content": "The first 250 products will come with exclusive numbers. One time only!",
+              "link": "LEARN MORE",
+              "url": ""
+            }
+          },
+          "1562234678301": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/box.png",
+              "title": "COMPLETELY SECURE AND FREE SHIPPING",
+              "content": "We're committed to shipping your watch anywhere in the world* for free or your money back.",
+              "link": "LEARN MORE",
+              "url": ""
+            }
+          }
+        },
+        "block_order": [
+          "1562234543434",
+          "1562234649236",
+          "1562234678301"
+        ],
+        "settings": {
+          "isActive": true,
+          "title": "",
+          "font_option": false,
+          "title_position": 0,
+          "title_size": 5,
+          "subtitle": "",
+          "font_option_subtitle": true,
+          "subtitle_position": 0,
+          "subtitle_size": 3,
+          "description": ""
+        }
+      },
+      "concept-etapes": {
+        "type": "concept-etapes",
+        "blocks": {
+          "1561382262977": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/blueprint.png",
+              "title": "PROTOTYPES",
+              "content": "Our watches are the real deal. Stopping by Paris soon? Come and try one out!",
+              "link": "I book my appointment",
+              "url": "shopify:\/\/pages\/touch-try"
+            }
+          },
+          "1561382315760": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/choices.png",
+              "title": "PRE-ORDER",
+              "content": "You have limited time to make your choice, but so many advantages when you do.",
+              "link": "Keep up with the launch",
+              "url": ""
+            }
+          },
+          "1561382726942": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/manufacture.png",
+              "title": "PRODUCTION",
+              "content": "Ready, set, go! Our workshops are now working hard to produce, assemble and check your watch.",
+              "link": "Follow the blog",
+              "url": "shopify:\/\/blogs\/road-book"
+            }
+          },
+          "1561382904131": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/new-product.png",
+              "title": "SHIPPING",
+              "content": "Free, secure, tracked international shipping – we take care of everything.",
+              "link": "Keep up with the launch",
+              "url": ""
+            }
+          },
+          "1561383133810": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/opinion.png",
+              "title": "YOUR FEEDBACK",
+              "content": "We'll be excited to hear about what you think of your new watch.",
+              "link": "Follow SYE on Instagram",
+              "url": "https:\/\/www.instagram.com\/syewatches\/"
+            }
+          }
+        },
+        "block_order": [
+          "1561382262977",
+          "1561382315760",
+          "1561382726942",
+          "1561382904131",
+          "1561383133810"
+        ],
+        "settings": {
+          "isActive": true,
+          "title": "SYE'S COMMITMENTS",
+          "font_option": false,
+          "title_position": 0,
+          "title_size": 5,
+          "subtitle": "We will constantly keep you informed throughout the development of your watch.",
+          "font_option_subtitle": true,
+          "subtitle_position": 0,
+          "subtitle_size": 3,
+          "subtitle_align": "center"
+        }
+      },
+      "text-image-concept": {
+        "type": "text-image-concept",
+        "settings": {
+          "image_width": "2\/3",
+          "image": "",
+          "image_mobile": "",
+          "font_option": false,
+          "title": "UNE FORTE PERSONNALITE",
+          "title_position": 0,
+          "title_size": 2,
+          "subtitle": "",
+          "subtitle_size": 3,
+          "subtitle_size_mobile": 2,
+          "content": "<p>Apr&egrave;s 2 ans de d&eacute;veloppement, SYE d&eacute;voile ses produits.<\/p>\n<p>Mais ce projet, tr&egrave;s abouti, ne pourra vraiment d&eacute;marrer que gr&acirc;ce &agrave; vous.<\/p>\n<p><\/p>\n<p>Pour donner vie aux premi&egrave;res montres SYE, la marque lance une pr&eacute;-commande&nbsp;et vous avez tout &agrave; y gagner&nbsp;!<\/p>",
+          "text_position": "middle",
+          "text_align": "align-center",
+          "form_status": false,
+          "button_size": "100",
+          "block_position": "left"
+        }
+      },
+      "special-title": {
+        "type": "special-title",
+        "settings": {
+          "isActive": true,
+          "block_size": 50,
+          "title": "IMAGINE",
+          "font_option": false,
+          "title_size": 5,
+          "title_color": "#000000",
+          "subtitle": "... IRRESTIBLE WATCHES",
+          "font_option2": false,
+          "subtitle_size": 3,
+          "subtitle_color": "#000000",
+          "position": "space-around"
+        }
+      },
+      "special-title-2": {
+        "type": "special-title-2",
+        "settings": {
+          "isActive": true,
+          "block_size": 50,
+          "title": "IMAGINE...",
+          "font_option": false,
+          "title_size": 5,
+          "title_color": "#000000",
+          "subtitle": "PREMIUM STRAPS",
+          "font_option2": false,
+          "subtitle_size": 3,
+          "subtitle_color": "#000000",
+          "position": "space-around"
+        }
+      },
+      "slideshow-5": {
+        "type": "slideshow-5",
+        "blocks": {
+          "1563976131656": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "mobile_image": "",
+              "apply_overlay": false,
+              "content_position": "bottomLeft",
+              "subheading": "Change your strap like a charm.",
+              "subtitle-size": 22,
+              "title": "FASTBACK™ SYSTEM",
+              "title-size": 27,
+              "button_1_text": "LEARN MORE",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1563976131656"
+        ],
+        "settings": {
+          "isActive": true,
+          "show_fullscreen": true,
+          "show_arrow": false,
+          "autoplay": true,
+          "cycle_speed": 5,
+          "text_color": "#ffffff",
+          "button_color": "#363636",
+          "button_background": "#ffffff"
+        }
+      },
+      "special-title-3": {
+        "type": "special-title-3",
+        "settings": {
+          "isActive": true,
+          "block_size": 50,
+          "title": "IMAGINE...",
+          "font_option": false,
+          "title_size": 5,
+          "title_color": "#333333",
+          "subtitle": "AN INGENIOUS SYSTEM TO JOIN THEM",
+          "font_option2": false,
+          "subtitle_size": 3,
+          "subtitle_color": "#333333",
+          "position": "space-around"
+        }
+      },
+      "technical-specifications": {
+        "type": "technical-specifications",
+        "blocks": {
+          "1562158790894": {
+            "type": "text",
+            "settings": {
+              "title": "CASE",
+              "text": "<p><strong>Material<\/strong> : Stainless steel 316L<\/p>\n<p><strong>Crystal<\/strong> : Scratch-resistant &amp; anti-reflects sapphire<\/p>\n<p><strong>Caseback<\/strong> : Fastback&trade; system<\/p>\n<p><strong>Water Resistance<\/strong> : 5 ATM (50m)<\/p>",
+              "text_position": "left",
+              "block_position": "left"
+            }
+          },
+          "1562160707796": {
+            "type": "text",
+            "settings": {
+              "title": "DIAL",
+              "text": "<p><strong>Color<\/strong> : Silver or Dark Grey dial<\/p>\n<p><strong>Functions<\/strong> : Hours, Minutes, Seconds, Date, 24h hours sub-dial<\/p>\n<p><strong>Hands<\/strong> : Diamond hands with SuperLuminova&reg;<\/p>",
+              "text_position": "left",
+              "block_position": "center"
+            }
+          },
+          "1562161079689": {
+            "type": "text",
+            "settings": {
+              "title": "MOUVEMENT",
+              "text": "<p><strong>Type<\/strong> : Automatic mechanical movement<\/p>\n<p>Miyota 8217 (21 jewels)<\/p>\n<p><strong>Power reserve<\/strong>&nbsp;: &gt; 42 hours<\/p>\n<p><strong>Frequency<\/strong> : 21 600&nbsp;vibrations \/ hour (3Hz)<\/p>\n<p><\/p>",
+              "text_position": "left",
+              "block_position": "right"
+            }
+          },
+          "1562161111764": {
+            "type": "text",
+            "settings": {
+              "title": "DIMENSIONS",
+              "text": "<p><strong>Diameter<\/strong> : 41,5mm<\/p>\n<p><strong>Width<\/strong> (incl. crown) : 43,5mm&nbsp;<\/p>\n<p><strong>Thickness<\/strong> : 13 mm<\/p>\n<p><strong>Weight<\/strong> : 93g (3,28 oz) approx.<\/p>\n<p><\/p>",
+              "text_position": "left",
+              "block_position": "left"
+            }
+          },
+          "1562161137318": {
+            "type": "text",
+            "settings": {
+              "title": "STRAP",
+              "text": "<p><strong>Material<\/strong> : French calfskin leather<\/p>\n<p><strong>Color<\/strong> : Cognac<\/p>\n<p><strong>Lining<\/strong> : SYE blue signature&nbsp;full gran leather<\/p>\n<p><strong>Stitching<\/strong> : contrasting sand stitches<\/p>\n<p><strong>Buckle<\/strong> : Brushed stainless steel deployment buckle<\/p>\n<p><strong>Width<\/strong> (top&nbsp;\/ buckle) : 20 \/ 18 cm<\/p>\n<p><strong>Length<\/strong>&nbsp;: 110 x 70 mm<br>Perfectly fits wrists from 14 to 24cm (5,51 to 9,45\").<\/p>",
+              "text_position": "left",
+              "block_position": "center"
+            }
+          },
+          "1563195967655": {
+            "type": "text",
+            "settings": {
+              "title": "EXTRAS",
+              "text": "<p><strong>Content of the&nbsp;box<\/strong> : SYE watch + premium Fastback&trade; strap + deployment buckle + Fastback&trade; screwdriver<\/p>\n<p><strong>Warranty<\/strong> : 2 years<\/p>\n<p><strong>Special<\/strong> : Exclusive pre-order limited edition (250 numbered watches)<\/p>\n<p>&nbsp;<\/p>",
+              "text_position": "left",
+              "block_position": "right"
+            }
+          }
+        },
+        "block_order": [
+          "1562158790894",
+          "1562160707796",
+          "1562161079689",
+          "1562161111764",
+          "1562161137318",
+          "1563195967655"
+        ],
+        "settings": {
+          "isActive": true,
+          "title": "TECHNICAL SPECIFICATIONS"
+        }
+      },
+      "concept-advantages-2": {
+        "type": "concept-advantages-2",
+        "settings": {
+          "isActive": true,
+          "title": "kick automatic",
+          "font_option": false,
+          "title_position": 0,
+          "title_size": 2,
+          "subtitle": "precision technology",
+          "font_option_subtitle": false,
+          "subtitle_position": 0,
+          "subtitle_size": 2
+        }
+      },
+      "slideshow-6": {
+        "type": "slideshow-6",
+        "blocks": {
+          "1562236277147": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "mobile_image": "",
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "",
+              "subtitle-size": 10,
+              "title": "SYE MOT1ON Automatic TWENTY FOUR",
+              "title-size": 42,
+              "button_1_text": "",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          },
+          "1563549963273": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "mobile_image": "",
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "RELIABLE ENGINE",
+              "subtitle-size": 10,
+              "title": "21 jewels to move your DAY",
+              "title-size": 10,
+              "button_1_text": "",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          },
+          "1563550042460": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "mobile_image": "",
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "Move ahead in style",
+              "subtitle-size": 10,
+              "title": "Start your engine",
+              "title-size": 10,
+              "button_1_text": "",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          },
+          "1563974085699": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "mobile_image": "",
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "",
+              "subtitle-size": 10,
+              "title": "FASTBACK™ SYSTEM",
+              "title-size": 30,
+              "button_1_text": "",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1562236277147",
+          "1563549963273",
+          "1563550042460",
+          "1563974085699"
+        ],
+        "settings": {
+          "isActive": false,
+          "show_fullscreen": true,
+          "show_arrow": true,
+          "autoplay": true,
+          "cycle_speed": 3,
+          "text_color": "#ffffff",
+          "button_color": "#ffffff",
+          "button_background": "#6a6a6a"
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "collections_to_show": "all",
+          "image_size": "normal",
+          "add_spacing": true,
+          "expand_collection": false,
+          "apply_overlay": true,
+          "text_color": "#ffffff",
+          "button_color": "#363636"
+        }
+      },
+      "product-description": {
+        "type": "product-description",
+        "blocks": {
+          "1562318649985": {
+            "type": "text",
+            "settings": {
+              "title": "CASE",
+              "text": "<p>&nbsp;Material&nbsp;Acier 316L&nbsp;Diameter&nbsp;40,5mm<\/p>\n<p>&nbsp;Dimensions&nbsp;(width x height x&nbsp; &nbsp;thickness) mm<\/p>\n<p>&nbsp;43,5 x 37 x 13&nbsp;Glass&nbsp;Saphir, traitement anti-reflet&nbsp;Bezel&nbsp;lisse&nbsp;<\/p>\n<p>Water Resistance&nbsp;5 ATM<\/p>",
+              "block_position": "left"
+            }
+          },
+          "1562318734970": {
+            "type": "text",
+            "settings": {
+              "title": "MOUVEMENT",
+              "text": "<p>Technology&nbsp;M&eacute;ca-Quartz&nbsp;<\/p>\n<p>Brand&nbsp;Seiko \/ TMI<\/p>\n<p>Model&nbsp;VK64&nbsp;<\/p>\n<p>Frequency&nbsp;32 Hz<\/p>",
+              "block_position": "right"
+            }
+          }
+        },
+        "block_order": [
+          "1562318649985",
+          "1562318734970"
+        ],
+        "settings": {
+          "isActive": true,
+          "title": "product description"
+        }
+      },
+      "text-with-image-2": {
+        "type": "text-with-image-2",
+        "settings": {
+          "isActive": true,
+          "subheading": "",
+          "title": "A STRONG PERSONALITY",
+          "image": "",
+          "image_position": "left",
+          "content": "<p><span style=\"text-decoration: none;\">Our desire to design an exclusive watch led to the birth of MOT1ON.<br><\/span><span style=\"text-decoration: none;\">MOTION Automatic 24 combines a top-range leather strap with a modern steel body in an innovative, eye-catching design.<br><\/span><span style=\"text-decoration: none;\">Its rich personality brings Sports Tailoring your wrist; it's as dynamic as it is classy, as elegant as it is athletic, and it will hug your wrist all day long without a single misstep.<br><\/span><span style=\"text-decoration: none;\">If you want to change up your style, be our guest! Through its Fastback&trade; system and our range of premium straps, swapping out the strap <\/span><span style=\"text-decoration: none;\">is<\/span><span style=\"text-decoration: none;\"> so simple.<\/span><\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "text-with-image-3": {
+        "type": "text-with-image-3",
+        "settings": {
+          "isActive": true,
+          "subheading": "",
+          "title": "WELL CRAFTED",
+          "image": "",
+          "image_position": "right",
+          "content": "<p>We cut no corners with MOT1ON &ndash; it is simply the best.<br>We started with a solid 316L stainless steel body with an impeccable finish, carefully balancing between brushed steel around the body, polished steel for the bezel and a sophisticated bead-blasted finish on the back... not to mention the anodized screw in the middle for an unexpected touch of colour.<br>The dial is protected by a scratch-resistant sapphire crystal with an anti-reflective coating. This means you have nothing worry about when admiring the many details of the elegant dial.<br>The same principle was applied to the strap &ndash; no corners cut, simply the best.<br>We selected high-end leathers from famous French and European tanneries, and the straps are crafted with the utmost care by our French partner which carries the <em>Entreprise du patrimoine vivant<\/em> label, awarded to businesses demonstrating excellence and traditional savoir-faire.<br>The folding clasp holds MOT1ON on your wrist and makes wearing it easier and more secure.<\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "text-with-image-4": {
+        "type": "text-with-image-4",
+        "settings": {
+          "isActive": false,
+          "subheading": "",
+          "title": "PERFECT FOR GEARHEADS",
+          "image": "",
+          "image_position": "left",
+          "content": "<p>The mood is immediately set with etched lines like an engine block.<br>At the heart of your SYE MOT1ON Automatic 24, we chose to use the reliable Miyota Japanese watch movement, which beats 21,600 times per hour (3 Hz). This mechanical watch movement is automatically powered via the motion of your wrist and will reserve its power for over 42 hours off your wrist.<br>Underneath the MOTION watch you will find the Fastback&trade; system, which is an ingenious mechanism allowing you to swap out straps with ease. With a few simple twists of a screwdriver, you can remove the back, change the strap, and you're good to go!<br>There's no doubt that MOTION watches will bring out your inner mechanic.<\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "product-template-chrono": {
+        "type": "product-template-chrono",
+        "settings": {
+          "show_share_buttons": true,
+          "show_vendor": false,
+          "show_sku": false,
+          "description_below_add_to_cart": false,
+          "selector_mode": "block",
+          "show_color_swatch": false,
+          "show_color_carousel": false,
+          "show_quantity_selector": false,
+          "show_inventory_quantity": false,
+          "inventory_quantity_threshold": 0,
+          "show_price_in_button": false,
+          "show_payment_button": true,
+          "image_size": "large",
+          "stack_images": false,
+          "show_thumbnails": true,
+          "enable_image_zoom": true,
+          "tab_page_1_handle": "",
+          "tab_page_2_handle": "",
+          "reviews_enabled": false,
+          "featured_image_size": "large",
+          "preorder_text-1": "PRE-ORDER PRICE",
+          "preorder_text-2": "NORMAL RECOMMENDED PRICE"
+        }
+      },
+      "product-description-chrono": {
+        "type": "product-description-chrono",
+        "settings": {
+          "isActive": true,
+          "title": "BE THE FIRST TO GET YOUR SYE MOT1ON!"
+        }
+      },
+      "text-with-image-chrono-1": {
+        "type": "text-with-image-chrono-1",
+        "settings": {
+          "isActive": true,
+          "subheading": "Exclusive design with",
+          "title": "A STRONG PERSONALITY",
+          "image": "shopify:\/\/shop_images\/SYE_MOT1ON_Chronograph_Hero_3x_0fb1a925-58f8-4db2-95ac-2954cf2cfda8.jpg",
+          "image_position": "left",
+          "content": "<p><span style=\"text-decoration: none;\">Our desire to design an exclusive watch led to the birth of MOT1ON.<br><\/span><\/p>\n<p><span style=\"text-decoration: none;\">MOTION&nbsp;Chronograph combines a top-range leather strap with a modern steel body in an innovative, eye-catching design.<br><\/span><\/p>\n<p><span style=\"text-decoration: none;\">Its rich personality brings Sports Tailoring your wrist; it's as dynamic as it is classy, as elegant as it is athletic, and it will hug your wrist all day long without a single misstep.<\/span><\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "text-with-image-chrono-2": {
+        "type": "text-with-image-chrono-2",
+        "settings": {
+          "isActive": true,
+          "subheading": "Splendid from every angle",
+          "title": "WELL SCULPTED",
+          "image": "shopify:\/\/shop_images\/SYE_MOT1ON_Blueprints_mobile_block.jpg",
+          "image_position": "right",
+          "content": "<p>We cut no corners with MOT1ON &ndash; it is simply the best.<\/p>\n<p>MOT1ON boasts a solid stainless steel 316L body made up of five mechanical components to fill it with sophistication and character.<\/p>\n<p>Its&nbsp;impeccable finish is carefully balancing between brushed steel around the body, polished steel for the bezel and a sophisticated bead-blasted finish on the back... not to mention the anodized screw in the middle for an unexpected touch of colour.<\/p>\n<p>The dial is protected by scratch-resistant sapphire crystal with an anti-reflective coating. This means you have nothing worry about when admiring the many details of the elegant dial.<\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "text-with-image-chrono-3": {
+        "type": "text-with-image-chrono-3",
+        "settings": {
+          "isActive": true,
+          "subheading": "Mechanical spirit in every way",
+          "title": "PERFECT FOR GEARHEADS",
+          "image": "shopify:\/\/shop_images\/SYE_Fastback_packshot_blocks_mobile.jpg",
+          "image_position": "left",
+          "content": "<p>The mood is immediately set with etched lines like an engine block.<\/p>\n<p>At the heart of your SYE MOT1ON Chronograph,&nbsp;we selected a mechanical-quartz hybrid movement from the Japanese brand Seiko TMI, renowned for its reliability and amazing precision with a frequency of 32 Hz. This unique watch movement combines precise quartz with the familiar mechanical tick. As for its lifespan, you should only need to replace the battery every three years.<\/p>\n<p>Underneath the MOT1ON watch you will find the Fastback&trade; system, which is an ingenious mechanism allowing you to swap out straps with ease. With a few simple twists of a screwdriver, you can remove the back, change the strap, and you're good to go!<br>There's no doubt that MOT1ON watches will bring out your inner mechanic.<\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "concept-advantages-chrono": {
+        "type": "concept-advantages-chrono",
+        "settings": {
+          "isActive": false,
+          "title": "",
+          "font_option": false,
+          "title_position": 0,
+          "title_size": 4,
+          "subtitle": "",
+          "font_option_subtitle": false,
+          "subtitle_position": 0,
+          "subtitle_size": 2
+        }
+      },
+      "slideshow-chrono": {
+        "type": "slideshow-chrono",
+        "blocks": {
+          "1564157668288": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "mobile_image": "",
+              "apply_overlay": true,
+              "content_position": "bottomLeft",
+              "subheading": "Slide title",
+              "subtitle-size": 25,
+              "title": "Tell your story",
+              "title-size": 50,
+              "button_1_text": "",
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1564157668288"
+        ],
+        "settings": {
+          "isActive": false,
+          "show_fullscreen": true,
+          "show_arrow": false,
+          "autoplay": true,
+          "cycle_speed": 5,
+          "text_color": "#ffffff",
+          "button_color": "#363636",
+          "button_background": "#ffffff"
+        }
+      },
+      "technical-specifications-chrono": {
+        "type": "technical-specifications-chrono",
+        "blocks": {
+          "1562343213386": {
+            "type": "text",
+            "settings": {
+              "title": "CASE",
+              "text": "<p><strong>Material:<\/strong> stainless steel 316L<\/p>\n<p><strong>Construction:<\/strong> 5-part case construction<\/p>\n<p><strong>Crystal:<\/strong>&nbsp;scratch-resistant &amp; AR coated sapphire<\/p>\n<p><strong>Caseback:<\/strong> Fastback&trade; system<\/p>\n<p><strong>Water resistance:<\/strong>&nbsp;50M (5 ATM)<\/p>",
+              "block_position": "left"
+            }
+          },
+          "1562343334870": {
+            "type": "text",
+            "settings": {
+              "title": "DIAL",
+              "text": "<p><strong>Colors:<\/strong> Silver or Smoky grey brushed steel dial<\/p>\n<p><strong>Functions:<\/strong>&nbsp;hour, minute, date, central 1\/5s chrono, 60 minutes &amp; 24h hours sub-dials&nbsp;<\/p>\n<p><strong>Hands<\/strong>&nbsp;: diamond shape with SuperLuminova&reg; coating<\/p>",
+              "block_position": "center"
+            }
+          },
+          "1562343354759": {
+            "type": "text",
+            "settings": {
+              "title": "MOVEMENT",
+              "text": "<p><strong>Type:<\/strong>&nbsp;mechanical-quartz movement<\/p>\n<p><strong>Caliber:<\/strong> Seiko \/ TMI VK64<\/p>\n<p><strong>Frequency:<\/strong> 32 Hz<\/p>\n<p><strong>Power reserve:<\/strong>&nbsp;3 years (approx. battery life)<\/p>",
+              "block_position": "right"
+            }
+          },
+          "1562343282468": {
+            "type": "text",
+            "settings": {
+              "title": "DIMENSIONS",
+              "text": "<p><strong>Diameter:<\/strong> 40,5mm<\/p>\n<p><strong>Width&nbsp;(incl. crown):<\/strong> 43,5mm&nbsp;<\/p>\n<p><strong>Thickness<\/strong><strong>:<\/strong> 13,4 mm<\/p>\n<p><strong>Weight<\/strong>&nbsp;: 100g (3,53 oz) approx.<\/p>",
+              "block_position": "left"
+            }
+          },
+          "1562343342969": {
+            "type": "text",
+            "settings": {
+              "title": "STRAP",
+              "text": "<p>Fastback&trade; Premium strap among 10 variations<\/p>\n<p><strong>Lining<\/strong><strong>:<\/strong>&nbsp;full grain Italian&nbsp;calf in SYE blue<\/p>\n<p><strong>Stitching:<\/strong> contrasting stitches<\/p>\n<p><strong>Buckle:<\/strong>&nbsp;brushed stainless steel deployment buckle<\/p>\n<p><strong>Length<\/strong>: 120\/80mm (long\/short strap)<\/p>",
+              "block_position": "center"
+            }
+          },
+          "1567068873754": {
+            "type": "text",
+            "settings": {
+              "title": "EXTRAS",
+              "text": "<p><strong>Content of the&nbsp;box:<\/strong> SYE&nbsp;MOT1ON Chronograph watch + premium Fastback&trade; strap + deployment buckle + Fastback&trade;&nbsp;tool<\/p>\n<p><strong>Warranty:<\/strong>&nbsp;2 years<\/p>\n<p><strong>Special<\/strong>: exclusive numbered pre-order limited to 500 units<\/p>",
+              "block_position": "right"
+            }
+          }
+        },
+        "block_order": [
+          "1562343213386",
+          "1562343334870",
+          "1562343354759",
+          "1562343282468",
+          "1562343342969",
+          "1567068873754"
+        ],
+        "settings": {
+          "isActive": true,
+          "title": "TECHNICAL SPECIFICATIONS"
+        }
+      },
+      "gallery": {
+        "type": "gallery",
+        "settings": {
+          "subheading": "",
+          "title": "",
+          "button_text": "",
+          "button_url": ""
+        }
+      },
+      "page-contact-template": {
+        "type": "page-contact-template",
+        "blocks": {
+          "page-contact-template-0": {
+            "type": "text",
+            "settings": {
+              "title": "Your phone (optional)",
+              "use_long_text": false,
+              "is_required": false
+            }
+          }
+        },
+        "block_order": [
+          "page-contact-template-0"
+        ],
+        "settings": {
+        }
+      },
+      "page-faq-template": {
+        "type": "page-faq-template",
+        "blocks": {
+          "page-faq-template-0": {
+            "type": "separator",
+            "settings": {
+              "title": "Shipping"
+            }
+          },
+          "page-faq-template-1": {
+            "type": "question",
+            "settings": {
+              "title": "Do you ship overseas?",
+              "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"
+            }
+          },
+          "page-faq-template-2": {
+            "type": "question",
+            "settings": {
+              "title": "How long will it take to get my order?",
+              "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
+            }
+          },
+          "page-faq-template-3": {
+            "type": "question",
+            "settings": {
+              "title": "What shipping carriers do you use?",
+              "answer": "<p>We use all major carriers, and local courier partners. You’ll be asked to select a delivery method during checkout.<\/p>"
+            }
+          },
+          "page-faq-template-4": {
+            "type": "separator",
+            "settings": {
+              "title": "Product"
+            }
+          },
+          "page-faq-template-5": {
+            "type": "question",
+            "settings": {
+              "title": "Can I return my product?",
+              "answer": "<p>We always aim for make sure our customers love our products, but if you do need to return an order, we’re happy to help. Just email us directly and we’ll take you through the process.<\/p>"
+            }
+          },
+          "page-faq-template-6": {
+            "type": "question",
+            "settings": {
+              "title": "Can I get my product personalized?",
+              "answer": "<p>It depends on the creator and the product. All options are outlined on the product page, so look out for customization options there.<\/p>"
+            }
+          },
+          "page-faq-template-7": {
+            "type": "separator",
+            "settings": {
+              "title": "Other"
+            }
+          },
+          "page-faq-template-8": {
+            "type": "question",
+            "settings": {
+              "title": "Any question?",
+              "answer": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "page-faq-template-0",
+          "page-faq-template-1",
+          "page-faq-template-2",
+          "page-faq-template-3",
+          "page-faq-template-4",
+          "page-faq-template-5",
+          "page-faq-template-6",
+          "page-faq-template-7",
+          "page-faq-template-8"
+        ],
+        "settings": {
+        }
+      },
+      "parallax": {
+        "type": "parallax",
+        "blocks": {
+          "1563367056315": {
+            "type": "block_type",
+            "settings": {
+              "title": "START",
+              "title_size": 4,
+              "title_size_mobile": 3,
+              "subtitle": "YOUR ENGINE",
+              "subtitle_size": 3,
+              "subtitle_size_mobile": 2,
+              "text": "",
+              "image": "",
+              "text_align": "left",
+              "color": "rgba(0,0,0,0)",
+              "display_background": true,
+              "position_mobile": "center",
+              "image_mobile": ""
+            }
+          },
+          "1564961004957": {
+            "type": "separator",
+            "settings": {
+              "display_mobile": true,
+              "bg_color": "#b9b9b9",
+              "title": "",
+              "title_size": 3,
+              "title_size_mobile": 3,
+              "title_special_font": false,
+              "subtitle": "",
+              "subtitle_size": 2,
+              "subtitle_size_mobile": 2,
+              "subtitle_special_font": false,
+              "text": "<p>How did you feel the first time you saw the smooth curves of a classy car, heard the musical growl of a twin engine, glimpsed a flash of gleaming chrome or felt the sensual touch of an aged leather seat?<\/p>\n<p>These are the feelings that drive us and that led to the creation of SYE!<\/p>\n<p>In our quest for a perfect moment, they inspired us look at materials, savoir-faire and 20th century design principles from a new angle in an unashamedly modern watch.<\/p>",
+              "text_align": "left"
+            }
+          },
+          "1563367085107": {
+            "type": "block_type",
+            "settings": {
+              "title": "INVENTING",
+              "title_size": 4,
+              "title_size_mobile": 3,
+              "subtitle": "A NEW TYPE OF ELEGANCE",
+              "subtitle_size": 3,
+              "subtitle_size_mobile": 2,
+              "text": "",
+              "image": "",
+              "text_align": "left",
+              "color": "#ffffff",
+              "display_background": true,
+              "position_mobile": "right",
+              "image_mobile": ""
+            }
+          },
+          "1566997818368": {
+            "type": "separator",
+            "settings": {
+              "display_mobile": true,
+              "bg_color": "#b9b9b9",
+              "title": "",
+              "title_size": 3,
+              "title_size_mobile": 3,
+              "title_special_font": false,
+              "subtitle": "",
+              "subtitle_size": 2,
+              "subtitle_size_mobile": 2,
+              "subtitle_special_font": false,
+              "text": "<p>Non-conformist, self-assured, distinguished &ndash; SYE brings the concept of Sports Tailoring to your wrist through a perfect marriage of rigorous yet relaxed, demanding yet free.<\/p>\n<p>Wearing a SYE watch means proclaiming your attachment to a different kind of watch and putting your strong style and bold mindset on display.<\/p>",
+              "text_align": "left"
+            }
+          },
+          "1563367104197": {
+            "type": "block_type",
+            "settings": {
+              "title": "CREATING",
+              "title_size": 4,
+              "title_size_mobile": 3,
+              "subtitle": "THRILLS",
+              "subtitle_size": 3,
+              "subtitle_size_mobile": 2,
+              "text": "",
+              "image": "",
+              "text_align": "left",
+              "color": "#ffffff",
+              "display_background": true,
+              "position_mobile": "center",
+              "image_mobile": ""
+            }
+          },
+          "1566997828480": {
+            "type": "separator",
+            "settings": {
+              "display_mobile": true,
+              "bg_color": "#b9b9b9",
+              "title": "",
+              "title_size": 3,
+              "title_size_mobile": 3,
+              "title_special_font": false,
+              "subtitle": "",
+              "subtitle_size": 2,
+              "subtitle_size_mobile": 2,
+              "subtitle_special_font": false,
+              "text": "<p>Get on board, take the plunge and let your senses take off!<\/p>\n<p>We cut no corners in our watches, using only the finest materials, an impeccable finish, exclusive styles and exciting designs...<\/p>\n<p>So many reasons to get excited and give in to temptation!<\/p>",
+              "text_align": "left"
+            }
+          },
+          "1563367131510": {
+            "type": "block_type",
+            "settings": {
+              "title": "START YOUR ENGINE...",
+              "title_size": 4,
+              "title_size_mobile": 3,
+              "subtitle": "AND HAVE FUN!",
+              "subtitle_size": 3,
+              "subtitle_size_mobile": 2,
+              "text": "",
+              "image": "",
+              "text_align": "right",
+              "color": "transparent",
+              "display_background": true,
+              "position_mobile": "center",
+              "image_mobile": ""
+            }
+          },
+          "1567001757059": {
+            "type": "separator",
+            "settings": {
+              "display_mobile": true,
+              "bg_color": "#b9b9b9",
+              "title": "",
+              "title_size": 3,
+              "title_size_mobile": 3,
+              "title_special_font": false,
+              "subtitle": "",
+              "subtitle_size": 2,
+              "subtitle_size_mobile": 2,
+              "subtitle_special_font": false,
+              "text": "<p>An unadultered good time.<\/p>\n<p>Get ready for an exclusive experience.<\/p>\n<p>We promise you'll love it!<\/p>",
+              "text_align": "left"
+            }
+          }
+        },
+        "block_order": [
+          "1563367056315",
+          "1564961004957",
+          "1563367085107",
+          "1566997818368",
+          "1563367104197",
+          "1566997828480",
+          "1563367131510",
+          "1567001757059"
+        ],
+        "settings": {
+          "isActive": true
+        }
+      },
+      "1563381536498": {
+        "type": "featured-collections",
+        "disabled": true,
+        "blocks": {
+          "1563381536498-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "",
+              "title": "",
+              "grid_items_count": 2,
+              "button_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "1563381536498-0"
+        ],
+        "settings": {
+          "title": "",
+          "layout_mode": "grid",
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false,
+          "grid_mobile_items_per_row": "2",
+          "grid_desktop_items_per_row": 3
+        }
+      },
+      "text-with-image-chrono-4": {
+        "type": "text-with-image-chrono-4",
+        "settings": {
+          "isActive": true,
+          "subheading": "Maybe the most sophisticated strap in the world",
+          "title": "PREMIUM FASTBACK™ STRAP",
+          "image": "shopify:\/\/shop_images\/SYE_Fastback_straps_blocks_mobile.jpg",
+          "image_position": "right",
+          "content": "<p>Taking its name from the dynamic shape of renowned carriages, the premium Fastback&trade; range that adorns each SYE MOT1ON watch is made primarily of French calfskin. Carefully chosen from a tannery in Alsace, it has unparalleled quality: soft, supple and able to acquire a beautiful patina over time.<\/p>\n<p>Our esteemed French producer carries the '<em>Entreprise du patrimoine vivant'<\/em>&nbsp;label and meticulously crafts the straps with a high-quality finish to ensure they fit your wrist perfectly.<br>We have taken every step to make sure your strap stays with you as long as possible - metal inserts seamlessly incorporated into the leather increase longevity and perfectly sync with the watch body. A folding deployment buckle maintains your strap&rsquo;s shape and protects it from marks.<\/p>\n<p>The premium Fastback&trade; straps create an unmatched tailored style in a wide choice of 10&nbsp;colors and leather finishes to ensure your watch is personalized just for you<\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "product-template-fastback": {
+        "type": "product-template-fastback",
+        "settings": {
+          "show_share_buttons": true,
+          "show_vendor": false,
+          "show_sku": false,
+          "description_below_add_to_cart": false,
+          "selector_mode": "block",
+          "show_color_swatch": false,
+          "show_color_carousel": false,
+          "show_quantity_selector": true,
+          "show_inventory_quantity": false,
+          "inventory_quantity_threshold": 0,
+          "show_price_in_button": false,
+          "show_payment_button": true,
+          "image_size": "fill",
+          "stack_images": false,
+          "show_thumbnails": true,
+          "enable_image_zoom": false,
+          "tab_page_1_handle": "",
+          "tab_page_2_handle": "",
+          "reviews_enabled": false,
+          "featured_image_size": "large"
+        }
+      },
+      "product-description-fastback": {
+        "type": "product-description-fastback",
+        "settings": {
+          "isActive": true,
+          "title": "BE THE FIRST TO WEAR A SYE MOT1ON WATCH!"
+        }
+      },
+      "text-with-image-fastback-1": {
+        "type": "text-with-image-fastback-1",
+        "settings": {
+          "isActive": true,
+          "subheading": "",
+          "title": "BEAUTIFUL, HIGH-END LEATHER",
+          "image": "shopify:\/\/shop_images\/SYE_Fastback_straps_blocks_mobile.jpg",
+          "image_position": "right",
+          "content": "<p>We cut no corners when creating the Fastback&trade; straps for SYE MOT1ON watches &ndash; they are simply the best.<\/p>\n<p>The straps are made primarly from French calfskin of unparalleled quality, carefully chosen from a tannery in Alsace. The end result is a soft, supple leather able to acquire a beautiful patina over time.<\/p>\n<p>The leather is lined with a semi-matte calfskin with our signature color, which matches the back of the watch perfectly.<\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "text-with-image-fastback-2": {
+        "type": "text-with-image-fastback-2",
+        "settings": {
+          "isActive": true,
+          "subheading": "",
+          "title": "BEAUTIFUL STRAP WITH A LONG LIFE",
+          "image": "shopify:\/\/shop_images\/SYE_MOT1ON_Fastback_strap_durability.jpg",
+          "image_position": "left",
+          "content": "<p>We have taken every step to make sure your&nbsp;Fastback&trade; strap stays with you as long as possible.Metal inserts are seamlessly incorporated into the leather to increase the longevity and perfectly sync with the watch case.<\/p>\n<p>The quick change strip integrated helps you swap out your deployment buckle without any tool and move it to another Fastback&trade; strap.<\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "text-with-image-fastback-3": {
+        "type": "text-with-image-fastback-3",
+        "settings": {
+          "isActive": true,
+          "subheading": "",
+          "title": "SPORT TAILORING ON YOUR WRIST",
+          "image": "shopify:\/\/shop_images\/SYE_Fastback_strap_profile_square.jpg",
+          "image_position": "right",
+          "content": "<p>Original, with crisp lines and precisely set into the watch, the Fastback&trade; strap is the pi&egrave;ce de r&eacute;sistance that makes the SYE MOT1ON watch so exclusive.<\/p>\n<p>Our Fastback&trade; straps are produced by a top-range French producer carrying the \"<em>Entreprise du patrimoine vivant\"<\/em>&nbsp;label. They are meticulously crafted with a high-quality finish to ensure they fit your wrist perfectly.<\/p>\n<p><\/p>\n<p>The Fastback&trade; Premium straps create an unmatched tailored style in a wide choice of 10 colors and leather finishes to ensure your watch is personalized for you.<\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "text-with-image-fastback-4": {
+        "type": "text-with-image-fastback-4",
+        "settings": {
+          "isActive": false,
+          "subheading": "Sub-heading",
+          "title": "Title",
+          "image": "",
+          "image_position": "right",
+          "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "concept-advantages-fastback": {
+        "type": "concept-advantages-fastback",
+        "blocks": {
+          "1567014765847": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "title": "",
+              "content": "",
+              "link": "",
+              "url": ""
+            }
+          }
+        },
+        "block_order": [
+          "1567014765847"
+        ],
+        "settings": {
+          "isActive": false,
+          "title": "",
+          "font_option": false,
+          "title_position": 0,
+          "title_size": 4,
+          "subtitle": "",
+          "font_option_subtitle": false,
+          "subtitle_position": 0,
+          "subtitle_size": 2
+        }
+      },
+      "slideshow-fastback": {
+        "type": "slideshow-fastback",
+        "settings": {
+          "isActive": false,
+          "show_fullscreen": true,
+          "show_arrow": false,
+          "autoplay": true,
+          "cycle_speed": 5,
+          "text_color": "#ffffff",
+          "button_color": "#363636",
+          "button_background": "#ffffff"
+        }
+      },
+      "technical-specifications-fastback": {
+        "type": "technical-specifications-fastback",
+        "blocks": {
+          "1567014785981": {
+            "type": "text",
+            "settings": {
+              "title": "LEATHER",
+              "text": "<p>Fastback&trade;&nbsp; Premium strap&nbsp;among 10 variations<\/p>\n<p><strong>Leather origin<\/strong>:&nbsp;see product picture<\/p>\n<p><strong>Lining<\/strong>: SYE blue signature&nbsp;full grain leather<\/p>\n<p><strong>Stitching<\/strong>: contrasting<\/p>\n<p><\/p>",
+              "block_position": "left"
+            }
+          },
+          "1567095752105": {
+            "type": "text",
+            "settings": {
+              "title": "DIMENSIONS",
+              "text": "<p><strong>Width<\/strong>&nbsp;(top&nbsp;\/ buckle): 20 \/ 18 cm<\/p>\n<p><strong>Length<\/strong>: 120 x 80 mm<\/p>\n<p><strong>Adjustment levels:<\/strong> 9<\/p>\n<p><strong>Weight:<\/strong>&nbsp;20g approx.<\/p>",
+              "block_position": "center"
+            }
+          },
+          "1567095768801": {
+            "type": "text",
+            "settings": {
+              "title": "EXTRAS",
+              "text": "<p><strong>Stainless steel inserts<\/strong> for durability<\/p>\n<p><strong>Integrated quick change strip<\/strong> to for buckle swap without any tool<\/p>",
+              "block_position": "right"
+            }
+          },
+          "1579546296150": {
+            "type": "text",
+            "settings": {
+              "title": "SPECIFICATION SHEET (ENGLISH)",
+              "text": "<p>Download the&nbsp;<a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0096\/7540\/7426\/files\/SYE_-_Fastback_premium_straps_-_Product_sheets_EN.pdf?13028?target=&quot;_blank&quot;\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0096\/7540\/7426\/files\/SYE_-_Fastback_premium_straps_-_Product_sheets_EN.pdf?13028?target=&quot;_blank&quot;\">Fastback&trade;&nbsp; Premium straps product sheets<\/a>&nbsp;in English<\/p>",
+              "block_position": "left"
+            }
+          },
+          "1579546450111": {
+            "type": "text",
+            "settings": {
+              "title": "SPECIFICATION SHEET (FRENCH)",
+              "text": "<p><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0096\/7540\/7426\/files\/SYE_-_Fastback_premium_straps_-_Product_sheets_FR.pdf?13028\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0096\/7540\/7426\/files\/SYE_-_Fastback_premium_straps_-_Product_sheets_FR.pdf?13028\">Download the Fastback&trade; Premium straps product sheets<\/a>&nbsp;in French<\/p>",
+              "block_position": "center"
+            }
+          }
+        },
+        "block_order": [
+          "1567014785981",
+          "1567095752105",
+          "1567095768801",
+          "1579546296150",
+          "1579546450111"
+        ],
+        "settings": {
+          "isActive": true,
+          "title": "TECHNICAL SPECIFICATIONS"
+        }
+      },
+      "text-with-image-5": {
+        "type": "text-with-image-5",
+        "settings": {
+          "isActive": false,
+          "subheading": "",
+          "title": "PREMIUM FASTBACK™ STRAP",
+          "image": "",
+          "image_position": "right",
+          "content": "<p>Just like when putting on a pair of gloves, your palm will slip through the solid folding clasp made of brushed steel. Our signature semi-matte leather lining will rest against your wrist and you can fasten the clasp. You'll certainly make the most of your premium leather Fastback&trade; strap.<br>The straps are made from French calfskin of unparalleled quality, carefully chosen from a tannery in Alsace. The finish is achieved via a double tanning process before being milled with warm air. The end result is soft, supple leather able to acquire a beautiful patina over time.<br>To breathe life into our high-end leather, we have our Fastback&trade; straps produced by a top-range French producer, based in the eastern Doubs region and carrying the Entreprise du patrimoine vivant label. The straps are meticulously crafted and checked in order to be precise and supple with high-quality finishes and stitching. By choosing to work with this partner, we do everything we can to make sure your strap fits your wrist perfectly.<br>We planned everything to make sure your strap stays with you as long as possible &ndash; metal inserts in the leather to make it last longer and match perfectly with the watch body, and a folding clasp to maintain your strap's shape and protect it from marks.<br>All that's left for you to do is enjoy the beautiful, high-end leather on your Fastback strap.<\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "page-support-template": {
+        "type": "page-support-template",
+        "blocks": {
+          "page-support-template-0": {
+            "type": "separator",
+            "settings": {
+              "title": "SUPPORT"
+            }
+          },
+          "page-support-template-1": {
+            "type": "question",
+            "settings": {
+              "title": "Address",
+              "answer": "<p>24 boulevard des italiens 75009 PARIS<\/p>",
+              "image": "",
+              "html_area": "<div><p>Some HTML content<\/p><\/div>"
+            }
+          },
+          "page-support-template-2": {
+            "type": "question",
+            "settings": {
+              "title": "What if?",
+              "answer": "<p><strong>Lorem Ipsum<\/strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<\/p>",
+              "image": "",
+              "html_area": "<div><p>Some HTML content<\/p><\/div>"
+            }
+          },
+          "page-support-template-3": {
+            "type": "question",
+            "settings": {
+              "title": "What if?",
+              "answer": "<p><strong>Lorem Ipsum<\/strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<\/p>",
+              "image": "",
+              "html_area": "<div><p>Some HTML content<\/p><\/div>"
+            }
+          },
+          "page-support-template-4": {
+            "type": "separator",
+            "settings": {
+              "title": "Reparation"
+            }
+          },
+          "page-support-template-5": {
+            "type": "question",
+            "settings": {
+              "title": "What if?",
+              "answer": "<p><strong>Lorem Ipsum<\/strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<\/p>",
+              "image": "",
+              "html_area": "<iframe width=\"100%\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/YIBqB-N2B38\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"><\/iframe>"
+            }
+          },
+          "page-support-template-6": {
+            "type": "question",
+            "settings": {
+              "title": "How can i adjust my watch?",
+              "answer": "<p><strong>Lorem Ipsum<\/strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<\/p>",
+              "image": "",
+              "html_area": "<iframe width=\"100%;\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/YIBqB-N2B38\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"><\/iframe>"
+            }
+          },
+          "page-support-template-7": {
+            "type": "separator",
+            "settings": {
+              "title": "Other"
+            }
+          },
+          "page-support-template-8": {
+            "type": "question",
+            "settings": {
+              "title": "Any question?",
+              "answer": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>",
+              "image": "",
+              "html_area": "<div><p>Some HTML content<\/p><\/div>"
+            }
+          }
+        },
+        "block_order": [
+          "page-support-template-0",
+          "page-support-template-1",
+          "page-support-template-2",
+          "page-support-template-3",
+          "page-support-template-4",
+          "page-support-template-5",
+          "page-support-template-6",
+          "page-support-template-7",
+          "page-support-template-8"
+        ],
+        "settings": {
+        }
+      },
+      "custom-parallax": {
+        "type": "custom-parallax",
+        "blocks": {
+          "1564072070185": {
+            "type": "block_type",
+            "settings": {
+              "image": "",
+              "title": "title",
+              "content": "",
+              "main-background_color": "#8c8c8c",
+              "main-text-align": "center",
+              "title2": "title 2",
+              "content2": "<p>dsadafcdfsdf<\/p>",
+              "background_color": "#d7d6d6",
+              "align": "center",
+              "show_collection_info": true,
+              "show_collection_image": true,
+              "apply_overlay": true,
+              "show_color_swatch": true,
+              "show_vendor": false,
+              "collection_image_size": "normal"
+            }
+          },
+          "1564072192092": {
+            "type": "block_type",
+            "settings": {
+              "image": "",
+              "title": "",
+              "content": "",
+              "main-background_color": "#8c8c8c",
+              "main-text-align": "center",
+              "title2": "TITLE 2",
+              "content2": "<p>CDFASFSFSAF<\/p>",
+              "background_color": "#6d4d4d",
+              "align": "center",
+              "show_collection_info": true,
+              "show_collection_image": false,
+              "apply_overlay": true,
+              "show_color_swatch": true,
+              "show_vendor": true,
+              "collection_image_size": "normal"
+            }
+          }
+        },
+        "block_order": [
+          "1564072070185",
+          "1564072192092"
+        ],
+        "settings": {
+          "isActive": true
+        }
+      },
+      "product-template-automatic": {
+        "type": "product-template-automatic",
+        "settings": {
+          "show_share_buttons": true,
+          "show_vendor": false,
+          "show_sku": false,
+          "description_below_add_to_cart": false,
+          "selector_mode": "block",
+          "show_color_swatch": false,
+          "show_color_carousel": false,
+          "show_quantity_selector": false,
+          "show_inventory_quantity": false,
+          "inventory_quantity_threshold": 0,
+          "show_price_in_button": false,
+          "show_payment_button": false,
+          "image_size": "large",
+          "stack_images": false,
+          "show_thumbnails": true,
+          "enable_image_zoom": false,
+          "tab_page_1_handle": "",
+          "tab_page_2_handle": "",
+          "reviews_enabled": false,
+          "featured_image_size": "large"
+        }
+      },
+      "product-description-automatic": {
+        "type": "product-description-automatic",
+        "settings": {
+          "isActive": true,
+          "title": "BE THE FIRST TO GET YOUR SYE MOT1ON!"
+        }
+      },
+      "text-with-image-automatic-1": {
+        "type": "text-with-image-automatic-1",
+        "settings": {
+          "isActive": true,
+          "subheading": "Exclusive design with",
+          "title": "A STRONG PERSONALITY",
+          "image": "shopify:\/\/shop_images\/SYE_MOT1ON_Automatic_Twenty_Four_Hero_3x_f7b8b242-ed02-4f2c-8c88-3e5426dad1aa.jpg",
+          "image_position": "right",
+          "content": "<p>Our desire to design an exclusive watch led to the birth of MOT1ON.<\/p>\n<p>MOT1ON Automatic Twenty-Four combines a top-range leather strap with a modern steel body in an innovative, eye-catching design.<\/p>\n<p>Its rich personality brings 'Sport Tailoring' to your wrist; it's as dynamic as it is classy, as elegant as it is athletic, and it will hug your wrist all day long without a single misstep.<\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "text-with-image-automatic-2": {
+        "type": "text-with-image-automatic-2",
+        "settings": {
+          "isActive": true,
+          "subheading": "Splendid view from every angle",
+          "title": "WELL SCULPTED",
+          "image": "shopify:\/\/shop_images\/SYE_MOT1ON_blueprints_blocks_mobile.jpg",
+          "image_position": "left",
+          "content": "<p>We cut no corners with MOT1ON &ndash; it is simply the best.<\/p>\n<p>MOT1ON boasts a solid stainless steel 316L body made up of five mechanical components to fill it with sophistication and character.<\/p>\n<p>Its&nbsp;impeccable finish is carefully balancing between brushed steel around the body, polished steel for the bezel and a sophisticated bead-blasted finish on the back... not to mention the anodized screw in the middle for an unexpected touch of colour.<\/p>\n<p>The dial is protected by scratch-resistant sapphire crystal with an anti-reflective coating. This means you have nothing worry about when admiring the many details of the elegant dial.<\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "text-with-image-automatic-3": {
+        "type": "text-with-image-automatic-3",
+        "settings": {
+          "isActive": true,
+          "subheading": "Mechanical spirit in every way",
+          "title": "PERFECT FOR GEARHEADS",
+          "image": "shopify:\/\/shop_images\/SYE_Fastback_packshot_blocks_mobile.jpg",
+          "image_position": "right",
+          "content": "<p>The mood is immediately set with etched lines like an engine block.<\/p>\n<p>At the heart of your SYE MOT1ON Automatic Twenty-Four we chose to use the famously reliable Miyota Japanese watch movement, which beats 21,600 times per hour (3 Hz). This mechanical watch movement is automatically powered via the motion of your wrist and will reserve its power for over 42 hours off your wrist.<\/p>\n<p><span>Underneath the MOT1ON watch you will find the Fastback&trade; system, which is an ingenious mechanism allowing you to swap out straps with ease. With a few simple twists of a tool, you can remove the back, change the strap, and you're good to go!<\/span><\/p>\n<p>There's no doubt that MOT1ON watches will bring out your inner mechanic.<\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "text-with-image-automatic-4": {
+        "type": "text-with-image-automatic-4",
+        "settings": {
+          "isActive": true,
+          "subheading": "Maybe the most sophisticated straps in the world",
+          "title": "FASTBACK™️ PREMIUM STRAPS",
+          "image": "shopify:\/\/shop_images\/SYE_Fastback_straps_blocks_mobile.jpg",
+          "image_position": "left",
+          "content": "<p>Taking its name from the dynamic shape of renowned carriages, the premium Fastback&trade; range that adorns each SYE MOT1ON watch is made primarily of French calfskin. Carefully chosen from a tannery in Alsace, it has unparalleled quality: soft, supple and able to acquire a beautiful patina over time.<\/p>\n<p>Our esteemed French producer carries the '<em>Entreprise du patrimoine vivant'<\/em> label and meticulously crafts the straps with a high-quality finish to ensure they fit your wrist perfectly.<br>We have taken every step to make sure your strap stays with you as long as possible - metal inserts seamlessly incorporated into the leather increase longevity and perfectly sync with the watch body. A folding deployment buckle maintains your strap&rsquo;s shape and protects it from marks.<\/p>\n<p>The premium Fastback&trade; straps create an unmatched tailored style in a wide choice of 10&nbsp;colors and leather finishes to ensure your watch is personalized just for you<\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "concept-advantages-automatic": {
+        "type": "concept-advantages-automatic",
+        "settings": {
+          "isActive": false,
+          "title": "",
+          "font_option": false,
+          "title_position": 28,
+          "title_size": 4,
+          "subtitle": "",
+          "font_option_subtitle": false,
+          "subtitle_position": 0,
+          "subtitle_size": 2
+        }
+      },
+      "slideshow-automatic": {
+        "type": "slideshow-automatic",
+        "settings": {
+          "isActive": false,
+          "show_fullscreen": true,
+          "show_arrow": false,
+          "autoplay": true,
+          "cycle_speed": 5,
+          "text_color": "#ffffff",
+          "button_color": "#363636",
+          "button_background": "#ffffff"
+        }
+      },
+      "technical-specifications-automatic": {
+        "type": "technical-specifications-automatic",
+        "blocks": {
+          "1579131504065": {
+            "type": "text",
+            "settings": {
+              "title": "CASE",
+              "text": "<p><strong>Material:<\/strong>&nbsp;stainless steel 316L<\/p>\n<p><strong>Construction:<\/strong> 5-part case construction<\/p>\n<p><strong>Crystal:<\/strong>&nbsp;scratch-resistant &amp; AR coated sapphire<\/p>\n<p><strong>Caseback:<\/strong> Fastback&trade;&nbsp; system&nbsp;<\/p>\n<p><strong>Water resistance:<\/strong>&nbsp;50 meters (5 ATM)<\/p>",
+              "block_position": "left"
+            }
+          },
+          "1579131770904": {
+            "type": "text",
+            "settings": {
+              "title": "DIAL",
+              "text": "<p><strong>Colors:<\/strong> Silver or Smoky grey brushed steel dial<\/p>\n<p><strong>Functions:<\/strong> hour, minute, second, date, 24h sub-dial<\/p>\n<p><strong>Hands:<\/strong>&nbsp;diamond shape with Superluminova&trade;&nbsp; coating<\/p>",
+              "block_position": "center"
+            }
+          },
+          "1579131885263": {
+            "type": "text",
+            "settings": {
+              "title": "MOVEMENT",
+              "text": "<p><strong>Type:<\/strong>&nbsp;automatic mechanical movement<\/p>\n<p><strong>Caliber:<\/strong> Miyota 8217<\/p>\n<p><strong>Jewels:<\/strong> 21 jewels<\/p>\n<p><strong>Frequency:<\/strong>&nbsp;21 600 alternances \/ hour (3 Hz)<\/p>\n<p><strong>Power reserve:<\/strong> 42 hours<\/p>",
+              "block_position": "right"
+            }
+          },
+          "1579170431403": {
+            "type": "text",
+            "settings": {
+              "title": "DIMENSIONS",
+              "text": "<p><strong>Diameter:<\/strong> 40,5mm<\/p>\n<p><strong>Width (incl crown):<\/strong> 43,5mm<\/p>\n<p><strong>Thickness :<\/strong> 13,4mm<\/p>\n<p><strong>Weight:<\/strong>&nbsp;100g (3,53 oz) approx.<\/p>\n<p><\/p>",
+              "block_position": "left"
+            }
+          },
+          "1579131968620": {
+            "type": "text",
+            "settings": {
+              "title": "STRAP",
+              "text": "<p>Fastback&trade;&nbsp; Premium strap&nbsp;among 10 variations<\/p>\n<p><strong>Lining:<\/strong> full grain Italian calf in SYE blue<\/p>\n<p><strong>Stitches:<\/strong> constrasting stitches<\/p>\n<p><strong>Buckle:<\/strong>&nbsp;brushed stainless steel deployment buckle<\/p>\n<p><strong>Length:<\/strong>&nbsp;120\/80mm&nbsp;(long\/short strap)<\/p>",
+              "block_position": "center"
+            }
+          },
+          "1579132096708": {
+            "type": "text",
+            "settings": {
+              "title": "EXTRAS",
+              "text": "<p><strong>Content of the box:<\/strong> SYE MOT1ON Automatic 24 watch + Premium Fastback&trade; strap + deployement buckle +&nbsp;Fastback&trade; tool<\/p>\n<p><strong>Warranty:<\/strong> 2 years<\/p>\n<p><strong>Special:<\/strong>&nbsp;exclusive numbered pre-order limited to 500 units.<\/p>",
+              "block_position": "right"
+            }
+          }
+        },
+        "block_order": [
+          "1579131504065",
+          "1579131770904",
+          "1579131885263",
+          "1579170431403",
+          "1579131968620",
+          "1579132096708"
+        ],
+        "settings": {
+          "isActive": true,
+          "title": "TECHNICAL SPECIFICATIONS"
+        }
+      },
+      "1573637563087": {
+        "type": "featured-video",
+        "disabled": true,
+        "settings": {
+          "section_size": "large",
+          "text_color": "#ffffff",
+          "subheading": "",
+          "title": "COMING SOON",
+          "image": "",
+          "video_url": "https:\/\/www.youtube.com\/watch?v=rp3WBBlL0Nw"
+        }
+      }
+    },
+    "content_for_index": [
+      "1561043424893",
+      "1561053249566",
+      "1563381536498",
+      "shop-the-look",
+      "collection-list",
+      "1561046809689",
+      "1561048304444",
+      "1561041128255",
+      "1573637563087"
+    ]
+  },
+  "presets": {
+    "Allure": {
+      "heading_color": "#1c1b1b",
+      "text_color": "#1c1b1b",
+      "text_light_color": "#6a6a6a",
+      "link_color": "#6a6a6a",
+      "background": "#efefef",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#1c1b1b",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#1c1b1b",
+      "header_light_color": "#6a6a6a",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#1c1b1b",
+      "footer_text_color": "#6a6a6a",
+      "newsletter_popup_background": "#1c1b1b",
+      "newsletter_popup_text_color": "#ffffff",
+      "secondary_elements_background": "#1c1b1b",
+      "secondary_elements_text_color": "#ffffff",
+      "navigation_background": "#1c1b1b",
+      "navigation_text_color": "#ffffff",
+      "heading_font": "montserrat_n5",
+      "heading_size": "small",
+      "uppercase_heading": true,
+      "text_font": "nunito_sans_n4",
+      "base_text_font_size": 14,
+      "currency_conversion_enabled": false,
+      "currency_conversion_round_amounts": true,
+      "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+      "currency_conversion_money_format": "money_format",
+      "show_page_transition": true,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": false,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "center",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "medium",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "drawer",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "center",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#efefef",
+      "checkout_accent_color": "#1c1b1b",
+      "checkout_button_color": "#1c1b1b",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#000000",
+            "text_color": "#ffffff",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "inline",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slide-0": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            },
+            "slide-1": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            }
+          },
+          "block_order": [
+            "slide-0",
+            "slide-1"
+          ],
+          "settings": {
+            "show_fullscreen": true,
+            "show_arrow": false,
+            "autoplay": true,
+            "cycle_speed": 5,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collection-0": {
+              "type": "collection",
+              "settings": {
+                "grid_items_count": 8,
+                "button_text": "View all products"
+              }
+            }
+          },
+          "block_order": [
+            "featured-collection-0"
+          ],
+          "settings": {
+            "title": "Featured collection",
+            "layout_mode": "grid",
+            "show_product_info": true,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2"
+          ],
+          "settings": {
+            "add_spacing": true,
+            "expand_collection": false,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {
+            "title": "Featured product",
+            "show_vendor": true,
+            "show_description": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3
+          }
+        },
+        "timeline": {
+          "type": "timeline",
+          "blocks": {
+            "item-0": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2000",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-1": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2001",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-2": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2002",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "item-0",
+            "item-1",
+            "item-2"
+          ],
+          "settings": {
+            "text_color": "#ffffff"
+          }
+        },
+        "blog-posts": {
+          "type": "blog-posts",
+          "blocks": {
+            "blog-0": {
+              "type": "blog",
+              "settings": {
+                "blog": "news"
+              }
+            }
+          },
+          "block_order": [
+            "blog-0"
+          ],
+          "settings": {
+            "title": "Featured article",
+            "show_category": false,
+            "button_text": "View all articles"
+          }
+        },
+        "shop-the-look": {
+          "type": "shop-the-look",
+          "blocks": {
+            "look-0": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 30,
+                "product_1_vertical_position": 40,
+                "product_2_horizontal_position": 45,
+                "product_2_vertical_position": 65,
+                "product_3_horizontal_position": 70,
+                "product_3_vertical_position": 50
+              }
+            },
+            "look-1": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 25,
+                "product_1_vertical_position": 45,
+                "product_2_horizontal_position": 55,
+                "product_2_vertical_position": 30,
+                "product_3_horizontal_position": 65,
+                "product_3_vertical_position": 60
+              }
+            }
+          },
+          "block_order": [
+            "look-0",
+            "look-1"
+          ],
+          "settings": {
+            "subheading": "Shop",
+            "title": "Our looks"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_collection_info": true,
+            "show_collection_image": false,
+            "show_sort_by": true,
+            "show_layout_switch": false,
+            "toolbar_position": "bottom",
+            "filter_position": "sidebar",
+            "filter_mode": "tag",
+            "show_filter_color_swatch": true,
+            "grid_items_per_page": 16,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "recently-viewed-products": {
+          "type": "recently-viewed-products",
+          "settings": {
+            "show_section": true,
+            "title": "Recently viewed",
+            "show_product_info": true
+          }
+        },
+        "collection-footer": {
+          "type": "collection-footer",
+          "settings": {
+            "show_section": false,
+            "text_color": "#ffffff",
+            "apply_overlay": true,
+            "title": "Our story",
+            "content": "<p>Add your own custom content to explain your processes...<\/p>"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_share_buttons": true,
+            "show_vendor": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3,
+            "image_size": "large",
+            "stack_images": true,
+            "show_thumbnails": false,
+            "enable_image_zoom": true,
+            "reviews_enabled": false
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "show_product_info": true
+          }
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-collections",
+        "collection-list",
+        "featured-product",
+        "timeline",
+        "blog-posts",
+        "shop-the-look"
+      ]
+    },
+    "Couture": {
+      "heading_color": "#5c5c5c",
+      "text_color": "#5c5c5c",
+      "text_light_color": "#939393",
+      "link_color": "#323232",
+      "background": "#ffffff",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#5c5c5c",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#5c5c5c",
+      "header_light_color": "#939393",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#5c5c5c",
+      "footer_text_color": "#939393",
+      "newsletter_popup_background": "#ffffff",
+      "newsletter_popup_text_color": "#1c1b1b",
+      "secondary_elements_background": "#5c5c5c",
+      "secondary_elements_text_color": "#ffffff",
+      "navigation_background": "#ffffff",
+      "navigation_text_color": "#5c5c5c",
+      "heading_font": "futura_n4",
+      "heading_size": "large",
+      "uppercase_heading": false,
+      "text_font": "century_gothic_n4",
+      "base_text_font_size": 15,
+      "currency_conversion_enabled": false,
+      "currency_conversion_round_amounts": true,
+      "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+      "currency_conversion_money_format": "money_format",
+      "show_page_transition": true,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": true,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "left",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "small",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "drawer",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "center",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#323232",
+      "checkout_button_color": "#5c5c5c",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#f3f3f3",
+            "text_color": "#5c5c5c",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "center",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slide-0": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            },
+            "slide-1": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            }
+          },
+          "block_order": [
+            "slide-0",
+            "slide-1"
+          ],
+          "settings": {
+            "show_fullscreen": true,
+            "show_arrow": false,
+            "autoplay": true,
+            "cycle_speed": 5,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collection-0": {
+              "type": "collection",
+              "settings": {
+                "grid_items_count": 8,
+                "button_text": "View all products"
+              }
+            }
+          },
+          "block_order": [
+            "featured-collection-0"
+          ],
+          "settings": {
+            "title": "Featured collection",
+            "layout_mode": "grid",
+            "show_product_info": true,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2"
+          ],
+          "settings": {
+            "add_spacing": true,
+            "expand_collection": false,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {
+            "title": "Featured product",
+            "show_vendor": true,
+            "show_description": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3
+          }
+        },
+        "timeline": {
+          "type": "timeline",
+          "blocks": {
+            "item-0": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2000",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-1": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2001",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-2": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2002",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "item-0",
+            "item-1",
+            "item-2"
+          ],
+          "settings": {
+            "text_color": "#ffffff"
+          }
+        },
+        "blog-posts": {
+          "type": "blog-posts",
+          "blocks": {
+            "blog-0": {
+              "type": "blog",
+              "settings": {
+                "blog": "news"
+              }
+            }
+          },
+          "block_order": [
+            "blog-0"
+          ],
+          "settings": {
+            "title": "Featured article",
+            "show_category": false,
+            "button_text": "View all articles"
+          }
+        },
+        "shop-the-look": {
+          "type": "shop-the-look",
+          "blocks": {
+            "look-0": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 30,
+                "product_1_vertical_position": 40,
+                "product_2_horizontal_position": 45,
+                "product_2_vertical_position": 65,
+                "product_3_horizontal_position": 70,
+                "product_3_vertical_position": 50
+              }
+            },
+            "look-1": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 25,
+                "product_1_vertical_position": 45,
+                "product_2_horizontal_position": 55,
+                "product_2_vertical_position": 30,
+                "product_3_horizontal_position": 65,
+                "product_3_vertical_position": 60
+              }
+            }
+          },
+          "block_order": [
+            "look-0",
+            "look-1"
+          ],
+          "settings": {
+            "subheading": "Shop",
+            "title": "Our looks"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_collection_info": true,
+            "show_collection_image": false,
+            "show_sort_by": true,
+            "show_layout_switch": false,
+            "toolbar_position": "bottom",
+            "filter_position": "sidebar",
+            "filter_mode": "tag",
+            "show_filter_color_swatch": true,
+            "grid_items_per_page": 16,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "recently-viewed-products": {
+          "type": "recently-viewed-products",
+          "settings": {
+            "show_section": true,
+            "title": "Recently viewed",
+            "show_product_info": true
+          }
+        },
+        "collection-footer": {
+          "type": "collection-footer",
+          "settings": {
+            "show_section": false,
+            "text_color": "#ffffff",
+            "apply_overlay": true,
+            "title": "Our story",
+            "content": "<p>Add your own custom content to explain your processes...<\/p>"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_share_buttons": true,
+            "show_vendor": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3,
+            "image_size": "large",
+            "stack_images": true,
+            "show_thumbnails": false,
+            "enable_image_zoom": true,
+            "reviews_enabled": false
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "show_product_info": true
+          }
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-collections",
+        "collection-list",
+        "featured-product",
+        "timeline",
+        "blog-posts",
+        "shop-the-look"
+      ]
+    },
+    "Vogue": {
+      "heading_color": "#454545",
+      "text_color": "#454545",
+      "text_light_color": "#9d9d9d",
+      "link_color": "#a17c5e",
+      "background": "#ffffff",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#c2a284",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#454545",
+      "header_light_color": "#9d9d9d",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#454545",
+      "footer_text_color": "#9d9d9d",
+      "newsletter_popup_background": "#454545",
+      "newsletter_popup_text_color": "#ffffff",
+      "secondary_elements_background": "#f1e4d8",
+      "secondary_elements_text_color": "#373737",
+      "navigation_background": "#454545",
+      "navigation_text_color": "#ffffff",
+      "heading_font": "din_neuzeit_grotesk_n3",
+      "heading_size": "small",
+      "uppercase_heading": true,
+      "text_font": "futura_n4",
+      "base_text_font_size": 14,
+      "currency_conversion_enabled": false,
+      "currency_conversion_round_amounts": true,
+      "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+      "currency_conversion_money_format": "money_format",
+      "show_page_transition": true,
+      "show_element_staggering": false,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": true,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "center",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "medium",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "drawer",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#a17c5e",
+      "checkout_button_color": "#454545",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#f1e4d8",
+            "text_color": "#343434",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "inline",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slide-0": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            },
+            "slide-1": {
+              "type": "image",
+              "settings": {
+                "apply_overlay": true,
+                "content_position": "bottomLeft",
+                "subheading": "Slide title",
+                "title": "Tell your story"
+              }
+            }
+          },
+          "block_order": [
+            "slide-0",
+            "slide-1"
+          ],
+          "settings": {
+            "show_fullscreen": true,
+            "show_arrow": false,
+            "autoplay": true,
+            "cycle_speed": 5,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collection-0": {
+              "type": "collection",
+              "settings": {
+                "grid_items_count": 8,
+                "button_text": "View all products"
+              }
+            }
+          },
+          "block_order": [
+            "featured-collection-0"
+          ],
+          "settings": {
+            "title": "Featured collection",
+            "layout_mode": "grid",
+            "show_product_info": true,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {
+                "image_alignment": "center center",
+                "subheading": "Sub-heading",
+                "button_text": "View products",
+                "apply_overlay": true
+              }
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2"
+          ],
+          "settings": {
+            "add_spacing": true,
+            "expand_collection": false,
+            "text_color": "#ffffff",
+            "button_color": "#363636"
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "settings": {
+            "title": "Featured product",
+            "show_vendor": true,
+            "show_description": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3
+          }
+        },
+        "timeline": {
+          "type": "timeline",
+          "blocks": {
+            "item-0": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2000",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-1": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2001",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            },
+            "item-2": {
+              "type": "item",
+              "settings": {
+                "apply_overlay": true,
+                "title": "2002",
+                "subheading": "Sub-heading",
+                "heading": "Heading",
+                "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "item-0",
+            "item-1",
+            "item-2"
+          ],
+          "settings": {
+            "text_color": "#ffffff"
+          }
+        },
+        "blog-posts": {
+          "type": "blog-posts",
+          "blocks": {
+            "blog-0": {
+              "type": "blog",
+              "settings": {
+                "blog": "news"
+              }
+            }
+          },
+          "block_order": [
+            "blog-0"
+          ],
+          "settings": {
+            "title": "Featured article",
+            "show_category": false,
+            "button_text": "View all articles"
+          }
+        },
+        "shop-the-look": {
+          "type": "shop-the-look",
+          "blocks": {
+            "look-0": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 30,
+                "product_1_vertical_position": 40,
+                "product_2_horizontal_position": 45,
+                "product_2_vertical_position": 65,
+                "product_3_horizontal_position": 70,
+                "product_3_vertical_position": 50
+              }
+            },
+            "look-1": {
+              "type": "look",
+              "settings": {
+                "dot_style": "light",
+                "product_1_horizontal_position": 25,
+                "product_1_vertical_position": 45,
+                "product_2_horizontal_position": 55,
+                "product_2_vertical_position": 30,
+                "product_3_horizontal_position": 65,
+                "product_3_vertical_position": 60
+              }
+            }
+          },
+          "block_order": [
+            "look-0",
+            "look-1"
+          ],
+          "settings": {
+            "subheading": "Shop",
+            "title": "Our looks"
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_collection_info": true,
+            "show_collection_image": false,
+            "show_sort_by": true,
+            "show_layout_switch": false,
+            "toolbar_position": "bottom",
+            "filter_position": "sidebar",
+            "filter_mode": "tag",
+            "show_filter_color_swatch": true,
+            "grid_items_per_page": 16,
+            "grid_mobile_items_per_row": "2",
+            "grid_desktop_items_per_row": 4
+          }
+        },
+        "recently-viewed-products": {
+          "type": "recently-viewed-products",
+          "settings": {
+            "show_section": true,
+            "title": "Recently viewed",
+            "show_product_info": true
+          }
+        },
+        "collection-footer": {
+          "type": "collection-footer",
+          "settings": {
+            "show_section": false,
+            "text_color": "#ffffff",
+            "apply_overlay": true,
+            "title": "Our story",
+            "content": "<p>Add your own custom content to explain your processes...<\/p>"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_share_buttons": true,
+            "show_vendor": true,
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "show_quantity_selector": true,
+            "show_inventory_quantity": false,
+            "inventory_quantity_threshold": 3,
+            "image_size": "large",
+            "stack_images": true,
+            "show_thumbnails": false,
+            "enable_image_zoom": true,
+            "reviews_enabled": false
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "show_product_info": true
+          }
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "featured-collections",
+        "collection-list",
+        "featured-product",
+        "timeline",
+        "blog-posts",
+        "shop-the-look"
+      ]
+    }
+  }
+}

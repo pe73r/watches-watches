@@ -1,0 +1,105 @@
+{% include 'special-title'%}
+
+{% schema %}
+{
+  "name": "Special title",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "isActive",
+      "label": "Show section",
+      "default": true
+    },
+    {
+    "type":      "range",
+    "id":        "block_size",
+    "min":       10,
+    "max":       90,
+    "step":      1,
+    "unit":      "px",
+    "label":     "Block size",
+    "default":   10
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "checkbox",
+      "id": "font_option",
+      "label": "Special font",
+      "info": "change the font of the title",
+      "default": false
+    },
+    {
+    "type":      "range",
+    "id":        "title_size",
+    "min":       1,
+    "max":       10,
+    "step":      1,
+    "unit":      "em",
+    "label":     "Title size",
+    "default":   2
+    },
+    {
+        "type": "color",
+        "id": "title_color",
+        "label": "title color",
+        "default": "#333333"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "checkbox",
+      "id": "font_option2",
+      "label": "Special font",
+      "info": "change the font of the title",
+      "default": false
+    },
+    {
+    "type":      "range",
+    "id":        "subtitle_size",
+    "min":       1,
+    "max":       8,
+    "step":      0.5,
+    "unit":      "em",
+    "label":     "Subtitle size",
+    "default":   1
+    },
+    {
+        "type": "color",
+        "id": "subtitle_color",
+        "label": "subtitle color",
+        "default": "#333333"
+    },
+    {
+      "type": "select",
+      "id": "position",
+      "label": "text position",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "left"
+        },
+        {
+          "value": "center",
+          "label": "center"
+        },
+        {
+          "value": "space-around",
+          "label": "center space"
+        },
+        {
+          "value": "flex-end",
+          "label": "right"
+        }
+      ],
+      "default": "flex-start"
+    }
+  ]
+}
+{% endschema %}

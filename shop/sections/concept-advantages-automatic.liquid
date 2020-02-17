@@ -1,0 +1,112 @@
+{% include "concept-advantages" %}
+
+{% schema %}
+{
+  "name": "Product advantages",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "isActive",
+      "label": "Show section",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "checkbox",
+      "id": "font_option",
+      "label": "Special font",
+      "info": "change the font of the title",
+      "default": false
+    },
+    {
+    "type":      "range",
+    "id":        "title_position",
+    "min":       -50,
+    "max":       50,
+    "step":      1,
+    "unit":       "%",
+    "label":     "Title position",
+    "default":   0
+    },
+    {
+    "type":      "range",
+    "id":        "title_size",
+    "min":       2,
+    "max":       8,
+    "step":      1,
+    "unit":      "em",
+    "label":     "Title size",
+    "default":   4
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "checkbox",
+      "id": "font_option_subtitle",
+      "label": "Special font",
+      "info": "change the font of the subtitle",
+      "default": false
+    },
+    {
+    "type":      "range",
+    "id":        "subtitle_position",
+    "min":       -40,
+    "max":       40,
+    "step":      1,
+    "unit":       "%",
+    "label":     "Subtitle position",
+    "default":   0
+    },
+    {
+    "type":      "range",
+    "id":        "subtitle_size",
+    "min":       2,
+    "max":       5,
+    "step":      1,
+    "unit":      "em",
+    "label":     "Subtitle size",
+    "default":   2
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "concept block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image presse"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Advantages title"
+        },
+        {
+          "type": "text",
+          "id": "content",
+          "label": "Advantages content"
+        },
+        {
+          "type": "text",
+          "id": "link",
+          "label": "link"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "url"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

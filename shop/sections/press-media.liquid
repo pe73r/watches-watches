@@ -1,0 +1,50 @@
+<section id="section-{{ section.id }}" class="section" data-section-id="{{ section.id }}" data-section-type="press-media">
+  <div class="container--small press-media__container">
+    {% unless section.settings.title == blank %}
+    <h2 class="Heading u-h2 align-center">
+      {{ section.settings.title }}
+    </h2>
+    {% endunless %}
+    <div class="grid">
+      {% for block in section.blocks %}
+          <div class="grid__cell 1/1 1/4--lap-and-up">
+            {% if block.type == "image" %}
+                <div class="image-container">
+                  <a href="{{ block.settings.link }}" target="_blank">{% include 'image' with img : block.settings.image %}</a>
+                </div>
+         {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Press media",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+	  	{
+	  	  "type": "url",
+	  	  "id": "link",
+	  	  "label": "Lien du contenu"
+	  },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image presse"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
